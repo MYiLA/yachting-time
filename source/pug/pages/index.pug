@@ -1,0 +1,53 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title ESSEC
+    //- link(rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="anonymous")
+    link(rel="stylesheet", href="lib/css-awesome/all.min.css")
+    link(rel="stylesheet", href="lib/css-awesome/brands.css")
+    link(rel="stylesheet" href="lib/glide/glide.core.min.css")
+    link(rel="stylesheet" href="css/style.min.css")
+
+  body
+
+    main.home-page.update-02-2020
+      .home-page__hover(style="background-image: url(img/home-hover.jpg)")
+        .wrap
+          h1.home-page__hover-title Study online with ESSEC Augmented Digital Campus
+          a.home-page__hover-btn(href="programmes-page.html") Explore our online courses now
+      .wrap
+        section.home-page__advantage.advantage
+          include ../modules/advantage
+
+        section.home-page__programmes.programmes
+          h2.programmes__title Discover our online Digital Transformation programmes
+          include ../modules/programmes
+
+        .home-page__message.message
+          p.message__desc Discover all our Digital Transformation programmes
+          a.message__btn(href="programmes-page.html") View all online courses now
+
+        section.home-page__media.media
+          include ../modules/media
+
+      section.home-page__review.review
+        include ../modules/review
+
+      .wrap
+        .home-page__message.message
+          p.message__desc Become an expert in Digital Transformation with ESSEC Business School from anywhere in the world. 
+          a.message__btn(href="programmes-page.html") View all online courses now
+
+    //- include ../modules/footer
+
+    script(src="js/polyfill.min.js")
+    script(src="lib/glide/glide.min.js")
+    script(src="js/script.js" defer)
+    script(src="js/review-slider.js" defer)
+    script(src="js/programmes-slider.js" defer)
+    script(src="js/video.js" defer)
+    
+    
