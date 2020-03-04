@@ -1,29 +1,37 @@
 doctype html
-html(lang="en")
+html(lang="ru")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
-    title ESSEC
-    //- link(rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="anonymous")
+    title Yachting time
+    meta(name="description" content = "Yachting Time - организация и проведение незабываемых морских путешествий для наших гостей")
+    meta(name=viewport content = "width = device-width, initial-scale = 1")
     link(rel="stylesheet", href="lib/css-awesome/all.min.css")
     link(rel="stylesheet", href="lib/css-awesome/brands.css")
     link(rel="stylesheet" href="lib/glide/glide.core.min.css")
     link(rel="stylesheet" href="css/style.min.css")
 
   body
-
-    main.home-page.update-02-2020
-      .home-page__hover(style="background-image: url(img/home-hover.jpg)")
-        .wrap
-          h1.home-page__hover-title Study online with ESSEC Augmented Digital Campus
-          a.home-page__hover-btn(href="programmes-page.html") Explore our online courses now
-
-    //- include ../modules/footer
-
+    include ../modules/header
+    main.landing
+      include ../modules/promo
+      include ../modules/intro
+      include ../modules/upcoming-trips
+      include ../modules/price--included
+      include ../modules/yacht
+      include ../modules/impressions
+      include ../modules/price--not-included
+      include ../modules/reviews
+      include ../modules/about
+      include ../modules/team
+      include ../modules/advantages
+      include ../modules/questions
+      include ../modules/form
+    include ../modules/footer
     //- script(src="js/polyfill.min.js")
     //- script(src="lib/glide/glide.min.js")
-    //- script(src="js/script.js" defer)
+    script(src="js/script.js" defer)
     //- script(src="js/review-slider.js" defer)
     //- script(src="js/programmes-slider.js" defer)
     //- script(src="js/video.js" defer)

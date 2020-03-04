@@ -1,0 +1,8 @@
+.impressions__item {
+  display: flex;
+  &--reverse {
+    .impressions__desc {
+      order: 1;
+    }
+  }
+}

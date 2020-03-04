@@ -1,5 +1,5 @@
 {
-  "name": "who-are-we",
+  "name": "yachting-time",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -36,12 +36,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MYiLA/who-are-we.git"
+    "url": "git+https://github.com/MYiLA/yachting-time.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MYiLA/who-are-we/issues"
+    "url": "https://github.com/MYiLA/yachting-time/issues"
   },
-  "homepage": "https://github.com/MYiLA/who-are-we#readme"
+  "homepage": "https://github.com/MYiLA/yachting-time#readme"
 }

@@ -22,143 +22,145 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'RobotoSlab';
-  src: url('../fonts/robotoslab-regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'RobotoSlab';
-  src: url('../fonts/robotoslab-bold.woff2') format('woff2'),
-    url('../fonts/robotoslab-bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
-
-body, html {
+body,
+html {
   margin: 0;
   overflow-x: hidden;
+  @include text;
 }
 
-.update-02-2020 {
+.body {
   position: relative;
   box-sizing: border-box;
   max-width: 100%;
   min-width: $mobile-width;
   margin: 0;
   overflow-x: hidden;
-  @include text;
-  background-color: $main-bg;
+  background-color: $white;
 }
 
-.update-02-2020 {
-  button {
-    cursor: pointer;
-    transition: 0.3s;
 
-    &:focus,
-    &:hover {
-      outline: none;
-      opacity: 0.9;
-    }
+button {
+  cursor: pointer;
+  transition: 0.3s;
 
-    &:active {
-      opacity: 0.7;
-    }
+  &:focus,
+  &:hover {
+    outline: none;
+    opacity: 0.9;
   }
 
-  a {
-    text-decoration: none;
-    @include text;
-    color: $font-gray;
-    transition: 0.3s;
+  &:active {
+    opacity: 0.7;
+  }
+}
 
-    &:focus,
-    &:hover {
-      outline: none;
-      opacity: 0.6;
-    }
+a {
+  text-decoration: none;
+  @include text;
+  color: $black;
+  transition: 0.3s;
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:focus,
+  &:hover {
+    outline: none;
+    opacity: 0.6;
   }
 
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.fixed {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+.static {
+  position: static;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 288px; // карточка 288 по макету
+
+  @media(min-width: 660px) {
+    width: 596px; // 2 карточки 288+288+20
   }
 
-  .visually-hidden {
-    @include visually-hidden;
+  @media(min-width:$tablet-width) {
+    width: 785px; // 2  карточки десктоп формата 374+374+37
   }
 
-  .fixed {
-    width: 100%;
-    position: fixed;
-    z-index: 2;
+  @media(min-width:$desktop-width) {
+    width: 1200px; //по макету
   }
+}
 
-  .static {
-    position: static;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-main;
+  font-weight: 700;
+  color: $black;
+}
 
-  .wrap {
-    margin-left: 20px;
-    margin-right: 20px;
+h1 {
+  font-size: 24px;
+  line-height: 32px;
+}
 
-    @media(min-width: 660px) {
-      margin: 0 auto;
-      width: 585px;
-    }
+h2 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
 
-    @media(min-width:$tablet-width) {
-      width: 821px;
-    }
+h3 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
 
-    @media(min-width:$desktop-width) {
-      width: 1100px;
-    }
-  }
+h4 {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 500;
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: $font-accent;
-    font-weight: 700;
-    color: #393939;
-  }
-
+@media (min-width: $tablet-width) {
   h1 {
-    font-size: 36px;
-    line-height: 47px;
+    font-size: 64px;
+    line-height: 75px;
   }
 
   h2 {
-    font-size: 26px;
-    line-height: 34px;
-    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
   }
 
   h3 {
-    font-size: 19px;
-    line-height: 25px;
-    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
   }
-}
 
-
-@media (max-width: $tablet-width) {
-  .update-02-2020 {
-    h1 {
-      font-size: 42px;
-      line-height: 55px;
-    }
+  h4 {
+    font-size: 16px;
+    line-height: 20px;
   }
 }

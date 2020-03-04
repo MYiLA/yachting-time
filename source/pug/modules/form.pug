@@ -1,0 +1,11 @@
+section.landing__form.form
+  h2.form__title Остались вопросы?
+  p.form__desc Оставьте свой номер и мы отправим вам презентацию с подробным описанием маршрута и наших прошлых путешествий
+  form.form__form(action="POST")
+    label.visually-hidden(for="name")
+    input.form__input(type="text" id="name" name="name" placeholder="Ваше имя")
+    label.visually-hidden(for="tel")
+    input.form__input(type="tel" id="tel" name="telephone" placeholder="Ваш номер телефона")
+    label.visually-hidden(for="messenger")
+    input.form__input(type="text" id="messenger" name="messenger" placeholder="Выберете мессенджер")
+    button.form__submit(type="submit") Получить презентацию
