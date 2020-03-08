@@ -2,10 +2,17 @@ section.landing__form.form
   h2.form__title Остались вопросы?
   p.form__desc Оставьте свой номер и мы отправим вам презентацию с подробным описанием маршрута и наших прошлых путешествий
   form.form__form(action="POST")
+    select.form__select(required size="1")
+      option.form__select-item(disabled selected) Выберите круиз
+      option.form__select-item(value="Круиз 1") Круиз 1
+      option.form__select-item(value="Круиз 2") Круиз 2
     label.visually-hidden(for="name")
-    input.form__input(type="text" id="name" name="name" placeholder="Ваше имя")
+    input.form__input(type="text" id="name" name="name" placeholder="Ваше имя" required)
     label.visually-hidden(for="tel")
-    input.form__input(type="tel" id="tel" name="telephone" placeholder="Ваш номер телефона")
+    input.form__input(type="tel" id="tel" name="telephone" placeholder="Ваш номер телефона" required)
     label.visually-hidden(for="messenger")
-    input.form__input(type="text" id="messenger" name="messenger" placeholder="Выберете мессенджер")
+    select.form__select(size="1")
+      option.form__select-item(disabled selected) Выберите мессенджер
+      option.form__select-item(value="мессенджер 1") мессенджер 1
+      option.form__select-item(value="мессенджер 2") мессенджер 2
     button.form__submit(type="submit") Получить презентацию
