@@ -1,8 +1,24 @@
+.impressions{}
+
+.impressions__title{}
+
+.impressions__list{}
+
+.impressions__also{}
+
+.impressions__img{
+  img{}
+}
+
 .impressions__item {
   display: flex;
   &--reverse {
     .impressions__desc {
       order: 1;
+
+      h3{}
+
+      p{}
     }
   }
 }
