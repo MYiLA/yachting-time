@@ -1,13 +1,36 @@
 .landing__scheme.scheme
   .scheme__wrap
-    .scheme__list
-      .scheme__item
-        button(type="button" aria-label="Описание кнопки").scheme__btn
+    .glide
+      .scheme__tabs.glide__bullets(data-glide-el="controls[nav]")
+        button.scheme__btn.glide__bullet(type="button" data-glide-dir="=0" aria-label="Переключить на схему яхты")
           span Яхта
-        .scheme__desc
-         p Мы путешествуем на 13-15 метровых яхтах. В каждой из них имеется 4-5 кают, полноценная кухня, а также пространство для отдыха.
-      .scheme__item
-        button(type="button" aria-label="Описание кнопки").scheme__btn
-          span Яхта
-        .scheme__desc
-         p Мы путешествуем на 13-15 метровых яхтах. В каждой из них имеется 4-5 кают, полноценная кухня, а также пространство для отдыха.
+        button.scheme__btn.glide__bullet(type="button" data-glide-dir="=1" aria-label="Переключить на схему каюты")
+          span Каюта
+      .glide__track(data-glide-el="track")
+        .glide__slides
+          .glide__slide
+            .scheme__slide
+              .scheme__img
+                img(src="#", alt="План-схема яхты")
+              .scheme__desc
+                h3 Яхта (6-10 человек)
+                p Отличный вариант для большой компании. Кроме вас на яхте будет только капитан и помощник.
+          .glide__slide
+            .scheme__slide
+              .scheme__img
+                img(src="#", alt="План-схема расположения каюты на яхте")
+              .scheme__desc
+                h3 Каюта (1-2 человека)
+                p В каюте будет комфортно  двум путешественникам. Мы можем подобрать для вас мужскую или женскую каюту. Также вы можете выкупить каюту целиком.
+//- section.landing__reviews.reviews
+//-     .glide
+//-       .glide__track(data-glide-el="track")
+//-         ul.glide__slides
+//-           li.glide__slide
+//-           li.glide__slide
+//-       .glide__bullets(data-glide-el="controls[nav]")
+//-         button.glide__bullet(type="button" data-glide-dir="=0")
+//-         button.glide__bullet(type="button" data-glide-dir="=1")
+//-       .glide__arrows(data-glide-el="controls")
+//-         button.glide__arrow.glide__arrow--left(type="button" data-glide-dir="<")
+//-         button.glide__arrow.glide__arrow--right(type="button" data-glide-dir=">")
