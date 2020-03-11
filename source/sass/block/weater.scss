@@ -1,22 +1,22 @@
-.weather{}
+.weather {}
 
-.weather__wrap{
+.weather__wrap {
 
-  &--day{}
+  &--day {}
 }
 
-.weather__days{}
+.weather__days {}
 
-.weather__temperature{}
-
-
-
-@media(min-width: $tablet-small-width){}
+.weather__temperature {}
 
 
 
-@media (min-width: $tablet-width){}
+@media(min-width: $tablet-small-width) {}
 
 
 
-@media (min-width: $desktop-width){}
+@media (min-width: $tablet-width) {}
+
+
+
+@media (min-width: $desktop-width) {}

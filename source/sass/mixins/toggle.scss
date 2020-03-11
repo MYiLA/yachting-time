@@ -1,0 +1,19 @@
+@mixin toggle {
+  display: block;
+  margin-right: 8px;
+  width: 12px;
+  height: 12px;
+  background-color: $dark-gray;
+  border: none;
+  border-radius: 50%;
+  transform: none;
+  transition: 0.4s;
+  &:hover,
+  &:active {
+    transform: scale(1.4);
+  }
+
+  &--active {
+    transform: scale(1.4);
+  }
+}

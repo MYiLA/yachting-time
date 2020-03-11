@@ -1,23 +1,34 @@
 section.landing__advantages.advantages
   h2.advantages__title Яхтинг в цифрах
-  ul.advantages__list
-    li.advantages__item
-      .advantages__img
-        span.advantages__signature 2 года
-        img(src="#", alt="описание")
-      p.advantages__desc Мы путешествуем на яхте с 2018 года
-    li.advantages__item
-      .advantages__img
-        span.advantages__signature 20 круизов
-        img(src="#", alt="описание")
-      p.advantages__desc Именно столько круизов мы совершили за это время
-    li.advantages__item
-      .advantages__img
-        span.advantages__signature 60 человек
-        img(src="#", alt="описание")
-      p.advantages__desc Стали нашими друзьями
-    li.advantages__item
-      .advantages__img
-        span.advantages__signature 5500 миль
-        img(src="#", alt="описание")
-      p.advantages__desc Пройдено нашими капитанами
+  .glide
+    .glide__track(data-glide-el="track")
+      ul.advantages__list.glide__slides
+        li.glide__slide
+          .advantages__item
+            .advantages__img
+              span.advantages__signature 2 года
+              img(src="./img/test.jpg", alt="описание")
+            p.advantages__desc Мы путешествуем на яхте с 2018 года
+        li.glide__slide
+          .advantages__item
+            .advantages__img
+              span.advantages__signature 20 круизов
+              img(src="./img/test.jpg", alt="описание")
+            p.advantages__desc Именно столько круизов мы совершили за это время
+        li.glide__slide
+          .advantages__item
+            .advantages__img
+              span.advantages__signature 60 человек
+              img(src="./img/test.jpg", alt="описание")
+            p.advantages__desc Стали нашими друзьями
+        li.glide__slide
+          .advantages__item
+            .advantages__img
+              span.advantages__signature 5500 миль
+              img(src="./img/test.jpg", alt="описание")
+            p.advantages__desc Пройдено нашими капитанами
+    .advantages__bullets.glide__bullets(data-glide-el="controls[nav]")
+      button.advantages__bullet.glide__bullet(type="button" data-glide-dir="=0" aria-label="Переключить на слайд 1")
+      button.advantages__bullet.glide__bullet(type="button" data-glide-dir="=1" aria-label="Переключить на слайд 2")
+      button.advantages__bullet.glide__bullet(type="button" data-glide-dir="=2" aria-label="Переключить на слайд 3")
+      button.advantages__bullet.glide__bullet(type="button" data-glide-dir="=3" aria-label="Переключить на слайд 4")

@@ -1,13 +1,13 @@
-.impressions{}
+.impressions {}
 
-.impressions__title{}
+.impressions__title {}
 
-.impressions__list{}
+.impressions__list {}
 
-.impressions__also{}
+.impressions__also {}
 
-.impressions__img{
-  img{}
+.impressions__img {
+  img {}
 }
 
 .impressions__item {
@@ -16,21 +16,21 @@
     .impressions__desc {
       order: 1;
 
-      h3{}
+      h3 {}
 
-      p{}
+      p {}
     }
   }
 }
 
 
 
-@media(min-width: $tablet-small-width){}
+@media(min-width: $tablet-small-width) {}
 
 
 
-@media (min-width: $tablet-width){}
+@media (min-width: $tablet-width) {}
 
 
 
-@media (min-width: $desktop-width){}
+@media (min-width: $desktop-width) {}

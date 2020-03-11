@@ -1,39 +1,41 @@
-.landing{}
+.landing {
+  background-color: $white;
+}
 
-.landing__about{}
+.landing__about {}
 
-.landing__advantages{}
+.landing__advantages {}
 
-.landing__form{}
+.landing__form {}
 
-.landing__impressions{}
+.landing__impressions {}
 
-.landing__intro{}
+.landing__intro {}
 
-.landing__price{}
+.landing__price {}
 
-.landing__promo{}
+.landing__promo {}
 
-.landing__questions{}
+.landing__questions {}
 
-.landing__reviews{}
+.landing__reviews {}
 
-.landing__scheme{}
+.landing__scheme {}
 
-.landing__team{}
+.landing__team {}
 
-.landing__upcoming-trips{}
+.landing__upcoming-trips {}
 
 .landing__yacht {}
 
 
 
-@media(min-width: $tablet-small-width){}
+@media(min-width: $tablet-small-width) {}
 
 
 
-@media (min-width: $tablet-width){}
+@media (min-width: $tablet-width) {}
 
 
 
-@media (min-width: $desktop-width){}
+@media (min-width: $desktop-width) {}
