@@ -1,7 +1,7 @@
 .about{}
 
 .about__title{}
-
+.about__hello{}
 .about__desc{
   p{}
 }
@@ -9,3 +9,6 @@
 .about__img{
   img{}
 }
+
+@media (min-width: $tablet-width){}
+@media (min-width: $desktop-width){}

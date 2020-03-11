@@ -96,7 +96,7 @@ a {
   margin: 0 auto;
   width: 288px; // карточка 288 по макету
 
-  @media(min-width: 660px) {
+  @media(min-width: $tablet-small-width) {
     width: 596px; // 2 карточки 288+288+20
   }
 
