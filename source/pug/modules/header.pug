@@ -1,8 +1,7 @@
-header.header(style="background-image: url('img/.jpg');")
+header.header
   a.header__logo
-    img(src="#", alt="логотип Yachting Time")
-  .header__menu.menu
+    img(src="img/logo.png", alt="логотип Yachting Time",  width="165")
+  .header__menu.menu.menu--closed
     include ./menu
   .header__tel.tel
     include ./tel
-  include ./promo

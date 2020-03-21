@@ -50,7 +50,7 @@ html {
 
 button {
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.4s;
 
   &:focus,
   &:hover {
@@ -67,7 +67,7 @@ a {
   text-decoration: none;
   @include text;
   color: $black;
-  transition: 0.3s;
+  transition: 0.4s;
 
   &:focus,
   &:hover {
@@ -124,31 +124,31 @@ h4,
 h5,
 h6 {
   font-family: $font-main;
-  font-weight: 700;
   color: $black;
 }
 
 h1 {
   font-size: 24px;
-  line-height: 32px;
+  line-height: 29px;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 18px;
   line-height: 22px;
-  font-weight: 500;
+  font-weight: 400
 }
 
 h3 {
   font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 h4 {
   font-size: 12px;
   line-height: 15px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 @media (min-width: $tablet-width) {
@@ -170,5 +170,6 @@ h4 {
   h4 {
     font-size: 16px;
     line-height: 20px;
+    text-transform: uppercase;
   }
 }
