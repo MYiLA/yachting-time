@@ -7,15 +7,18 @@ html(lang="ru")
     title Yachting time
     meta(name="description" content = "Yachting Time - организация и проведение незабываемых морских путешествий для наших гостей")
     meta(name=viewport content = "width = device-width, initial-scale = 1")
-    link(rel="stylesheet", href="lib/css-awesome/all.min.css")
-    link(rel="stylesheet", href="lib/css-awesome/brands.css")
+    link(href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet")
+    link(rel="icon" href="img/favicon.ico" type="image/x-icon")
+    link(rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet" href="lib/bootstrap/css/mdb.min.css")
+    link(rel="stylesheet" href="lib/css-awesome/all.min.css")
+    link(rel="stylesheet" href="lib/css-awesome/brands.css")
     link(rel="stylesheet" href="lib/glide/glide.core.min.css")
     link(rel="stylesheet" href="css/style.min.css")
 
   body
     include ../modules/header
     main.landing
-      include ../modules/promo
       .wrap
         include ../modules/intro
         include ../modules/upcoming-trips
@@ -31,11 +34,16 @@ html(lang="ru")
         include ../modules/questions
         include ../modules/form
     include ../modules/footer
-    //- script(src="js/polyfill.min.js")
-    //- script(src="lib/glide/glide.min.js")
-    script(src="js/script.js" defer)
-    //- script(src="js/review-slider.js" defer)
-    //- script(src="js/programmes-slider.js" defer)
-    //- script(src="js/video.js" defer)
+  
+    script(src="js/polyfill.min.js")
+    script(src="lib/glide/glide.min.js")
+
+    <script type="text/javascript" src="lib/bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/mdb.min.js"></script>
+
+    script(src="js/script.js")
+
     
     
