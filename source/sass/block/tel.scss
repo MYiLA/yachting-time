@@ -1,6 +1,10 @@
 .tel {}
 
-.tel__link {}
+.tel__link {
+  span {
+      display: none;
+  }
+}
 
 
 

@@ -1,31 +1,104 @@
 .promo {
   padding: 25px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
 }
 
 .promo__wrap {
   margin: 0 auto;
   width: 250px;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.promo__title {}
+.promo__title {
+  margin-bottom: 67px;
+  text-align: center;
+  color: $white;
+}
 
-.promo__desc {}
+.promo__desc {
+  display: none;
+}
 
-.promo__link {}
+.promo__link {
+  display: inline-block;
+  padding-top: 20px;
+  padding-right: 23px;
+  padding-bottom: 21px;
+  padding-left: 23px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border:1px solid $white;
+  border-radius: 50px;
+  transition: 0.4;
 
-.promo__bg {
-  img {}
+  color: $white;
+
+  &:hover, &:active {
+    color: $white;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: 700;
+  }
+}
+
+// section.landing__promo.promo(style="background-image: url('img/header/bg.jpg')")
+//   .promo__wrap
+//     h1.promo__title Яхтинг по Средиземному морю
+//     p.promo__desc Проведите отпуск в атмосфере морского приключения
+//     a.promo__link(href='#' download='cruises-yachting-time') Программа круизов
+
+
+
+@media(min-width: $tablet-small-width) {
+  .promo__title {
+    margin-bottom: 16px;
+  }
+  .promo__desc {
+    display: block;
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    color: $white;
+  }
+
+  .promo__wrap {
+    margin: 0 auto;
+    width: 450px;
+  }
 }
 
 
 
-@media(min-width: $tablet-small-width) {}
+@media (min-width: $tablet-width) {
+  .promo__title {
+    text-align: left;
+  }
 
+  .promo__wrap {
+    width: 834px;
+    display: block;
+  }
 
+  .promo__desc {
+    max-width: 560px;
+    text-align: left;
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
 
-@media (min-width: $tablet-width) {}
-
-
-
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .promo__wrap {
+    width: 834px;
+    display: block;
+  }
+}

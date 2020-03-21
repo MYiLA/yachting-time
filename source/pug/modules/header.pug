@@ -1,7 +1,8 @@
-header.header
+header.header.fixed
   a.header__logo
-    img(src="img/logo.png", alt="логотип Yachting Time",  width="165")
-  .header__menu.menu.menu--closed
-    include ./menu
-  .header__tel.tel
-    include ./tel
+    img(src="img/logo.png", alt="логотип Yachting Time",  width="96")
+  .header__wrap
+    .header__menu.menu
+      include ./menu
+    .header__tel.tel
+      include ./tel

@@ -1,12 +1,25 @@
-.header {}
+.header {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__wrap {
+  display: flex;
+}
 
 .header__logo {
   img{}
 }
 
-.header__menu {}
+.header__menu {
+  order: 1;
+}
 
-.header__tel {}
+.header__tel {
+  
+}
 
 .header__promo {}
 

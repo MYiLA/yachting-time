@@ -1,11 +1,20 @@
 .menu__wrap
-  button.menu__burger-btn
-  ul.menu__list
-    li.menu__item
-      a.menu__link(href="#") О нас
-    li.menu__item
-      a.menu__link(href="#") Круизы
-    li.menu__item
-      a.menu__link(href="#") Отзывы
-    li.menu__item
-      a.menu__link(href="#") Вопросы
+  button.menu__burger-btn.navbar-toggler.first-button(type="button" data-toggle="collapse" data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation")
+    div.animated-icon1
+      span
+      span
+      span
+  .collapse.navbar-collapse.animated.fadeInRight(id="navbarSupportedContent20")
+    ul.menu__list
+      li.menu__item
+        a.menu__link(href="#") О нас
+      li.menu__item
+        a.menu__link(href="#") Круизы
+      li.menu__item
+        a.menu__link(href="#") Отзывы
+      li.menu__item
+        a.menu__link(href="#") Вопросы
+
+button(class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation")
+    
+  </button>
