@@ -88,3 +88,22 @@
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
     }
+
+
+    @media (min-width: $tablet-width) {
+        .navbar-collapse, .navbar-collapse:not(.show-menu) {
+            width: 375px;
+            padding: 0;
+            margin: 0;
+            position: static;
+            opacity: 1;
+            pointer-events: auto;
+            transform: none;
+            background-color: transparent;
+            .social {
+                display: none;
+            }
+        }
+
+
+    }

@@ -32,18 +32,18 @@
 
 body,
 html {
-  margin: 0;
   overflow-x: hidden;
+  position: relative;
+  margin: 0;
   @include text;
 }
 
 .body {
-  position: relative;
+  
   box-sizing: border-box;
   max-width: 100%;
   min-width: $mobile-width;
   margin: 0;
-  overflow-x: hidden;
   background-color: $white;
 }
 
@@ -51,7 +51,18 @@ a {
   text-decoration: none;
   @include text;
   color: $black;
-  transition: 0.4s;
+  transition: 0.6s;
+
+  &:hover {
+    outline: none;
+    color: $white;
+    opacity: 0.7;
+  };
+
+  &:focus, &:active {
+    color: $white;
+    opacity: 0.3;
+  }
 }
 
 *,

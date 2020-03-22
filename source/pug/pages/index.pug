@@ -21,20 +21,20 @@ html(lang="ru")
     include ../modules/promo
     main.landing
       .wrap
-        include ../modules/intro
         include ../modules/upcoming-trips
-        include ../modules/price--included
-        include ../modules/yacht
-        include ../modules/scheme
+        include ../modules/intro
         include ../modules/impressions
+        include ../modules/yacht
+        //- схемы возможно нет
+        include ../modules/scheme 
+        include ../modules/price--included
         include ../modules/price--not-included
         include ../modules/reviews
         include ../modules/about
         include ../modules/team
-        include ../modules/advantages
         include ../modules/questions
         include ../modules/form
-    include ../modules/footer
+    include ../modules/footer   
   
     script(src="js/polyfill.min.js")
     script(src="lib/glide/glide.min.js")

@@ -1,16 +1,25 @@
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   padding: 25px;
+  
+  transition: 0.6s;
+
+  &--fixed {
+    z-index: 5;
+  }
+}
+
+.header__wrap-desktop {
   display: flex;
   justify-content: space-between;
+  transition: 0.6s;
 }
 
 .header__wrap {
   display: flex;
-}
-
-.header__logo {
-  img{}
 }
 
 .header__menu {
@@ -18,19 +27,136 @@
 }
 
 .header__tel {
-  
+  margin-right: 23px;
+  transition: 0.6s;
+  img {
+    transition: 0.6s;
+  }
+
+  &--fixed {
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    right: 0;
+    bottom: 24px;
+
+    background-color: #1D517C;
+    border-radius: 50%;
+    
+    .tel__link:hover {
+      outline: none;
+      opacity: 1;
+      background-color: rgba(29, 81, 124, 0.7);
+    }
+
+    .tel__link:active, .tel__link:focus {
+      opacity: 1;
+      background-color: rgba(29, 81, 124, 0.4);
+    }
+ 
+    img {
+      width: 30px;
+    }
+  }
 }
 
 .header__promo {}
 
 
 
-@media(min-width: $tablet-small-width) {}
+@media(min-width: $tablet-small-width) {
+  .header__logo {
+    img {
+      width: 170px;
+    };
+  }
+}
 
 
 
-@media (min-width: $tablet-width) {}
+@media (min-width: $tablet-width) {
+  .header {
+    padding-left: 0;
+    padding-right: 0;
+    &--fixed {
+      position: fixed;
+      background-color: rgba(19, 67, 117, 0.7);
+    }
+  }
+
+  .header__wrap-desktop {
+    margin: 0 auto;
+    width: 785px;
+  }
+
+  .header__menu {
+    display: flex;
+    align-items: center;
+    order: 0;
+  }
+
+  .header__logo {
+    padding-top: 12px;
+  }
+
+  .header__wrap {
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  .header__tel {
+    margin: 0;
+    width: 185px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    &--fixed {
+      width: 185px;
+      height: auto;
+      position: static;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      z-index: 0;
+  
+      background-color: transparent;
+      border-radius: 0;
+      
+      .tel__link:hover {
+        outline: none;
+        opacity: 0.7;
+        background-color: transparent;
+      }
+  
+      .tel__link:active, .tel__link:focus {
+        opacity: 0.3;
+        background-color: transparent;
+      }
+   
+      img {
+        width: 20px;
+      }
+      
+    }
+  }
+}
 
 
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+
+  .header__wrap-desktop {
+    width: 1200px;
+  }
+  .header__logo {
+    margin-right: 70px;
+  }
+}
