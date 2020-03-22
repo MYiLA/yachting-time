@@ -1,3 +1,8 @@
+//открытие меню 
+$('.menu__burger-btn').on('click', function () {
+  $('.navbar-collapse').toggleClass('show-menu');
+})
+
 //анимация бургера
 $(document).ready(function () {
 

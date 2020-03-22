@@ -30,24 +30,7 @@
 }
 
 .promo__link {
-  display: inline-block;
-  padding-top: 20px;
-  padding-right: 23px;
-  padding-bottom: 21px;
-  padding-left: 23px;
-  margin-bottom: 10px;
-  background-color: rgba(255, 255, 255, 0.15);
-  border:1px solid $white;
-  border-radius: 50px;
-  transition: 0.4;
-
-  color: $white;
-
-  &:hover, &:active {
-    color: $white;
-    background-color: rgba(255, 255, 255, 0.3);
-    font-weight: 700;
-  }
+  @include btn
 }
 
 // section.landing__promo.promo(style="background-image: url('img/header/bg.jpg')")

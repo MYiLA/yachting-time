@@ -1,16 +1,40 @@
 .menu {}
 
-.menu__wrap {}
-
-.menu__burger-btn {
-    transition: 0.4s;
+.menu__wrap {
+    position: relative;
 }
 
-.menu__list {}
+.menu__burger-btn {
+    position: relative;
+    z-index: 1;
+    transition: 0.4s;
+    &:hover {
+      outline: none;  
+    }
+}
 
-.menu__item {}
+.menu__list {
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
 
-.menu__link {}
+.menu__item {
+    margin-bottom: 30px;
+}
+
+.menu__link {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    color: $white;
+}
 
 
 

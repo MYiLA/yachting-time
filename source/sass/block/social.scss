@@ -1,9 +1,17 @@
-.social {}
-
-.social__list {}
+.social__list {
+  margin: 0 auto;
+  padding: 0;
+  width: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
 
 .social__item {
-  
+  margin-right: 25px;
+  &:nth-child(3n + 3) {
+    margin-right: 0;
+  }
   img {}
 }
 
