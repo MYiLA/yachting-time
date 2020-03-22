@@ -67,6 +67,8 @@
   }
 
   .promo__wrap {
+    padding-top: 150px;
+    padding-bottom: 105px;
     width: 785px;
     display: block;
   }
@@ -81,6 +83,7 @@
 
 @media (min-width: $desktop-width) {
   .promo__wrap {
+    padding-top: 325px;
     width: 1200px;
     display: block;
   }
