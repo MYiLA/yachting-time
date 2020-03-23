@@ -45,18 +45,19 @@
     right: 0;
     bottom: 24px;
 
-    background-color: rgba(29, 81, 124, 0.4);
+    background-color: rgba(29, 81, 124, 0.9);
     border-radius: 50%;
     
     .tel__link:hover {
       outline: none;
-      opacity: 1;
-      background-color: rgba(29, 81, 124, 0.7);
+      // opacity: 1;
+      background-color: rgba(29, 81, 124, 0.9);
     }
 
     .tel__link:active, .tel__link:focus {
-      opacity: 1;
-      background-color: rgba(29, 81, 124, 0.4);
+      outline: none;
+      // opacity: 1;
+      background-color: rgba(29, 81, 124, 0.9);
     }
  
     img {
@@ -85,7 +86,7 @@
     padding-right: 0;
     &--fixed {
       position: fixed;
-      background-color: rgba(19, 67, 117, 0.3);
+      background-color: rgba(19, 67, 117, 0.9);
     }
   }
 

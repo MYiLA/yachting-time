@@ -10,7 +10,8 @@
 
 .upcoming-trips__list {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 26px;
     padding: 0;
 }
 
@@ -19,6 +20,10 @@
     width: 288px;
     height: 360px;
     margin-bottom: 21px;
+
+    &:not(:nth-child(1)):not(:nth-child(2)) {
+      display: none;   
+    }
 }
 
 .upcoming-trips__item-wrap {
@@ -28,6 +33,8 @@
     padding-top: 18px;
     padding-left: 25px;
     padding-right: 14px;
+    background-position: center;
+    background-size: cover;
 
     &::before {
         content: '';
@@ -77,17 +84,23 @@
 .upcoming-trips__places {
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 52px;
-    height: 52px;
+    // height: 52px;
     border-radius: 50%;
     font-size: 10px;
-    line-height: 12px;
+    line-height: 14px;
     font-weight: 500;
+    text-transform: lowercase;
 
     color: $white;
     background-color: #058e6e;
+
+    span {
+        width: 45px;
+    }
 }
 
 .upcoming-trips__places--not {
@@ -118,6 +131,9 @@
 }
 
 .upcoming-trips__item-hover {
+    transform: translateX(75%);
+    opacity: 0;
+    pointer-events: none;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -130,6 +146,31 @@
     left: 0;
     background-size: cover;
     background-position: center;
+    transition: 0.6s;
+
+    &--horvatia-isle {
+        background-image: url('../img/upcoming-trips/horvatia-isle-hover.png');
+    }
+
+    &--sicilia {
+        background-image: url('../img/upcoming-trips/sicilia-hover.jpg');
+    }
+
+    &--horvatia-way {
+        background-image: url('../img/upcoming-trips/horvatia-way-hover.jpg');
+    }
+
+    &--tourkin-view {
+        background-image: url('../img/upcoming-trips/tourkin-view-hover.jpg')
+    }
+
+    &--tourkin-may {
+        background-image: url('../img/upcoming-trips/tourkin-may-hover.jpg')
+    }
+
+    &--dodecanes {
+        background-image: url('../img/upcoming-trips/dodecanes-hover.jpg')
+    }
 
     p {
         padding: 0;
@@ -187,6 +228,7 @@
     text-transform: uppercase;
     font-size: 14px;
     line-height: 17px;
+    transition: 0.6s;
 
     &:hover {
         opacity: 0.7;
@@ -212,6 +254,8 @@
     }
 
     &--min {
+        display: none;
+    
         &::before {
             top: 70%;
             transform: translate(-50%, -50%) rotate(-135deg);
@@ -225,12 +269,99 @@
     margin-bottom: 35px;
 }
 
-@media(min-width: $tablet-small-width) {}
+@media(min-width: $tablet-small-width) {
+    .upcoming-trips__item {
+        &:hover .upcoming-trips__item-hover {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+    .upcoming-trips__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .upcoming-trips__item-hover {
+        transform: none;
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    .upcoming-trips__btn-mobile {
+        display: none;
+    }
+}
 
 
 
-@media (min-width: $tablet-width) {}
+@media (min-width: $tablet-width) {
+    .upcoming-trips__item {
+        width: 250px;
+        &:not(:nth-child(1)):not(:nth-child(2)) {
+            display: block;   
+          }
+    }
 
+    .upcoming-trips__item-wrap {
+        padding-left: 17px;
+    }
 
+    .upcoming-trips__name {
+        font-size: 18px;
+        line-height: 22px;
+    }
 
-@media (min-width: $desktop-width) {}
+    .upcoming-trips__price {
+       font-size: 16px;
+       line-height: 20px;
+    }
+
+    .upcoming-trips__btn-collapse {
+        display: none;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .upcoming-trips__item-wrap {
+        padding-left: 36px;
+        padding-right: 18px;
+        padding-top: 23px;
+    }
+
+    .upcoming-trips__item {
+        width: 375px;
+        height: 465px;
+        margin-bottom: 37px;
+    }
+
+    .upcoming-trips__weather {
+      margin-bottom: 80px;
+    }
+
+    .upcoming-trips__name {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .upcoming-trips__desc {
+        font-size: 19px;
+        line-height: 22px;
+    }
+
+    .upcoming-trips__price {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .upcoming-trips__places {
+        width: 68px;
+        height: 68px;
+        font-size: 12px;
+        line-height: 17px;
+
+        span {
+            width: 50px;
+        }
+    }
+}
