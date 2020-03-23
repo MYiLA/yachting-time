@@ -2,28 +2,30 @@ section.landing__upcoming-trips.upcoming-trips
   h2.upcoming-trips__title Предстоящие путешествия
   ul.upcoming-trips__list
     li.upcoming-trips__item
-      .upcoming-trips__item-wrap
+      .upcoming-trips__item-wrap(style="background-image: url('img/upcoming-trips/dodecanes.jpg')")
         .upcoming-trips__weather.weather
           .weather__wrap.weather__wrap--day
-            span.weather__days 7 дней
+            span.weather__days.weather__days 7 дней
             span.weather__temperature +27°C
           .weather__wrap.weather__wrap--night
             span.weather__days 6 ночей
             span.weather__temperature +22°C
-        time.upcoming-trips__time(datetime="2020-04") 25 апреля - 2 мая
-        h3.upcoming-trips__name Архипелаг Додеканес
-        p.upcoming-trips__desc Весна на юге Греции
-        strong.upcoming-trips__price 660€
-        span.upcoming-trips__unavailable 2 места
-      .upcoming-trips__item-hover
-        h3 Что вы увидите:
-        ul
-          li Необитаемый остров Алимья
-          li Самую большую марину о. Родос
-          li Бескрайние зеленые пейзажи
-          li Могущественные горы
+          span.upcoming-trips__places 2 места
+        .upcoming-trips__wrap-title
+          h3.upcoming-trips__name Архипелаг Додеканес
+          p.upcoming-trips__desc Весна на юге Греции
+          strong.upcoming-trips__price 660€
+        .upcoming-trips__time-wrap
+          time.upcoming-trips__time(datetime="2020-04") 25 апреля - 2 мая
+        button.upcoming-trips__btn-mobile(type='button' aria-label='смотреть подробнее')
+        
+      .upcoming-trips__item-hover(style="background-image: url('img/upcoming-trips/dodecanes-hover.jpg')")
+        button.upcoming-trips__btn.upcoming-trips__btn--program(type='button') Узнать программу
+        button.upcoming-trips__btn.upcoming-trips__btn--book(type='button') Забронировать
+        button.upcoming-trips__btn-mobile(type='button' aria-label='вернуться')
+    
     li.upcoming-trips__item
-      .upcoming-trips__item-wrap
+      .upcoming-trips__item-wrap(style="background-image: url('img/upcoming-trips/tourkin-may.jpg')")
         .upcoming-trips__weather.weather
           .weather__wrap.weather__wrap--day
             span.weather__days 7 дней
@@ -31,20 +33,22 @@ section.landing__upcoming-trips.upcoming-trips
           .weather__wrap.weather__wrap--night
             span.weather__days 6 ночей
             span.weather__temperature +22°C
-        time.upcoming-trips__time(datetime="2020-04") 2 мая - 9 мая
-        h3.upcoming-trips__name Турция
-        p.upcoming-trips__desc Майские праздники на море
-        strong.upcoming-trips__price 650€
-        span.upcoming-trips__unavailable Мест нет
-      .upcoming-trips__item-hover
-        h3 Что вы увидите:
-        ul
-          li Долину бабочек
-          li Черепаший пляж Изтузу 
-          li Пиратскую бухту Бештан
-          li Древние города
+          span.upcoming-trips__places.upcoming-trips__places--not Мест нет
+        .upcoming-trips__wrap-title
+          h3.upcoming-trips__name Турция
+          p.upcoming-trips__desc Майские праздники на море
+          strong.upcoming-trips__price 650€
+        .upcoming-trips__time-wrap
+          time.upcoming-trips__time(datetime="2020-04") 2 мая - 9 мая
+        button.upcoming-trips__btn-mobile(type='button' aria-label='смотреть подробнее')
+      
+      .upcoming-trips__item-hover(style="background-image: url('img/upcoming-trips/tourkin-may-hover.jpg')")
+        p Оставьте свой номер и мы свяжемся с вами, когда места появятся
+        button.upcoming-trips__btn.upcoming-trips__btn--tel(type='button') Оставить номер
+        button.upcoming-trips__btn-mobile(type='button' aria-label='вернуться')
+        
       li.upcoming-trips__item
-        .upcoming-trips__item-wrap
+        .upcoming-trips__item-wrap(style="background-image: url('img/upcoming-trips/tourkin-view.jpg')")
           .upcoming-trips__weather.weather
             .weather__wrap.weather__wrap--day
               span.weather__days 7 дней
@@ -52,20 +56,22 @@ section.landing__upcoming-trips.upcoming-trips
             .weather__wrap.weather__wrap--night
               span.weather__days 6 ночей
               span.weather__temperature +22°C
-          time.upcoming-trips__time(datetime="2020-04") 9 мая - 16 мая
-          h3.upcoming-trips__name Турция
-          p.upcoming-trips__desc Взгляд с другой стороны
-          strong.upcoming-trips__price 660€
-          span.upcoming-trips__unavailable 3 места
-        .upcoming-trips__item-hover
-          h3 Что вы увидите:
-          ul
-            li Долину бабочек
-            li Черепаший пляж Изтузу 
-            li Пиратскую бухту Бештан
-            li Древние города
+            span.upcoming-trips__places 3 места
+          .upcoming-trips__wrap-title
+            h3.upcoming-trips__name Турция
+            p.upcoming-trips__desc Взгляд с другой стороны
+            strong.upcoming-trips__price 660€
+          .upcoming-trips__time-wrap
+            time.upcoming-trips__time(datetime="2020-04") 9 мая - 16 мая
+          button.upcoming-trips__btn-mobile(type='button' aria-label='смотреть подробнее')
+        
+        .upcoming-trips__item-hover(style="background-image: url('img/upcoming-trips/tourkin-view-hover.jpg')")
+          button.upcoming-trips__btn.upcoming-trips__btn--program(type='button') Узнать программу
+          button.upcoming-trips__btn.upcoming-trips__btn--book(type='button') Забронировать
+          button.upcoming-trips__btn-mobile(type='button' aria-label='вернуться')
+    
     li.upcoming-trips__item
-      .upcoming-trips__item-wrap
+      .upcoming-trips__item-wrap(style="background-image: url('img/upcoming-trips/horvatia-way.jpg')")
         .upcoming-trips__weather.weather
           .weather__wrap.weather__wrap--day
             span.weather__days 7 дней
@@ -73,20 +79,22 @@ section.landing__upcoming-trips.upcoming-trips
           .weather__wrap.weather__wrap--night
             span.weather__days 6 ночей
             span.weather__temperature +24°C
-        time.upcoming-trips__time(datetime="2020-04") 25 июня - 7 июля
-        h3.upcoming-trips__name Хорватия
-        p.upcoming-trips__desc Путь в жемчужину Адриатики
-        strong.upcoming-trips__price 650€
-        span.upcoming-trips__unavailable 5 мест
-      .upcoming-trips__item-hover
-        h3 Что вы увидите:
-        ul
-          li Место съемок “Игры Престолов”
-          li Средневековые замки и крепости
-          li Самый зеленый остров Адриатики
-          li Один из лучших пляжей Европы
+          span.upcoming-trips__places 5 мест
+        .upcoming-trips__wrap-title
+          h3.upcoming-trips__name Хорватия
+          p.upcoming-trips__desc Путь в жемчужину Адриатики
+          strong.upcoming-trips__price 650€
+        .upcoming-trips__time-wrap
+          time.upcoming-trips__time(datetime="2020-04") 25 июня - 7 июля
+        button.upcoming-trips__btn-mobile(type='button' aria-label='смотреть подробнее')
+      
+      .upcoming-trips__item-hover(style="background-image: url('img/upcoming-trips/horvatia-way-hover.jpg')")
+        button.upcoming-trips__btn.upcoming-trips__btn--program(type='button') Узнать программу
+        button.upcoming-trips__btn.upcoming-trips__btn--book(type='button') Забронировать
+        button.upcoming-trips__btn-mobile(type='button' aria-label='вернуться')
+    
     li.upcoming-trips__item
-      .upcoming-trips__item-wrap
+      .upcoming-trips__item-wrap(style="background-image: url('img/upcoming-trips/horvatia-isle.jpg')")
         .upcoming-trips__weather.weather
           .weather__wrap.weather__wrap--day
             span.weather__days 7 дней
@@ -94,20 +102,22 @@ section.landing__upcoming-trips.upcoming-trips
           .weather__wrap.weather__wrap--night
             span.weather__days 6 ночей
             span.weather__temperature +24°C
-        time.upcoming-trips__time(datetime="2020-04") 4 июля - 11 июля
-        h3.upcoming-trips__name Хорватия
-        p.upcoming-trips__desc По островам Средней Долмации
-        strong.upcoming-trips__price 650€
-        span.upcoming-trips__unavailable 4 места
-      .upcoming-trips__item-hover
-        h3 Что вы увидите:
-        ul
-          li Средневековые замки и церкви
-          li Съемочную площадку “Игры престолов”
-          li Один из лучших пляжей Европы
-          li Секретные бухты
+          span.upcoming-trips__places 4 места
+        .upcoming-trips__wrap-title
+          h3.upcoming-trips__name Хорватия
+          p.upcoming-trips__desc По островам Средней Долмации
+          strong.upcoming-trips__price 650€
+        .upcoming-trips__time-wrap
+          time.upcoming-trips__time(datetime="2020-04") 4 июля - 11 июля
+        button.upcoming-trips__btn-mobile(type='button' aria-label='смотреть подробнее')
+
+      .upcoming-trips__item-hover(style="background-image: url('img/upcoming-trips/horvatia-isle-hover.jpg')")
+        button.upcoming-trips__btn.upcoming-trips__btn--program(type='button') Узнать программу
+        button.upcoming-trips__btn.upcoming-trips__btn--book(type='button') Забронировать
+        button.upcoming-trips__btn-mobile(type='button' aria-label='вернуться')
+
     li.upcoming-trips__item.upcoming-trips__item--unavailable
-      .upcoming-trips__item-wrap
+      .upcoming-trips__item-wrap(style="background-image: url('img/upcoming-trips/sicilia.jpg')")
         .upcoming-trips__weather.weather
           .weather__wrap.weather__wrap--day
             span.weather__days 7 дней
@@ -115,15 +125,19 @@ section.landing__upcoming-trips.upcoming-trips
           .weather__wrap.weather__wrap--night
             span.weather__days 6 ночей
             span.weather__temperature +25°C
-        time.upcoming-trips__time(datetime="2020-04") 8 августа - 15 августа
-        h3.upcoming-trips__name Сицилия
-        p.upcoming-trips__desc Липарские острова
-        strong.upcoming-trips__price 850€
-        span.upcoming-trips__unavailable 6 мест
-      .upcoming-trips__item-hover
-        h3 Что вы увидите:
-        ul
-          li Пещеры и виноградники
-          li Остров с действующими вулканами
-          li Архитектуру эпохи Возрождения
-          li Горячие источники
+          span.upcoming-trips__places 6 мест
+        .upcoming-trips__wrap-title
+          h3.upcoming-trips__name Сицилия
+          p.upcoming-trips__desc Липарские острова
+          strong.upcoming-trips__price 850€
+        .upcoming-trips__time-wrap
+          time.upcoming-trips__time(datetime="2020-04") 8 августа - 15 августа
+        button.upcoming-trips__btn-mobile(type='button' aria-label='смотреть подробнее')
+      
+      .upcoming-trips__item-hover(style="background-image: url('img/upcoming-trips/sicilia-hover.jpg')")
+        button.upcoming-trips__btn.upcoming-trips__btn--program(type='button') Узнать программу
+        button.upcoming-trips__btn.upcoming-trips__btn--book(type='button') Забронировать
+        button.upcoming-trips__btn-mobile(type='button' aria-label='вернуться')
+  
+  button.upcoming-trips__btn-collapse.upcoming-trips__btn-collapse--max(type='button') Развернуть
+  button.upcoming-trips__btn-collapse.upcoming-trips__btn-collapse--min(type='button') Свернуть

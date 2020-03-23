@@ -1,0 +1,61 @@
+.weather {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.weather__wrap {
+  position: relative;
+  display: block;
+  width: 90px;
+  font-size: 12px;
+  line-height: 15px;
+  color: $white;
+  font-weight: 400;
+
+  &::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--day {
+    &::before {
+      background-image: url('../img/upcoming-trips/sun.svg');
+      background-size: 30px;
+    }
+  }
+
+  &--night {
+    &::before {
+      background-size: 24px;
+      background-image: url('../img/upcoming-trips/moon.svg');
+    }
+  }
+}
+
+.weather__days {
+  display: block;
+  padding-top: 9px;
+  padding-left: 37px;
+  margin-bottom: 13px;
+}
+
+.weather__temperature {}
+
+
+
+@media(min-width: $tablet-small-width) {}
+
+
+
+@media (min-width: $tablet-width) {}
+
+
+
+@media (min-width: $desktop-width) {}
