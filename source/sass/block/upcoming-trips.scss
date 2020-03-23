@@ -118,17 +118,29 @@
 }
 
 .upcoming-trips__item-hover {
-    display: none;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 45px;
     top: 0;
     left: 0;
+    background-size: cover;
+    background-position: center;
 
-    .upcoming-trips__btn-mobile {
-        &::before {
-            left: 0;
-            top: 50%;
-            transform: translate(-50%, -50%) rotate(-45deg);
-        }
+    p {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+        width: 225px;
+        font-size: 14px;
+        line-height: 20px;
+        color: $white;
+        font-weight: 500;
+        text-align: center;
     }
 }
 
@@ -208,7 +220,9 @@
 }
 
 .upcoming-trips__btn {
-    @include btn
+    @include btn;
+
+    margin-bottom: 35px;
 }
 
 @media(min-width: $tablet-small-width) {}
