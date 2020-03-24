@@ -30,11 +30,17 @@ html(lang="ru")
         include ../modules/reviews
         include ../modules/about
         include ../modules/team
-        include ../modules/questions
-        section.landing__form.form
-          include ../modules/form
-    include ../modules/footer   
+      .landing__gradient
+        .wrap
+          include ../modules/questions
+          section.landing__form.form
+            include ../modules/form
+    include ../modules/footer
   
+    .popup-form
+      .popup-form__form.form
+        include ../modules/form
+
     script(src="js/polyfill.min.js")
     script(src="lib/glide/glide.min.js")
 

@@ -1,21 +1,24 @@
-h2.form__title Остались вопросы?
-p.form__desc Оставьте свой номер и мы отправим вам презентацию с подробным описанием маршрута и наших прошлых путешествий
+h2.form__title Забронировать круиз
+p.form__desc Оставьте свой номер и мы свяжемся с вами в течение 10 минут для уточнения подробностей
 form.form__form(action="POST")
-  select.form__select(required size="1")
-    option.form__select-item(disabled selected) Выберите круиз
-    option.form__select-item(value="Греция. Архипелаг Додеканес (25.04 - 02.05)") Греция. Архипелаг Додеканес (25.04 - 02.05)
-    option.form__select-item(value="Турция. Взгляд с другой стороны (09.05 - 16.05)") Турция. Взгляд с другой стороны (09.05 - 16.05)
-    option.form__select-item(value="Хорватия. Жемчужина Адриатики (27.06 - 04.07)") Хорватия. Жемчужина Адриатики (27.06 - 04.07)
-    option.form__select-item(value="Хорватия. Острова Средней Долмации (27.06 - 04.07)") Хорватия. Острова Средней Долмации (27.06 - 04.07)
-    option.form__select-item(value="Сицилия. Липарские острова (08.08 - 15.08)") Сицилия. Липарские острова (08.08 - 15.08)
-  label.visually-hidden(for="name")
-  input.form__input(type="text" id="name" name="name" placeholder="Ваше имя" required)
-  label.visually-hidden(for="tel")
-  input.form__input(type="tel" id="tel" name="telephone" placeholder="Ваш номер телефона" required)
-  label.visually-hidden(for="messenger")
-  select.form__select(size="1")
-    option.form__select-item(disabled selected) Выберите мессенджер
-    option.form__select-item(value="Telegram") Telegram
-    option.form__select-item(value="WhatsApp") WhatsApp
-    option.form__select-item(value="Viber") Viber
-  button.form__submit(type="submit") Получить презентацию
+  .form__select-wrap
+    label.form__label.form__label--select(for="cruise") Выберите круиз
+    select.form__select(required size="1" id="cruise")                                   
+      option.form__select-item(disabled selected)
+      option.form__select-item(value="Греция. Архипелаг Додеканес (25.04 - 02.05)") Греция. Архипелаг Додеканес (25.04 - 02.05)
+      option.form__select-item(value="Турция. Взгляд с другой стороны (09.05 - 16.05)") Турция. Взгляд с другой стороны (09.05 - 16.05)
+      option.form__select-item(value="Хорватия. Жемчужина Адриатики (27.06 - 04.07)") Хорватия. Жемчужина Адриатики (27.06 - 04.07)
+      option.form__select-item(value="Хорватия. Острова Средней Долмации (27.06 - 04.07)") Хорватия. Острова Средней Долмации (27.06 - 04.07)
+      option.form__select-item(value="Сицилия. Липарские острова (08.08 - 15.08)") Сицилия. Липарские острова (08.08 - 15.08)
+  .form__counter-wrap
+    label.form__label.form__label--number(for="places") Кол-во мест
+    button(type="button" aria-label="Увеличить на 1") +
+    input.form__counter(type="number" value="1" id="places" name="places" disabled)
+    button(type="button" aria-label="Уменьшить на 1") -
+  .form__input-wrap
+    label.form__label.form__label--text(for="name") Ваше имя
+    input.form__input(type="text" id="name" name="name")
+  .form__input-wrap
+    label.form__label.form__label--text(for="tel") Ваш номер телефона
+    input.form__input(type="tel" id="tel" name="telephone")
+  button.form__submit(type="submit") Забронировать

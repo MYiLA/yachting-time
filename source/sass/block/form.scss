@@ -1,20 +1,64 @@
-.form {}
+.form {
+    text-align: center;
+}
 
-.form__title {}
+.form__title {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+}
 
-.form__desc {}
+.form__desc {
+    margin: 0;
+    margin-bottom: 37px;
+    padding: 0;
+}
 
 .form__form {}
 
-.form__select {}
-
-.form__select-item {}
-
-.form__input {}
+.form__select-wrap {
+  position: relative;
+}
 
 .form__select {}
 
 .form__select-item {}
+
+.form__counter-wrap {}
+
+.form__select {
+    width: 288px;
+    height: 45px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #e4e3e3;
+}
+
+.form__input-wrap {
+    position: relative;
+    width: 288px;
+    height: 45px;
+    margin-bottom: 10px;
+    background-color: #e4e3e3;
+}
+
+.form__input {
+    
+}
+
+.form__label {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+
 
 .form__submit {}
 
