@@ -95,7 +95,7 @@
           top: 23%;
           font-size: 7px;
           line-height: 10px;
-          color: #058E6E;
+          color: rgba(0, 0, 0, 0.6);
         }
     }
 
@@ -113,14 +113,20 @@
                 top: 23%;
                 font-size: 7px;
                 line-height: 10px;
-                color: #058E6E;
+                color: rgba(0, 0, 0, 0.6);
             }
 
             & .form__input {
                 opacity: 1;
             }
         }
-    }    
+    }
+    
+    &.change {
+        .form__label--number, .form__label {
+            color: #058E6E;
+        }
+    }
 }
 
 .form__input {

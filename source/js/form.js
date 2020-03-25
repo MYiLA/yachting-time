@@ -11,8 +11,21 @@ $('.cruises-select__btn-collapse').on('click', function () {
     $('.cruises-select__wrap').toggleClass('active')
 })
 
+// логика инпутов
+
+$('.form__input').on('focusout', function () {
+    if($(this).val() === '') {
+        $(this).parent().removeClass('active')
+        $(this).parent().removeClass('change')
+    }  
+})
+
 $('.form__input-wrap').on('click', function () {
     $(this).addClass('active')
+})
+
+$('.form__input').on('change', function () {
+    $(this).parent().addClass('change')
 })
 
 $('.form__submit').on('click', function (evt) {
