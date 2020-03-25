@@ -19,4 +19,20 @@ $('.form__submit').on('click', function (evt) {
     evt.preventDefault()
 })
 
-promo__link
+// закрыть попап
+$('.form__btn-close').on('click', function () {
+    $('.popup-form').removeClass('active')
+})
+
+$('.form__btn-close').on('click', function () {
+    $('.popup-form').removeClass('active--no-places')
+})
+
+// открыть попап (переделать. перед открытием должен активироваться соответствующий кнопке радио батон)
+$('.upcoming-trips__btn--book').on('click', function () {
+    $('.popup-form').addClass('active')
+})
+
+$('.upcoming-trips__btn--tel').on('click', function () {
+    $('.popup-form').addClass('active--no-places')
+})

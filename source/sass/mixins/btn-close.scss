@@ -1,0 +1,39 @@
+@mixin btn-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    transition: 0.4s;
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30px;
+        height: 1px;
+        background-color: $white;
+    }
+
+    &::before {
+        transform: translate(-50%, -50%);
+    }
+
+    &::after {
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &:active, &:focus {
+        opacity: 0.3;
+    }
+}
