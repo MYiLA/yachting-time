@@ -1,19 +1,34 @@
 @mixin toggle {
-  display: block;
+  display: inline-block;
   margin-right: 8px;
-  width: 12px;
-  height: 12px;
-  background-color: $dark-gray;
+  width: 10px;
+  height: 10px;
   border: none;
-  border-radius: 50%;
+
+  background: radial-gradient(5px, $dark-gray 93%, transparent 100%);
+
   transform: none;
   transition: 0.4s;
+  
   &:hover,
   &:active {
+    outline: none;
     transform: scale(1.4);
   }
 
-  &--active {
-    transform: scale(1.4);
+  &:nth-child(1) {
+    background: radial-gradient(5px, #a9a7a7 93%, transparent 100%);
+  }
+  &:nth-child(2) {
+    background: radial-gradient(5px, rgba(169, 167, 167, .8) 93%, transparent 100%);
+  }
+  &:nth-child(3) {
+    background: radial-gradient(5px, rgba(169, 167, 167, .7) 93%, transparent 100%);
+  }
+  &:nth-child(4) {
+    background: radial-gradient(5px, rgba(169, 167, 167, .5) 93%, transparent 100%);
+  }
+  &:nth-child(5) {
+    background: radial-gradient(5px, rgba(169, 167, 167, .4) 93%, transparent 100%);
   }
 }

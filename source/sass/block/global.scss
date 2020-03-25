@@ -152,3 +152,7 @@ h4 {
     text-transform: uppercase;
   }
 }
+
+.glide__bullet--active {
+    transform: scale(1.4) !important;
+}

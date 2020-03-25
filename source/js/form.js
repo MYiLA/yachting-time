@@ -1,3 +1,4 @@
+'use strict';
 // показывает блок с картинами
 $('.cruises-select__tabs-caption').on('click', '.cruises-select__tab:not(.active)', function () {
     // console.log($(this).closest('.cruises-select__content-wrap'))
