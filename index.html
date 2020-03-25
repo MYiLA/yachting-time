@@ -696,6 +696,47 @@
             <p class="footer__copyright">© YachtingTime 2020</p>
         </div>
     </footer>
+    <div class="popup-form">
+        <div class="popup-form__form form">
+            <button class="form__btn-close" type="button" aria-label="закрыть окно"></button>
+            <h2 class="form__title">Забронировать круиз</h2>
+            <p class="form__desc form__desc--places">Оставьте свой номер и мы свяжемся с вами в течение 10 минут для уточнения подробностей</p>
+            <p class="form__desc form__desc--not-places">Оставьте свой номер и мы свяжемся с вами, когда появятся свободные места</p>
+            <form class="form__form" method="POST" action="https://formspree.io/mzbvobkj">
+                <div class="form__cruises cruises-select cruises-select--popup">
+                    <label class="cruises-select__tab" for="cruise__dodecanes-popup"></label>
+                    <input type="radio" id="cruise__dodecanes-popup" name="cruise" value="Греция. Архипелаг Додеканес. 25 апреля - 02 мая">
+                    <label class="cruises-select__tab" for="cruise__not-places"></label>
+                    <input type="radio" id="cruise__not-places" name="cruise" value="Турция. Майские праздники на море. 2 мая - 9 мая. Мест нет.">
+                    <label class="cruises-select__tab" for="tourkin-view-popup"></label>
+                    <input type="radio" id="tourkin-view-popup" name="cruise" value="Турция. Взгляд с другой стороны. 9 мая - 16 мая">
+                    <label class="cruises-select__tab" for="horvatia-way-popup"></label>
+                    <input type="radio" id="horvatia-way-popup" name="cruise" value="Хорватия. Путь в жемчужину Адриатики. 25июня - 6 июля">
+                    <label class="cruises-select__tab" for="horvatia-isle-popup"></label>
+                    <input type="radio" id="horvatia-isle-popup" name="cruise" value="Хорватия. По островам Средней Долмации. 4 июля - 11 июля">
+                    <label class="cruises-select__tab" for="sicilia-popup"></label>
+                    <input type="radio" id="sicilia-popup" name="cruise" value="Сицилия. Липарские острова. 8 августа - 15 августа">
+                </div>
+                <div class="form__input-wrap form__input-wrap--counter">
+                    <label class="form__label form__label--number" for="places-popup">Кол-во мест</label>
+                    <div class="form__counter-wrap">
+                        <button class="form__counter-tab form__counter-tab--up" type="button" aria-label="Увеличить на 1"></button>
+                        <input class="form__counter" type="number" value="1" id="places-popup" name="places" readonly="">
+                        <button class="form__counter-tab form__counter-tab--down" type="button" aria-label="Уменьшить на 1"></button>
+                    </div>
+                </div>
+                <div class="form__input-wrap form__input-wrap--text">
+                    <label class="form__label form__label--text" for="name-popup">Ваше имя</label>
+                    <input class="form__input" type="text" id="name-popup" name="name" autocomplete="off">
+                </div>
+                <div class="form__input-wrap form__input-wrap--text">
+                    <label class="form__label" for="tel-popup">Ваш номер телефона</label>
+                    <input class="form__input" type="tel" id="tel-popup" name="telephone" autocomplete="off">
+                </div>
+                <button class="form__submit" type="submit">Забронировать</button>
+            </form>
+        </div>
+    </div>
     <script src="js/polyfill.min.js"></script>
     <script src="lib/glide/glide.min.js"></script>
     <script type="text/javascript" src="lib/bootstrap/js/jquery.min.js"></script>
