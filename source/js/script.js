@@ -23,3 +23,10 @@ $(document).ready(function () {
     }
   });
 });
+
+// загрузка файла
+
+$('.promo__link').on('click', function (evt) {
+  evt.preventDefault()
+})
+

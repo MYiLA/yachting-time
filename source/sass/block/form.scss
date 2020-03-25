@@ -1,5 +1,6 @@
 .form {
     text-align: center;
+    padding-bottom: 80px;
 }
 
 .form__title {
@@ -26,49 +27,210 @@
 
 .form__counter-wrap {}
 
-.form__select {
-    width: 288px;
-    height: 45px;
-    margin-bottom: 10px;
-    border: none;
-    background-color: #e4e3e3;
+.form__counter {
+    @include input-transparent;
+    padding-left: 35px;
+
+    &:hover, &:active, &:focus {
+        outline: none;
+    }
+}
+
+.form__counter-wrap {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+.form__counter-tab {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: none;
+    border: 1px solid #4F4F4F;
+    border-radius: 50%;
+    &::before, &::after {
+        position: absolute;
+        width: 10px;
+        height: 1px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #4F4F4F;
+    }
+
+  &--up {
+    left: 48px;
+    bottom: 10px;
+    &::before, &::after {
+        content: '';
+  }
+
+  &::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+  &--down {
+    left: 10px;
+    bottom: 10px;
+    &::before {
+        content: '';
+    }
+  }
 }
 
 .form__input-wrap {
-    position: relative;
-    width: 288px;
-    height: 45px;
-    margin-bottom: 10px;
-    background-color: #e4e3e3;
+    @include input;
+    transition: 0.4s;
+
+    &--counter.active {
+        box-shadow: 0 0 0 2px #058E6E;
+        .form__counter-wrap {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .form__label--number {
+          top: 23%;
+          font-size: 7px;
+          line-height: 10px;
+          color: #058E6E;
+        }
+    }
+
+    &--text {
+        & .form__input {
+            opacity: 0;
+            &:hover, &:active, &:focus {
+                outline: none;
+            };
+        }
+
+        &.active {
+            box-shadow: 0 0 0 2px #058E6E;
+            .form__label {
+                top: 23%;
+                font-size: 7px;
+                line-height: 10px;
+                color: #058E6E;
+            }
+
+            & .form__input {
+                opacity: 1;
+            }
+        }
+    }    
 }
 
 .form__input {
-    
+    @include input-transparent;
 }
 
 .form__label {
+    z-index: 1;
     position: absolute;
     margin: 0;
     padding: 0;
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
+    font-size: 10px;
+    line-height: 12px;
+    transition: 0.4s;
 
     color: rgba(0, 0, 0, 0.6);
 }
 
+.form__submit {
+    @include btn-color;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    background-color: #4676b9;
+
+    transition: 0.4s;
+
+    &:active, &:focus {
+        background-color: #3f6cac;
+    }
+}
 
 
 
-.form__submit {}
+@media(min-width: $tablet-small-width) {
+    .form__desc {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+}
 
 
 
-@media(min-width: $tablet-small-width) {}
+@media (min-width: $tablet-width) {
+    .form__desc {
+        width: 683px;
+        font-size: 24px;
+        line-height: 29px;
+    }
 
+    .form__label {
+        left: 35px;
+        font-size: 14px;
+        line-height: 17px;
+    }
 
+    .form__input-wrap {
+        &--counter.active, &--text.active {
+            .form__label--number {
+              top: 23%;
+              font-size: 10px;
+              line-height: 12px;
+            }
+        }
 
-@media (min-width: $tablet-width) {}
+        &--text.active {
+            .form__label {
+              top: 23%;
+              font-size: 10px;
+              line-height: 12px;
+            }
+        }
+    }
+
+    .form__input {
+        padding-left: 35px;
+        padding-right: 35px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .form__counter-tab {
+        &--down {
+          left: 35px;  
+        }
+
+        &--up {
+          left: 84px;
+        }
+
+    }
+
+    .form__counter-tab {
+        width: 18px;
+        height: 18px;
+        &:before, &:after {
+            width: 10px;
+        }
+    }
+
+    .form__counter {
+        padding-left: 65px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
 
 
 

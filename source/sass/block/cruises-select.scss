@@ -1,0 +1,171 @@
+.cruises-select__btn-collapse {
+    @include input;
+    padding: 0;
+    padding-left: 10px;
+    text-align: left;
+    color: rgba(0,0,0,.6);
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.cruises-select__wrap {
+    display: none;
+    margin-top: -9px;
+    margin-bottom: 10px;
+    &.active {
+        display: block;
+    }
+}
+
+.cruises-select__tabs-caption {
+    margin-top: -10px;
+}
+
+.cruises-select__tab {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;    
+    margin-top: -1px;
+    margin-bottom: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.4s;
+    border-bottom: 1px solid #b6b6b6;
+
+    background-color: #e4e3e3;
+
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+
+    &:nth-child(1) {
+        border-top: 1px solid #b6b6b6;
+    }
+
+    &.active {
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.9);
+    }
+}
+
+.cruises-select__content-wrap {
+    position: relative;
+    height: 358px;
+    margin-top: -1px;
+    background-color: #e4e3e3;
+    overflow: hidden;
+}
+
+.cruises-select__tabs-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.6s;
+    
+    &.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .upcoming-trips__wrap-title {
+        padding-top: 110px;
+        margin-bottom: 90px;
+    }
+
+    .upcoming-trips__weather {
+        justify-content: flex-end; 
+    }
+
+    .upcoming-trips__places {
+        height: 52px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .cruises-select__wrap {
+        width: 413px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &.active {
+            display: flex;
+        }
+    }
+
+    .cruises-select__tabs-caption {
+        width: 206px;
+    }
+
+    .cruises-select__tab {
+        width: 206;
+        height: 60px;
+        margin-bottom: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: center;
+        border: 1px solid #b6b6b6;
+        border-radius: 5px;
+        font-size: 14px;
+        line-height: 17px;
+
+        &:nth-child(1) {
+            margin-top: 9px;
+        }
+    }
+
+    .cruises-select__content-wrap {
+        box-shadow: 0 0 0 1px #b6b6b6;
+        width: 207px;
+        height: 295px;
+    }
+
+    .cruises-select__tabs-content {
+        .upcoming-trips__item-wrap {
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-bottom: 15px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
+        .upcoming-trips__wrap-title {
+            padding-top: 95px;
+            margin-bottom: 0;
+            text-align: left;
+        }
+
+        .upcoming-trips__weather {
+            width: 100%;
+            margin-bottom: 0;
+            align-self: flex-end;
+        }
+
+        .upcoming-trips__places {
+            width: 60px;
+            height: 60px;
+        }
+
+        .upcoming-trips__name {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        .upcoming-trips__desc {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        .upcoming-trips__price {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+}
