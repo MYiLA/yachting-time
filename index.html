@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yachting time</title>
+    <meta name="description" content="Yachting Time - организация и проведение незабываемых морских путешествий для наших гостей">
+    <meta content="width = device-width, initial-scale = 1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="lib/css-awesome/all.min.css">
+    <link rel="stylesheet" href="lib/css-awesome/brands.css">
+    <link rel="stylesheet" href="lib/glide/glide.core.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrap-desktop"><a class="header__logo"><img src="img/logo.png" alt="логотип Yachting Time" width="105"></a>
+            <div class="header__wrap">
+                <div class="header__menu menu">
+                    <div class="menu__wrap">
+                        <button class="menu__burger-btn first-button" type="button" aria-label="Открыть или закрыть меню">
+                            <div class="animated-icon1"><span></span><span></span><span></span></div>
+                        </button>
+                        <div class="navbar-collapse">
+                            <ul class="menu__list">
+                                <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#upcoming-trips">Круизы</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#questions">Вопросы</a></li>
+                            </ul>
+                            <div class="menu__social social">
+                                <ul class="social__list">
+                                    <li class="social__item"><a class="social__link" href="https://vk.com/yachting_time" aria-label="группа вконтакте Yachting Time"><img src="img/vk.svg" alt="Вконтакте"></a></li>
+                                    <li class="social__item"><a class="social__link" href="https://www.instagram.com/yachting_time/" aria-label="инстаграмм Yachting Time"><img src="img/instagram.svg" alt="Инстаграмм"></a></li>
+                                    <li class="social__item"><a class="social__link" href="https://www.youtube.com/channel/UChxQ2n8YUJREQP_0Tzjt2yw" aria-label="ютуб-канал Yachting Time"><img src="img/youtube.svg" alt="Ютуб"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__tel tel"><a class="tel__link" href="tel:+79118482000"><img src="img/header/icon-tell.svg" alt="позвонить в Yachting Time" width="20"><span>+7 911 848-20-00</span></a></div>
+            </div>
+        </div>
+    </header>
+    <section class="landing__promo promo" style="background-image: url('img/header/bg.jpg')">
+        <div class="promo__wrap">
+            <h1 class="promo__title">Яхтинг <br> по&nbspСредиземному морю</h1>
+                <p class="promo__desc">Проведите отпуск в атмосфере морского приключения</p><a class="promo__link" href="#" download="cruises-yachting-time">Забронировать круиз</a>
+        </div>
+    </section>
+    <main class="landing">
+        <div class="wrap">
+            <section class="landing__upcoming-trips upcoming-trips" id="upcoming-trips">
+                <h2 class="upcoming-trips__title">Предстоящие путешествия</h2>
+                <ul class="upcoming-trips__list">
+                    <li class="upcoming-trips__item">
+                        <div class="upcoming-trips__item-wrap" style="background-image: url('img/upcoming-trips/dodecanes.jpg')">
+                            <div class="upcoming-trips__weather weather">
+                                <div class="weather__wrap weather__wrap--day"><span class="weather__days weather__days">7 дней</span><span class="weather__temperature">+27°C</span></div>
+                                <div class="weather__wrap weather__wrap--night"><span class="weather__days">6 ночей</span><span class="weather__temperature">+22°C</span></div>
+                                <div class="upcoming-trips__places"><span>2 места</span></div>
+                            </div>
+                            <div class="upcoming-trips__wrap-title">
+                                <h3 class="upcoming-trips__name">Архипелаг Додеканес</h3>
+                                <p class="upcoming-trips__desc">Весна на юге Греции</p><strong class="upcoming-trips__price">660€</strong>
+                            </div>
+                            <div class="upcoming-trips__time-wrap">
+                                <time class="upcoming-trips__time" datetime="2020-04">25 апреля - 2 мая</time>
+                            </div>
+                            <button class="upcoming-trips__btn-mobile" type="button" aria-label="смотреть подробнее"></button>
+                        </div>
+                        <div class="upcoming-trips__item-hover upcoming-trips__item-hover--dodecanes">
+                            <button class="upcoming-trips__btn upcoming-trips__btn--program" type="button">Узнать программу</button>
+                            <button class="upcoming-trips__btn upcoming-trips__btn--book" type="button">Забронировать</button>
+                            <button class="upcoming-trips__btn-mobile" type="button" aria-label="вернуться"></button>
+                        </div>
+                    </li>
+                    <li class="upcoming-trips__item">
+                        <div class="upcoming-trips__item-wrap" style="background-image: url('img/upcoming-trips/tourkin-may.jpg')">
+                            <div class="upcoming-trips__weather weather">
+                                <div class="weather__wrap weather__wrap--day"><span class="weather__days">7 дней</span><span class="weather__temperature">+27°C</span></div>
+                                <div class="weather__wrap weather__wrap--night"><span class="weather__days">6 ночей</span><span class="weather__temperature">+22°C</span></div>
+                                <div class="upcoming-trips__places upcoming-trips__places--not"><span>Мест нет</span></div>
+                            </div>
+                            <div class="upcoming-trips__wrap-title">
+                                <h3 class="upcoming-trips__name">Турция</h3>
+                                <p class="upcoming-trips__desc">Майские праздники на море</p><strong class="upcoming-trips__price">650€</strong>
+                            </div>
+                            <div class="upcoming-trips__time-wrap">
+                                <time class="upcoming-trips__time" datetime="2020-04">2 мая - 9 мая</time>
+                            </div>
+                            <button class="upcoming-trips__btn-mobile" type="button" aria-label="смотреть подробнее"></button>
+                        </div>
+                        <div class="upcoming-trips__item-hover upcoming-trips__item-hover--tourkin-may">
+                            <p>Оставьте свой номер и мы свяжемся с вами, когда места появятся</p>
+                            <button class="upcoming-trips__btn upcoming-trips__btn--tel" type="button">Оставить номер</button>
+                            <button class="upcoming-trips__btn-mobile" type="button" aria-label="вернуться"></button>
+                        </div>
+                    </li><li class="upcoming-trips__item">
+                        <div class="upcoming-trips__item-wrap" style="background-image: url('img/upcoming-trips/tourkin-view.jpg')">
+                            <div class="upcoming-trips__weather weather">
+                                <div class="weather__wrap weather__wrap--day"><span class="weather__days">7 дней</span><span class="weather__temperature">+27°C</span></div>
+                                <div class="weather__wrap weather__wrap--night"><span class="weather__days">6 ночей</span><span class="weather__temperature">+22°C</span></div>
+                                <div class="upcoming-trips__places"> <span>3 места</span></div>
+                            </div>
+                            <div class="upcoming-trips__wrap-title">
+                                <h3 class="upcoming-trips__name">Турция</h3>
+                                <p class="upcoming-trips__desc">Взгляд с другой стороны</p><strong class="upcoming-trips__price">660€</strong>
+                            </div>
+                            <div class="upcoming-trips__time-wrap">
+                                <time class="upcoming-trips__time" datetime="2020-04">9 мая - 16 мая</time>
+                            </div>
+                            <button class="upcoming-trips__btn-mobile" type="button" aria-label="смотреть подробнее"></button>
+                        </div>
+                        <div class="upcoming-trips__item-hover upcoming-trips__item-hover--tourkin-view">
+                            <button class="upcoming-trips__btn upcoming-trips__btn--program" type="button">Узнать программу</button>
+                            <button class="upcoming-trips__btn upcoming-trips__btn--book" type="button">Забронировать</button>
+                            <button class="upcoming-trips__btn-mobile" type="button" aria-label="вернуться"></button>
+                        </div>
+                    </li>
+                    
+                    <li class="upcoming-trips__item">
+                        <div class="upcoming-trips__item-wrap" style="background-image: url('img/upcoming-trips/horvatia-way.jpg')">
+                            <div class="upcoming-trips__weather weather">
+                                <div class="weather__wrap weather__wrap--day"><span class="weather__days">7 дней</span><span class="weather__temperature">+29°C</span></div>
+                                <div class="weather__wrap weather__wrap--night"><span class="weather__days">6 ночей</span><span class="weather__temperature">+24°C</span></div>
+                                <div class="upcoming-trips__places"><span>5 мест</span></div>
+                            </div>
+                            <div class="upcoming-trips__wrap-title">
+                                <h3 class="upcoming-trips__name">Хорватия</h3>
+                                <p class="upcoming-trips__desc">Путь в жемчужину Адриатики</p><strong class="upcoming-trips__price">650€</strong>
+                            </div>
+                            <div class="upcoming-trips__time-wrap">
+                                <time class="upcoming-trips__time" datetime="2020-04">25 июня - 7 июля</time>
+                            </div>
+                            <button class="upcoming-trips__btn-mobile" type="button" aria-label="смотреть подробнее"></button>
+                        </div>
+                        <div class="upcoming-trips__item-hover upcoming-trips__item-hover--horvatia-way">
+                            <button class="upcoming-trips__btn upcoming-trips__btn--program" type="button">Узнать программу</button>
+                            <button class="upcoming-trips__btn upcoming-trips__btn--book" type="button">Забронировать</button>
+                            <button class="upcoming-trips__btn-mobile" type="button" aria-label="вернуться"></button>
+                        </div>
+                    </li>
+                    <li class="upcoming-trips__item">
+                        <div class="upcoming-trips__item-wrap" style="background-image: url('img/upcoming-trips/horvatia-isle.jpg')">
+                            <div class="upcoming-trips__weather weather">
+                                <div class="weather__wrap weather__wrap--day"><span class="weather__days">7 дней</span><span class="weather__temperature">+29°C</span></div>
+                                <div class="weather__wrap weather__wrap--night"><span class="weather__days">6 ночей</span><span class="weather__temperature">+24°C</span></div>
+                                <div class="upcoming-trips__places"> <span>4 места</span></div>
+                            </div>
+                            <div class="upcoming-trips__wrap-title">
+                                <h3 class="upcoming-trips__name">Хорватия</h3>
+                                <p class="upcoming-trips__desc">По островам Средней Долмации</p><strong class="upcoming-trips__price">650€</strong>
+                            </div>
+                            <div class="upcoming-trips__time-wrap">
+                                <time class="upcoming-trips__time" datetime="2020-04">4 июля - 11 июля</time>
+                            </div>
+                            <button class="upcoming-trips__btn-mobile" type="button" aria-label="смотреть подробнее"></button>
+                        </div>
+                        <div class="upcoming-trips__item-hover upcoming-trips__item-hover--horvatia-isle">
+                            <button class="upcoming-trips__btn upcoming-trips__btn--program" type="button">Узнать программу</button>
+                            <button class="upcoming-trips__btn upcoming-trips__btn--book" type="button">Забронировать</button>
+                            <button class="upcoming-trips__btn-mobile" type="button" aria-label="вернуться"></button>
+                        </div>
+                    </li>
+                    <li class="upcoming-trips__item upcoming-trips__item--unavailable">
+                        <div class="upcoming-trips__item-wrap" style="background-image: url('img/upcoming-trips/sicilia.jpg')">
+                            <div class="upcoming-trips__weather weather">
+                                <div class="weather__wrap weather__wrap--day"><span class="weather__days">7 дней</span><span class="weather__temperature">+32°C</span></div>
+                                <div class="weather__wrap weather__wrap--night"><span class="weather__days">6 ночей</span><span class="weather__temperature">+25°C</span></div>
+                                <div class="upcoming-trips__places"> <span>6 мест</span></div>
+                            </div>
+                            <div class="upcoming-trips__wrap-title">
+                                <h3 class="upcoming-trips__name">Сицилия</h3>
+                                <p class="upcoming-trips__desc">Липарские острова</p><strong class="upcoming-trips__price">850€</strong>
+                            </div>
+                            <div class="upcoming-trips__time-wrap">
+                                <time class="upcoming-trips__time" datetime="2020-04">8 августа - 15 августа</time>
+                            </div>
+                            <button class="upcoming-trips__btn-mobile" type="button" aria-label="смотреть подробнее"></button>
+                        </div>
+                        <div class="upcoming-trips__item-hover upcoming-trips__item-hover--sicilia">
+                            <button class="upcoming-trips__btn upcoming-trips__btn--program" type="button">Узнать программу</button>
+                            <button class="upcoming-trips__btn upcoming-trips__btn--book" type="button">Забронировать</button>
+                            <button class="upcoming-trips__btn-mobile" type="button" aria-label="вернуться"></button>
+                        </div>
+                    </li>
+                </ul>
+                <button class="upcoming-trips__btn-collapse upcoming-trips__btn-collapse--max" type="button">Развернуть</button>
+                <button class="upcoming-trips__btn-collapse upcoming-trips__btn-collapse--min" type="button">Свернуть</button>
+            </section>
+            <section class="landing__intro intro">
+                <h2 class="intro__title">Немного о яхтинге</h2>
+                <ul class="intro__list">
+                    <li class="intro__item">
+                        <div class="intro__img"><span class="intro__signature">4 из 10</span><img src="#" alt="описание"></div>
+                        <h3 class="intro__item-title">Сложность</h3>
+                        <p class="intro__desc">Отсутствие яхтенного опыта не накладывает ограничений на участников круизов</p>
+                    </li>
+                    <li class="intro__item">
+                        <div class="intro__img"><span class="intro__signature">20 круизов</span><img src="#" alt="описание"></div>
+                        <h3 class="intro__item-title">Возраст</h3>
+                        <p class="intro__desc">Мы берем в круизные плавания детей от 7 лет. Это подходящий возраст для безопасного прохождения маршрута</p>
+                    </li>
+                    <li class="intro__item">
+                        <div class="intro__img"><span class="intro__signature">60 человек</span><img src="#" alt="описание"></div>
+                        <h3 class="intro__item-title">Количество человек</h3>
+                        <p class="intro__desc">Кроме вас на яхте будет только капитан и его помощник</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="landing__impressions impressions">
+                <h2 class="impressions__title">Что нас ждет</h2>
+                <ul class="impressions__list">
+                    <li class="impressions__item impressions__item--reverse">
+                        <div class="impressions__desc">
+                            <h3>Острова и пляжи</h3>
+                            <p>а также красивейшие бухты</p>
+                        </div>
+                        <div class="impressions__img"><img src="#" alt="описание"></div>
+                    </li>
+                    <li class="impressions__item">
+                        <div class="impressions__desc">
+                            <h3>Секретные места</h3>
+                            <p>побываете там, где не ступала нога обычного туриста</p>
+                        </div>
+                        <div class="impressions__img"><img src="#" alt="описание"></div>
+                    </li>
+                    <li class="impressions__item impressions__item--reverse">
+                        <div class="impressions__desc">
+                            <h3>Необычные активности</h3>
+                            <p>научитесь управлять яхтой и вязать морские узлы</p>
+                        </div>
+                        <div class="impressions__img"><img src="#" alt="описание"></div>
+                    </li>
+                    <li class="impressions__item">
+                        <div class="impressions__desc">
+                            <h3>Расширение кругозора</h3>
+                            <p>посмотрите на мир с другого ракурса</p>
+                        </div>
+                        <div class="impressions__img"><img src="#" alt="описание"></div>
+                    </li>
+                </ul>
+                <section class="impressions__also also">
+                    <h3 class="also__title">А также</h3>
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="also__list glide__slides">
+                                <li class="glide__slide">
+                                    <div class="also__item">
+                                        <div class="also__img"><img src="./img/bg-header.jpg" alt="описание"></div>
+                                        <p class="also__desc">Дайвинг</p>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="also__item">
+                                        <div class="also__img"><img src="./img/bg-header.jpg" alt="описание"></div>
+                                        <p class="also__desc">Рыбалка</p>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="also__item">
+                                        <div class="also__img"><img src="./img/bg-header.jpg" alt="описание"></div>
+                                        <p class="also__desc">Плавание</p>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="also__item">
+                                        <div class="also__img"><img src="./img/bg-header.jpg" alt="описание"></div>
+                                        <p class="also__desc">Sup-бординг</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="also__bullets glide__bullets" data-glide-el="controls[nav]">
+                            <button class="also__bullet glide__bullet" type="button" data-glide-dir="=0" aria-label="переключить на слайд 1"></button>
+                            <button class="also__bullet glide__bullet" type="button" data-glide-dir="=1" aria-label="переключить на слайд 2"></button>
+                            <button class="also__bullet glide__bullet" type="button" data-glide-dir="=2" aria-label="переключить на слайд 3"></button>
+                            <button class="also__bullet glide__bullet" type="button" data-glide-dir="=3" aria-label="переключить на слайд 4"></button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="landing__yacht yacht">
+                <h2 class="yacht__title">Быт на яхте</h2>
+                <div class="yacht__slider">
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <div class="yacht__slide">
+                                        <p class="yacht__desc">Мы путешествуем на 13-15 метровых яхтах. В каждой из них имеется 4-5 кают, полноценная кухня, а также пространство для отдыха.</p>
+                                        <div class="yacht__img"><img src="#" alt="описание"></div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="yacht__slide">
+                                        <p class="yacht__desc">В каждой каюте размещаются по  1-2 человека. Также можно арендовать каюту целиком.</p>
+                                        <div class="yacht__img"><img src="#" alt="описание"></div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="yacht__slide">
+                                        <p class="yacht__desc">Завтраки, обеды и перекусы мы готовим на яхте. Ужины возможны в ресторане или также на яхте. </p>
+                                        <div class="yacht__img"><img src="#" alt="описание"></div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="yacht__slide">
+                                        <p class="yacht__desc">На яхте расположены две ванные комнаты с туалетом душевыми кабинами, а также бойлер и баки с запасами пресной воды.</p>
+                                        <div class="yacht__img"><img src="#" alt="описание"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="yacht__tabs-list glide__bullets" data-glide-el="controls[nav]">
+                            <button class="yacht__tab glide__bullet" type="button" data-glide-dir="=0" aria-label="Переключить на слайд 'Яхта'"><span class="yacht__tab-text">Яхта</span></button>
+                            <button class="yacht__tab glide__bullet" type="button" data-glide-dir="=1" aria-label="Переключить на слайд 'Проживание'"><span class="yacht__tab-text">Проживание</span></button>
+                            <button class="yacht__tab glide__bullet" type="button" data-glide-dir="=2" aria-label="Переключить на слайд 'Питание'"><span class="yacht__tab-text">Питание</span></button>
+                            <button class="yacht__tab glide__bullet" type="button" data-glide-dir="=3" aria-label="Переключить на слайд 'Гигиена'"><span class="yacht__tab-text">Гигиена</span></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="landing__price price">
+                <h2 class="price__title">Что входит в стоимость</h2>
+                <ul class="price__list">
+                    <li class="price__item">
+                        <div class="price__img"><img src="#" alt="описание"></div>
+                        <p class="price__desc">Трансфер из аэропорта</p>
+                    </li>
+                    <li class="price__item">
+                        <div class="price__img"><img src="#" alt="описание"></div>
+                        <p class="price__desc">Мастер-классы по яхтингу</p>
+                    </li>
+                    <li class="price__item">
+                        <div class="price__img"><img src="#" alt="описание"></div>
+                        <p class="price__desc">Проживание на яхте</p>
+                    </li>
+                    <li class="price__item">
+                        <div class="price__img"><img src="#" alt="описание"></div>
+                        <p class="price__desc">Постельное белье и полотенца</p>
+                    </li>
+                    <li class="price__item">
+                        <div class="price__img"><img src="#" alt="описание"></div>
+                        <p class="price__desc">Услуги шкипера и помощника</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="landing__price price">
+                <h2 class="price__title">Что не входит в стоимость</h2>
+                <ul class="price__list">
+                    <li class="price__item">
+                        <div class="price__img"><img src="#" alt="описание"></div>
+                        <p class="price__desc">Авиабилеты</p>
+                    </li>
+                    <li class="price__item">
+                        <div class="price__img"><img src="#" alt="описание"></div>
+                        <p class="price__desc">Страховка</p>
+                    </li>
+                    <li class="price__item">
+                        <div class="price__img"><img src="#" alt="описание"></div>
+                        <p class="price__desc">Виза</p>
+                    </li>
+                    <li class="price__item">
+                        <div class="price__img"><img src="#" alt="описание"></div>
+                        <p class="price__desc">Прокат техники на островах</p>
+                    </li>
+                    <li class="price__item">
+                        <div class="price__img"><img src="#" alt="описание"></div>
+                        <p class="price__desc">Рестораны</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="landing__reviews reviews" id="reviews">
+                <h2 class="reviews__title">Отзывы</h2>
+                <div class="reviews__slider">
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <div class="reviews__item">
+                                        <div class="reviews__img"><img src="#" alt="опиание"></div>
+                                        <div class="reviews__desc">Это было незабываемое путешествие и хочется снова его повторить! Яхтинг – это новый мир возможностей и эмоций! Всем от души рекомендую! И конечно же большое спасибо команде и капитану, без него бы ничего не получилось!</div>
+                                        <div class="reviews__author"> <strong>Inna Lekontseva-Collin</strong>
+                                            <time datetime="2018-06">июнь 2018</time>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="reviews__item">
+                                        <div class="reviews__img"><img src="#" alt="опиание"></div>
+                                        <div class="reviews__desc">Это было незабываемое путешествие и хочется снова его повторить! Яхтинг – это новый мир возможностей и эмоций! Всем от души рекомендую! И конечно же большое спасибо команде и капитану, без него бы ничего не получилось!</div>
+                                        <div class="reviews__author"> <strong>Inna Lekontseva-Collin</strong>
+                                            <time datetime="2018-06">июнь 2018</time>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="reviews__item">
+                                        <div class="reviews__img"><img src="#" alt="опиание"></div>
+                                        <div class="reviews__desc">Это было незабываемое путешествие и хочется снова его повторить! Яхтинг – это новый мир возможностей и эмоций! Всем от души рекомендую! И конечно же большое спасибо команде и капитану, без него бы ничего не получилось!</div>
+                                        <div class="reviews__author"> <strong>Inna Lekontseva-Collin</strong>
+                                            <time datetime="2018-06">июнь 2018</time>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="reviews__bullets glide__bullets" data-glide-el="controls[nav]">
+                            <button class="reviews__bullet glide__bullet" type="button" data-glide-dir="=0" aria-label="Переключить на отзыв 1"></button>
+                            <button class="reviews__bullet glide__bullet" type="button" data-glide-dir="=1" aria-label="Переключить на отзыв 2"></button>
+                            <button class="reviews__bullet glide__bullet" type="button" data-glide-dir="=2" aria-label="Переключить на отзыв 3"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="landing__about about" id="about">
+                <h2 class="about__title">О нас</h2>
+                <div class="about__img"><img src="./img/bg-header.jpg" alt="описание"></div><span class="about__hello">Всем привет!</span>
+                <div class="about__desc">
+                    <p>Меня зовут <a href="https://api.whatsapp.com/send?phone=79118482000"><strong>Александр Скворцов</strong></a> и я являюсь лицензированным капитаном и основатель проекта <a href="https://yachtingtime.ru/"><strong>Yachting Time</strong></a>.</p>
+                    <p>Мой первый опыт яхтинга был взрывным - крен, когда лодка идет под парусом или налетевший шквал дают яркий всплеск эмоций, а штиль в звездную ночь пробуждает нечто торжественное внутри. </p>
+                    <p>В круизах мы будем наполнять ветром паруса, травить и выбирать шкоты, менять галсы и вязать узлы, крутить мили за штурвалом и загорать на белоснежной палубе.</p>
+                    <p>Я приглашаю вас погрузиться в эту интересную, новую, пропитанную духом свободы и приключений среду!</p>
+                </div>
+            </section>
+            <section class="landing__team team">
+                <h2 class="team__title"></h2>
+                <ul class="team__list">
+                    <li class="team__item">
+                        <figure class="team__img"><img src="#" alt="Описание">
+                            <h3 class="team__name">Александр Скворцов</h3>
+                            <figcaption>Капитан, более 4000 морских миль</figcaption>
+                        </figure>
+                        <p>Море - прекрасный учитель! Тут всё по-настоящему. В море мы проявляемся такими, какими есть.. Прекрасная возможность взять обратную связь и стать чуточку лучше, чем вчера!</p>
+                    </li>
+                    <li class="team__item">
+                        <figure class="team__img"><img src="#" alt="Описание">
+                            <h3 class="team__name">Сергей Кыликов</h3>
+                            <figcaption>Капитан, более 3500 морских миль</figcaption>
+                        </figure>
+                        <p>Считаю, что настоящий капитан - это мульти-личность, человек, который бысто и точно принимает решения и умеет одинаково хорошо работать и руками, и головой.</p>
+                    </li>
+                    <li class="team__item">
+                        <figure class="team__img"><img src="#" alt="Описание">
+                            <h3 class="team__name">Ольга Алымова</h3>
+                            <figcaption>Капитан, более 3000 морских миль</figcaption>
+                        </figure>
+                        <p>Взгляд на мир с другой стороны от береговой линии способен в целом изменить восприятие жизни. Такой опыт способен наполнять свежим бризом всю нашу жизнь еще долгое время после возвращения на берег.</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="landing__gradient">
+            <div class="wrap">
+                <section class="landing__questions questions" id="questions">
+                    <h2 class="questions__title">Популярные вопросы</h2>
+                    <ol class="questions__list">
+                        <li class="questions__item">Сколько это стоит?
+                            <div class="questions__answer">
+                                <p>Стоимость  путешествия = стоимость круиза + судовая касса</p>
+                                <p>Судовая касса - это денежные средства, внесенные всеми участниками круиза. Они предназначены для оплаты совместных расходов - питания, стоянки, воды, электричества, топлива. В среднем взнос в судовую кассу равен 150 €</p>
+                                <p>Личные расходы – на Ваше усмотрение, 150 - 300 €</p>
+                            </div>
+                        </li>
+                        <li class="questions__item">Насколько это безопасно?
+                            <div class="questions__answer">
+                                <p>Формат, в котором осуществляются наши недельные маршруты для новичков. </p>
+                                <p>На протяжении всего маршрута суша никогда не пропадает из виду. Все переходы осуществляются в дневное время.</p>
+                                <p>Выходя в море, капитан руководствуется сводом правил, в том числе проверяет исправность яхты и изучает прогноз погоды в регионе, чтобы избежать штормовых переходов.</p>
+                            </div>
+                        </li>
+                        <li class="questions__item">Если я заболею?
+                            <div class="questions__answer">
+                                <p>На борту предусмотрены аптечка первой медицинской помощи, огнетушители и спасательные средства. Для вызова экстренной помощи имеются средства связи и аварийный радиобуй.</p>
+                            </div>
+                        </li>
+                        <li class="questions__item">Если я передумаю ехать?
+                            <div class="questions__answer">
+                                <p>Для обеспечения взаимных договоренностей мы заключаем договор. В нём учтены все нюансы касаемо обязательств, оплаты, сроков, возврата средств и прочее.</p>
+                                <p>Образец вы можете запросить по любым имеющимся контактным данным.</p>
+                            </div>
+                        </li>
+                        <li class="questions__item">Что нужно взять с собой?
+                            <div class="questions__answer">
+                                <ul>
+                                    <li>Сумка или рюкзак</li>
+                                    <li>Комфортная одежда</li>
+                                    <li>Купальник</li>
+                                    <li>Удобная обувь (кроссовки и сандалии)</li>
+                                    <li>Головной убор и очки</li>
+                                    <li>Солнцезащитное средство</li>
+                                    <li>Документы</li>
+                                    <li>Гаджеты (зарядка для телефона)</li>
+                                    <li>Медикаменты для ваших личных нужд (на борту есть аптечка)</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="questions__item">Какой распорядок дня на судне?
+                            <div class="questions__answer">
+                                <p>Примерный распорядок дня</p>
+                                <ul>
+                                    <li>Зарядка/пробежка/заплыв</li>
+                                    <li>Завтрак</li>
+                                    <li>Переход</li>
+                                    <li>Обед</li>
+                                    <li>Прогулки и экскурсии по городу/острову</li>
+                                    <li>Ужин</li>
+                                    <li>Вечерний променад</li>
+                                </ul>
+                                <p>Распорядок дня оговаривается - вы сами решаете как и с кем комфортно проводить время на отдыхе.</p>
+                            </div>
+                        </li>
+                        <li class="questions__item">Я не умею плавать, что мне делать?
+                            <div class="questions__answer">
+                                <p>Чтобы ходить на яхте, не обязательно уметь плавать.</p>
+                                <p>Для подстраховки на яхте предусмотрены спасательный круг, жилет и обвязка. Для купания можно также  использовать надувной круг, матрас и нарукавники.</p>
+                            </div>
+                        </li>
+                        <li class="questions__item">Есть ли одноместные каюты?
+                            <div class="questions__answer">
+                                <p>В каюте предусмотрено размещение 1-2 человек.</p>
+                                <p>Размещение одного человека в каюте зависит от количества людей на яхте.</p>
+                                <p>Вы всегда можете выкупить каюту целиком.</p>
+                            </div>
+                        </li>
+                        <li class="questions__item">Есть вопросы по программе
+                            <div class="questions__answer">
+                                <p>Если у вам астались вопросы по программе - заполните форму обратной связи и мы вышлем вам подробное описание наших круизов.</p>
+                                <p>Также вы можете <a href="https://api.whatsapp.com/send?phone=79118482000">позвонить</a> или написать нам и задать вопросы нашему капитану лично.</p>
+                            </div>
+                        </li>
+                        <li class="questions__item">Есть ли скидки?
+                            <div class="questions__answer">
+                                <p>При аренде яхты целиком редусмотрена специальная цена.</p>
+                                <p>Данный вопрос уточняется при личном контакте.</p>
+                            </div>
+                        </li>
+                        <li class="questions__item">Как мы будем питаться?
+                            <div class="questions__answer">
+                                <p>Продукты мы закупаем в супермаркетах и на рынках. Накануне закупки составляем список необходимых продуктов и согласовываем его со всеми участниками.</p>
+                                <p>На яхте мы все вместе готовим завтраки, обеды, ужины и легкие перекусы, на суше можем зайти в ресторан/кафе.</p>
+                                <p>На яхте предусмотрена газовая плита с духовкой, холодильник и все необходимое для приготовления пищи.</p>
+                            </div>
+                        </li>
+                        <li class="questions__item">Сколько будет человек на яхте?
+                            <div class="questions__answer">
+                                <p>Всестимость яхты - 10 человек, включая капитана и помощника.</p>
+                            </div>
+                        </li>
+                        <li class="questions__item">Чем будут заниматься дети на яхте?
+                            <div class="questions__answer">
+                                <p>Мы берем в круизные плавания детей от 7 лет. Это наиболее подходящий возраст для обучения и безопасного прохождения маршрута.</p>
+                                <p>Но каждый родитель должен понимать, что ответственность за своих детей он несет сам.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+                <section class="landing__form form">
+                    <h2 class="form__title">Забронировать круиз</h2>
+                    <p class="form__desc">Оставьте свой номер и мы свяжемся с вами в течение 10 минут для уточнения подробностей</p>
+                    <form class="form__form" method="POST" action="https://formspree.io/mzbvobkj">
+                        <div class="form__cruises cruises-select">
+                            <button class="cruises-select__btn-collapse" type="button">Выберите круиз</button>
+                            <div class="cruises-select__wrap">
+                                <div class="cruises-select__tabs-caption">
+                                    <label class="cruises-select__tab" for="cruise__dodecanes">Греция 25&nbspапреля&nbsp-&nbsp02&nbspмая
+                                        <input class="visually-hidden" type="radio" id="cruise__dodecanes" name="cruise" value="Греция. Архипелаг Додеканес. 25 апреля - 02 мая">
+                                    </label>
+                                    <label class="cruises-select__tab" for="tourkin-view">Турция 9&nbspмая&nbsp-&nbsp16&nbspмая
+                                        <input class="visually-hidden" type="radio" id="tourkin-view" name="cruise" value="Турция. Взгляд с другой стороны. 9 мая - 16 мая">
+                                    </label>
+                                    <label class="cruises-select__tab" for="horvatia-way">Хорватия 25&nbspиюня&nbsp-&nbsp6&nbspиюля
+                                        <input class="visually-hidden" type="radio" id="horvatia-way" name="cruise" value="Хорватия. Путь в жемчужину Адриатики. 25июня - 6 июля">
+                                    </label>
+                                    <label class="cruises-select__tab" for="horvatia-isle">Хорватия 4&nbspиюля&nbsp-&nbsp11&nbspиюля
+                                        <input class="visually-hidden" type="radio" id="horvatia-isle" name="cruise" value="Хорватия. По островам Средней Долмации. 4 июля - 11 июля">
+                                    </label>
+                                    <label class="cruises-select__tab" for="sicilia">Сицилия 8&nbspавгуста&nbsp-&nbsp15&nbspавгуста
+                                        <input class="visually-hidden" type="radio" id="sicilia" name="cruise" value="Сицилия. Липарские острова. 8 августа - 15 августа">
+                                    </label>
+                                </div>
+                                <div class="cruises-select__content-wrap">
+                                    <div class="cruises-select__tabs-content">
+                                        <div class="upcoming-trips__item-wrap" style="background-image: url('img/upcoming-trips/dodecanes.jpg')">
+                                            <div class="upcoming-trips__wrap-title">
+                                                <h3 class="upcoming-trips__name">Архипелаг Додеканес</h3>
+                                                <p class="upcoming-trips__desc">Весна на юге Греции</p><strong class="upcoming-trips__price">660€</strong>
+                                            </div>
+                                            <div class="upcoming-trips__weather weather">
+                                                <div class="upcoming-trips__places"><span>2 места</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cruises-select__tabs-content">
+                                        <div class="upcoming-trips__item-wrap" style="background-image: url('img/upcoming-trips/tourkin-view.jpg')">
+                                            <div class="upcoming-trips__wrap-title">
+                                                <h3 class="upcoming-trips__name">Турция</h3>
+                                                <p class="upcoming-trips__desc">Взгляд с другой стороны</p><strong class="upcoming-trips__price">660€</strong>
+                                            </div>
+                                            <div class="upcoming-trips__weather weather">
+                                                <div class="upcoming-trips__places"> <span>3 места</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cruises-select__tabs-content">
+                                        <div class="upcoming-trips__item-wrap" style="background-image: url('img/upcoming-trips/horvatia-way.jpg')">
+                                            <div class="upcoming-trips__wrap-title">
+                                                <h3 class="upcoming-trips__name">Хорватия</h3>
+                                                <p class="upcoming-trips__desc">Путь в жемчужину Адриатики</p><strong class="upcoming-trips__price">650€</strong>
+                                            </div>
+                                            <div class="upcoming-trips__weather weather">
+                                                <div class="upcoming-trips__places"><span>5 мест</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cruises-select__tabs-content">
+                                        <div class="upcoming-trips__item-wrap" style="background-image: url('img/upcoming-trips/horvatia-isle.jpg')">
+                                            <div class="upcoming-trips__wrap-title">
+                                                <h3 class="upcoming-trips__name">Хорватия</h3>
+                                                <p class="upcoming-trips__desc">По островам Средней Долмации</p><strong class="upcoming-trips__price">650€</strong>
+                                            </div>
+                                            <div class="upcoming-trips__weather weather">
+                                                <div class="upcoming-trips__places"> <span>4 места</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cruises-select__tabs-content">
+                                        <div class="upcoming-trips__item-wrap" style="background-image: url('img/upcoming-trips/sicilia.jpg')">
+                                            <div class="upcoming-trips__wrap-title">
+                                                <h3 class="upcoming-trips__name">Сицилия</h3>
+                                                <p class="upcoming-trips__desc">Липарские острова</p><strong class="upcoming-trips__price">850€</strong>
+                                            </div>
+                                            <div class="upcoming-trips__weather weather">
+                                                <div class="upcoming-trips__places"> <span>6 мест</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__input-wrap form__input-wrap--counter">
+                            <label class="form__label form__label--number" for="places">Кол-во мест</label>
+                            <div class="form__counter-wrap">
+                                <button class="form__counter-tab form__counter-tab--up" type="button" aria-label="Увеличить на 1"></button>
+                                <input class="form__counter" type="number" value="1" id="places" name="places" readonly="">
+                                <button class="form__counter-tab form__counter-tab--down" type="button" aria-label="Уменьшить на 1"></button>
+                            </div>
+                        </div>
+                        <div class="form__input-wrap form__input-wrap--text">
+                            <label class="form__label form__label--text" for="name">Ваше имя</label>
+                            <input class="form__input" type="text" id="name" name="name" autocomplete="off">
+                        </div>
+                        <div class="form__input-wrap form__input-wrap--text">
+                            <label class="form__label" for="tel">Ваш номер телефона</label>
+                            <input class="form__input" type="tel" id="tel" name="telephone" autocomplete="off">
+                        </div>
+                        <button class="form__submit" type="submit">Забронировать</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrap">
+            <div class="footer__menu menu">
+                <div class="menu__wrap">
+                    <button class="menu__burger-btn first-button" type="button" aria-label="Открыть или закрыть меню">
+                        <div class="animated-icon1"><span></span><span></span><span></span></div>
+                    </button>
+                    <div class="navbar-collapse">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#upcoming-trips">Круизы</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#questions">Вопросы</a></li>
+                        </ul>
+                        <div class="menu__social social">
+                            <ul class="social__list">
+                                <li class="social__item"><a class="social__link" href="https://vk.com/yachting_time" aria-label="группа вконтакте Yachting Time"><img src="img/vk.svg" alt="Вконтакте"></a></li>
+                                <li class="social__item"><a class="social__link" href="https://www.instagram.com/yachting_time/" aria-label="инстаграмм Yachting Time"><img src="img/instagram.svg" alt="Инстаграмм"></a></li>
+                                <li class="social__item"><a class="social__link" href="https://www.youtube.com/channel/UChxQ2n8YUJREQP_0Tzjt2yw" aria-label="ютуб-канал Yachting Time"><img src="img/youtube.svg" alt="Ютуб"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__tel tel"><a class="tel__link" href="tel:+79118482000"><img src="img/header/icon-tell.svg" alt="позвонить в Yachting Time" width="20"><span>+7 911 848-20-00</span></a></div>
+            <p class="footer__copyright">© YachtingTime 2020</p>
+        </div>
+    </footer>
+    <script src="js/polyfill.min.js"></script>
+    <script src="lib/glide/glide.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/mdb.min.js"></script>
+    <script src="js/nav-menu.js"></script>
+    <script src="js/uncoming-trips.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
