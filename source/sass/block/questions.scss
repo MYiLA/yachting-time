@@ -5,13 +5,50 @@
   margin-bottom: 30px;
 }
 
-.questions__list {}
+.questions__list {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
+}
 
-.questions__item {}
+.questions__item {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.questions__btn {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 30px;
+  margin-bottom: 5px;
+  text-align: left;
+
+  &:hover, &:active {
+    outline: none;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, .9);
+  }
+}
+
 
 .questions__answer {
-  
-  p {}
+  display: none;
+  width: 100%;
+  font-size: 12px;
+  line-height: 15px;
+  background-color: white;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 20px;
+  margin-top: -5px;
+  margin-bottom: 5px;
+  p {
+    margin-bottom: 15px;
+  }
 
   h3 {}
 }
