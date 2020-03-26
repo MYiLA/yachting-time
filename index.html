@@ -20,7 +20,8 @@
 
 <body>
     <header class="header">
-        <div class="header__wrap-desktop"><a class="header__logo"><img src="img/logo.png" alt="логотип Yachting Time" width="105"></a>
+        <div class="header__wrap-desktop">
+            <div class="header__logo"><img src="img/logo.png" alt="логотип Yachting Time" width="105"></div>
             <div class="header__wrap">
                 <div class="header__menu menu">
                     <div class="menu__wrap">
@@ -196,185 +197,118 @@
                 <button class="upcoming-trips__btn-collapse upcoming-trips__btn-collapse--min" type="button">Свернуть</button>
             </section>
             <section class="landing__intro intro">
-                <h2 class="intro__title">Немного о яхтинге</h2>
-                <ul class="intro__list">
-                    <li class="intro__item">
-                        <div class="intro__img"><span class="intro__signature">4 из 10</span><img src="#" alt="описание"></div>
-                        <h3 class="intro__item-title">Сложность</h3>
-                        <p class="intro__desc">Отсутствие яхтенного опыта не накладывает ограничений на участников круизов</p>
-                    </li>
-                    <li class="intro__item">
-                        <div class="intro__img"><span class="intro__signature">20 круизов</span><img src="#" alt="описание"></div>
-                        <h3 class="intro__item-title">Возраст</h3>
-                        <p class="intro__desc">Мы берем в круизные плавания детей от 7 лет. Это подходящий возраст для безопасного прохождения маршрута</p>
-                    </li>
-                    <li class="intro__item">
-                        <div class="intro__img"><span class="intro__signature">60 человек</span><img src="#" alt="описание"></div>
-                        <h3 class="intro__item-title">Количество человек</h3>
-                        <p class="intro__desc">Кроме вас на яхте будет только капитан и его помощник</p>
-                    </li>
-                </ul>
-            </section>
-            <section class="landing__impressions impressions">
-                <h2 class="impressions__title">Что нас ждет</h2>
-                <ul class="impressions__list">
-                    <li class="impressions__item impressions__item--reverse">
-                        <div class="impressions__desc">
-                            <h3>Острова и пляжи</h3>
-                            <p>а также красивейшие бухты</p>
-                        </div>
-                        <div class="impressions__img"><img src="#" alt="описание"></div>
-                    </li>
-                    <li class="impressions__item">
-                        <div class="impressions__desc">
-                            <h3>Секретные места</h3>
-                            <p>побываете там, где не ступала нога обычного туриста</p>
-                        </div>
-                        <div class="impressions__img"><img src="#" alt="описание"></div>
-                    </li>
-                    <li class="impressions__item impressions__item--reverse">
-                        <div class="impressions__desc">
-                            <h3>Необычные активности</h3>
-                            <p>научитесь управлять яхтой и вязать морские узлы</p>
-                        </div>
-                        <div class="impressions__img"><img src="#" alt="описание"></div>
-                    </li>
-                    <li class="impressions__item">
-                        <div class="impressions__desc">
-                            <h3>Расширение кругозора</h3>
-                            <p>посмотрите на мир с другого ракурса</p>
-                        </div>
-                        <div class="impressions__img"><img src="#" alt="описание"></div>
-                    </li>
-                </ul>
-                <section class="impressions__also also">
-                    <h3 class="also__title">А также</h3>
-                    <div class="glide">
-                        <div class="glide__track" data-glide-el="track">
-                            <ul class="also__list glide__slides">
-                                <li class="glide__slide">
-                                    <div class="also__item">
-                                        <div class="also__img"><img src="./img/bg-header.jpg" alt="описание"></div>
-                                        <p class="also__desc">Дайвинг</p>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="also__item">
-                                        <div class="also__img"><img src="./img/bg-header.jpg" alt="описание"></div>
-                                        <p class="also__desc">Рыбалка</p>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="also__item">
-                                        <div class="also__img"><img src="./img/bg-header.jpg" alt="описание"></div>
-                                        <p class="also__desc">Плавание</p>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="also__item">
-                                        <div class="also__img"><img src="./img/bg-header.jpg" alt="описание"></div>
-                                        <p class="also__desc">Sup-бординг</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="also__bullets glide__bullets" data-glide-el="controls[nav]">
-                            <button class="also__bullet glide__bullet" type="button" data-glide-dir="=0" aria-label="переключить на слайд 1"></button>
-                            <button class="also__bullet glide__bullet" type="button" data-glide-dir="=1" aria-label="переключить на слайд 2"></button>
-                            <button class="also__bullet glide__bullet" type="button" data-glide-dir="=2" aria-label="переключить на слайд 3"></button>
-                            <button class="also__bullet glide__bullet" type="button" data-glide-dir="=3" aria-label="переключить на слайд 4"></button>
-                        </div>
+                <h2 class="intro__title">О яхтинге</h2>
+                <div class="intro__glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="intro__list glide__slides">
+                            <li class="intro__item glide__slide">
+                                <div class="intro__slide">
+                                    <div class="intro__img"><img src="img/intro/puzzle.png" alt="пазл"></div>
+                                    <h3 class="intro__item-title">Сложность</h3>
+                                    <p class="intro__desc">Отсутствие яхтенного опыта не накладывает ограничений на участников круизов</p>
+                                </div>
+                            </li>
+                            <li class="intro__item glide__slide">
+                                <div class="intro__slide">
+                                    <div class="intro__img"><img src="img/intro/bathroom.png" alt="ребенок в ванне"></div>
+                                    <h3 class="intro__item-title">Умение плавать</h3>
+                                    <p class="intro__desc">Чтобы ходить на яхте, не обязательно уметь плавать</p>
+                                </div>
+                            </li>
+                            <li class="intro__item glide__slide">
+                                <div class="intro__slide">
+                                    <div class="intro__img"><img src="img/intro/daughter.png" alt="девочка с хвостиками"></div>
+                                    <h3 class="intro__item-title">Возраст</h3>
+                                    <p class="intro__desc">Мы берем в круизные плавания детей от 7 лет. Это подходящий возраст для безопасного прохождения маршрута</p>
+                                </div>
+                            </li>
+                            <li class="intro__item glide__slide">
+                                <div class="intro__slide">
+                                    <div class="intro__img"><img src="img/intro/cross.svg" alt="медицинский крест"></div>
+                                    <h3 class="intro__item-title">Безопасность</h3>
+                                    <p class="intro__desc">На яхте предусмотрены спасательные средства и медицинская аптечка</p>
+                                </div>
+                            </li>
+                            <li class="intro__item glide__slide">
+                                <div class="intro__slide">
+                                    <div class="intro__img"><img src="img/intro/family.png" alt="семья"></div>
+                                    <h3 class="intro__item-title">6–10 человек</h3>
+                                    <p class="intro__desc">Кроме вас на яхте будет только капитан и его помощник</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </section>
-            </section>
-            <section class="landing__yacht yacht">
-                <h2 class="yacht__title">Быт на яхте</h2>
-                <div class="yacht__slider">
-                    <div class="glide">
-                        <div class="glide__track" data-glide-el="track">
-                            <ul class="glide__slides">
-                                <li class="glide__slide">
-                                    <div class="yacht__slide">
-                                        <p class="yacht__desc">Мы путешествуем на 13-15 метровых яхтах. В каждой из них имеется 4-5 кают, полноценная кухня, а также пространство для отдыха.</p>
-                                        <div class="yacht__img"><img src="#" alt="описание"></div>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="yacht__slide">
-                                        <p class="yacht__desc">В каждой каюте размещаются по  1-2 человека. Также можно арендовать каюту целиком.</p>
-                                        <div class="yacht__img"><img src="#" alt="описание"></div>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="yacht__slide">
-                                        <p class="yacht__desc">Завтраки, обеды и перекусы мы готовим на яхте. Ужины возможны в ресторане или также на яхте. </p>
-                                        <div class="yacht__img"><img src="#" alt="описание"></div>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="yacht__slide">
-                                        <p class="yacht__desc">На яхте расположены две ванные комнаты с туалетом душевыми кабинами, а также бойлер и баки с запасами пресной воды.</p>
-                                        <div class="yacht__img"><img src="#" alt="описание"></div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="yacht__tabs-list glide__bullets" data-glide-el="controls[nav]">
-                            <button class="yacht__tab glide__bullet" type="button" data-glide-dir="=0" aria-label="Переключить на слайд 'Яхта'"><span class="yacht__tab-text">Яхта</span></button>
-                            <button class="yacht__tab glide__bullet" type="button" data-glide-dir="=1" aria-label="Переключить на слайд 'Проживание'"><span class="yacht__tab-text">Проживание</span></button>
-                            <button class="yacht__tab glide__bullet" type="button" data-glide-dir="=2" aria-label="Переключить на слайд 'Питание'"><span class="yacht__tab-text">Питание</span></button>
-                            <button class="yacht__tab glide__bullet" type="button" data-glide-dir="=3" aria-label="Переключить на слайд 'Гигиена'"><span class="yacht__tab-text">Гигиена</span></button>
-                        </div>
+                    <div class="intro__bullets glide__bullets" data-glide-el="controls[nav]">
+                        <button class="intro__bullet glide__bullet" type="button" data-glide-dir="=0" aria-label="переключить на слайд 1"></button>
+                        <button class="intro__bullet glide__bullet" type="button" data-glide-dir="=1" aria-label="переключить на слайд 2"></button>
+                        <button class="intro__bullet glide__bullet" type="button" data-glide-dir="=2" aria-label="переключить на слайд 3"></button>
+                        <button class="intro__bullet glide__bullet" type="button" data-glide-dir="=3" aria-label="переключить на слайд 4"></button>
+                        <button class="intro__bullet glide__bullet" type="button" data-glide-dir="=4" aria-label="переключить на слайд 5"></button>
                     </div>
                 </div>
             </section>
-            <section class="landing__price price">
+            <section class="landing__price price price--included">
                 <h2 class="price__title">Что входит в стоимость</h2>
                 <ul class="price__list">
                     <li class="price__item">
-                        <div class="price__img"><img src="#" alt="описание"></div>
+                        <div class="price__img"><img src="img/included/bus.png" alt="автобус"></div>
                         <p class="price__desc">Трансфер из аэропорта</p>
                     </li>
                     <li class="price__item">
-                        <div class="price__img"><img src="#" alt="описание"></div>
+                        <div class="price__img"><img src="img/included/yacht.png" alt="яхта"></div>
                         <p class="price__desc">Мастер-классы по яхтингу</p>
                     </li>
                     <li class="price__item">
-                        <div class="price__img"><img src="#" alt="описание"></div>
-                        <p class="price__desc">Проживание на яхте</p>
+                        <div class="price__img"><img src="img/included/sofa.png" alt="софа в интерьере"></div>
+                        <p class="price__desc">Проживание в каюте</p>
                     </li>
                     <li class="price__item">
-                        <div class="price__img"><img src="#" alt="описание"></div>
+                        <div class="price__img"><img src="img/included/towel.png" alt="полотенце"></div>
                         <p class="price__desc">Постельное белье и полотенца</p>
                     </li>
                     <li class="price__item">
-                        <div class="price__img"><img src="#" alt="описание"></div>
-                        <p class="price__desc">Услуги шкипера и помощника</p>
+                        <div class="price__img"><img src="img/included/food.png" alt="тарелка с вилкой и ложкой"></div>
+                        <p class="price__desc">Питание на яхте</p>
                     </li>
                 </ul>
             </section>
-            <section class="landing__price price">
+            <section class="landing__price price price--not-included">
                 <h2 class="price__title">Что не входит в стоимость</h2>
                 <ul class="price__list">
                     <li class="price__item">
-                        <div class="price__img"><img src="#" alt="описание"></div>
-                        <p class="price__desc">Авиабилеты</p>
+                        <div class="price__img"><img src="img/not-included/shield.png" alt="щит с крестом"></div>
+                        <div class="price__item-wrap">
+                            <h3 class="price__item-title">Страховка</h3>
+                            <p class="price__desc">Медицинская страховка (до 40 €)</p>
+                        </div>
                     </li>
                     <li class="price__item">
-                        <div class="price__img"><img src="#" alt="описание"></div>
-                        <p class="price__desc">Страховка</p>
+                        <div class="price__img"><img src="img/not-included/passport.png" alt="иконка визы"></div>
+                        <div class="price__item-wrap">
+                            <h3 class="price__item-title">Виза</h3>
+                            <p class="price__desc">Шенгенская виза (от 35 €)</p>
+                        </div>
                     </li>
                     <li class="price__item">
-                        <div class="price__img"><img src="#" alt="описание"></div>
-                        <p class="price__desc">Виза</p>
+                        <div class="price__img"><img src="img/not-included/pass.png" alt="билет на самолет"></div>
+                        <div class="price__item-wrap">
+                            <h3 class="price__item-title">Авиабилеты</h3>
+                            <p class="price__desc">Авиабилеты из вашего города до аэропорта назначения (100-200 €)</p>
+                        </div>
                     </li>
                     <li class="price__item">
-                        <div class="price__img"><img src="#" alt="описание"></div>
-                        <p class="price__desc">Прокат техники на островах</p>
+                        <div class="price__img"><img src="img/not-included/bike.png" alt="трехколесный велосипед"></div>
+                        <div class="price__item-wrap">
+                            <h3 class="price__item-title">Прокат техники</h3>
+                            <p class="price__desc">Транспорт на островах</p>
+                        </div>
                     </li>
                     <li class="price__item">
-                        <div class="price__img"><img src="#" alt="описание"></div>
-                        <p class="price__desc">Рестораны</p>
+                        <div class="price__img"><img src="img/not-included/kafe.png" alt="иконка кафе"></div>
+                        <div class="price__item-wrap">
+                            <h3 class="price__item-title">Рестораны</h3>
+                            <p class="price__desc">Если вы захотите поесть на суше</p>
+                        </div>
                     </li>
                 </ul>
             </section>
@@ -386,76 +320,68 @@
                             <ul class="glide__slides">
                                 <li class="glide__slide">
                                     <div class="reviews__item">
-                                        <div class="reviews__img"><img src="#" alt="опиание"></div>
+                                        <div class="reviews__img"><img src="img/reviews/Inna-lekontseva-collin.jpg" alt="фотография автора отзыва"></div>
                                         <div class="reviews__desc">Это было незабываемое путешествие и хочется снова его повторить! Яхтинг – это новый мир возможностей и эмоций! Всем от души рекомендую! И конечно же большое спасибо команде и капитану, без него бы ничего не получилось!</div>
-                                        <div class="reviews__author"> <strong>Inna Lekontseva-Collin</strong>
-                                            <time datetime="2018-06">июнь 2018</time>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="reviews__item">
-                                        <div class="reviews__img"><img src="#" alt="опиание"></div>
-                                        <div class="reviews__desc">Это было незабываемое путешествие и хочется снова его повторить! Яхтинг – это новый мир возможностей и эмоций! Всем от души рекомендую! И конечно же большое спасибо команде и капитану, без него бы ничего не получилось!</div>
-                                        <div class="reviews__author"> <strong>Inna Lekontseva-Collin</strong>
-                                            <time datetime="2018-06">июнь 2018</time>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="reviews__item">
-                                        <div class="reviews__img"><img src="#" alt="опиание"></div>
-                                        <div class="reviews__desc">Это было незабываемое путешествие и хочется снова его повторить! Яхтинг – это новый мир возможностей и эмоций! Всем от души рекомендую! И конечно же большое спасибо команде и капитану, без него бы ничего не получилось!</div>
-                                        <div class="reviews__author"> <strong>Inna Lekontseva-Collin</strong>
+                                        <div class="reviews__author"> <a href="https://vk.com/topic-158155317_41161404?post=4">Inna Lekontseva-Collin</a>
                                             <time datetime="2018-06">июнь 2018</time>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
-                        <div class="reviews__bullets glide__bullets" data-glide-el="controls[nav]">
-                            <button class="reviews__bullet glide__bullet" type="button" data-glide-dir="=0" aria-label="Переключить на отзыв 1"></button>
-                            <button class="reviews__bullet glide__bullet" type="button" data-glide-dir="=1" aria-label="Переключить на отзыв 2"></button>
-                            <button class="reviews__bullet glide__bullet" type="button" data-glide-dir="=2" aria-label="Переключить на отзыв 3"></button>
-                        </div>
                     </div>
                 </div>
             </section>
             <section class="landing__about about" id="about">
                 <h2 class="about__title">О нас</h2>
-                <div class="about__img"><img src="./img/bg-header.jpg" alt="описание"></div><span class="about__hello">Всем привет!</span>
                 <div class="about__desc">
-                    <p>Меня зовут <a href="https://api.whatsapp.com/send?phone=79118482000"><strong>Александр Скворцов</strong></a> и я являюсь лицензированным капитаном и основатель проекта <a href="https://yachtingtime.ru/"><strong>Yachting Time</strong></a>.</p>
-                    <p>Мой первый опыт яхтинга был взрывным - крен, когда лодка идет под парусом или налетевший шквал дают яркий всплеск эмоций, а штиль в звездную ночь пробуждает нечто торжественное внутри. </p>
-                    <p>В круизах мы будем наполнять ветром паруса, травить и выбирать шкоты, менять галсы и вязать узлы, крутить мили за штурвалом и загорать на белоснежной палубе.</p>
-                    <p>Я приглашаю вас погрузиться в эту интересную, новую, пропитанную духом свободы и приключений среду!</p>
+                    <p>Путешествие с <a href="https://yachtingtime.ru/"><strong>Yachting Time</strong></a> — это возможность провести отпуск в атмосфере морского приключения.</p>
+                    <p>Мы будем наполнять ветром паруса, травить и выбирать шкоты, менять галсы и вязать узлы, крутить мили за штурвалом и загорать на белоснежной палубе!</p>
                 </div>
-            </section>
-            <section class="landing__team team">
-                <h2 class="team__title"></h2>
-                <ul class="team__list">
-                    <li class="team__item">
-                        <figure class="team__img"><img src="#" alt="Описание">
-                            <h3 class="team__name">Александр Скворцов</h3>
-                            <figcaption>Капитан, более 4000 морских миль</figcaption>
-                        </figure>
-                        <p>Море - прекрасный учитель! Тут всё по-настоящему. В море мы проявляемся такими, какими есть.. Прекрасная возможность взять обратную связь и стать чуточку лучше, чем вчера!</p>
-                    </li>
-                    <li class="team__item">
-                        <figure class="team__img"><img src="#" alt="Описание">
-                            <h3 class="team__name">Сергей Кыликов</h3>
-                            <figcaption>Капитан, более 3500 морских миль</figcaption>
-                        </figure>
-                        <p>Считаю, что настоящий капитан - это мульти-личность, человек, который бысто и точно принимает решения и умеет одинаково хорошо работать и руками, и головой.</p>
-                    </li>
-                    <li class="team__item">
-                        <figure class="team__img"><img src="#" alt="Описание">
-                            <h3 class="team__name">Ольга Алымова</h3>
-                            <figcaption>Капитан, более 3000 морских миль</figcaption>
-                        </figure>
-                        <p>Взгляд на мир с другой стороны от береговой линии способен в целом изменить восприятие жизни. Такой опыт способен наполнять свежим бризом всю нашу жизнь еще долгое время после возвращения на берег.</p>
-                    </li>
-                </ul>
+                <section class="about__team team">
+                    <h2 class="team__title"></h2>
+                    <div class="team__glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="team__list glide__slides">
+                                <li class="team__item glide__slide">
+                                    <div class="team__slide">
+                                        <figure class="team__img">
+                                            <div class="team__img-wrap"> <img src="img/team/alexandr.jpg" alt="Александр Скворцов"></div>
+                                            <h3 class="team__name">Александр Скворцов</h3>
+                                            <figcaption>Капитан, более 4000 морских миль</figcaption>
+                                        </figure>
+                                        <p>Море - прекрасный учитель! Тут всё по-настоящему. В море мы проявляемся такими, какими есть.. Прекрасная возможность взять обратную связь и стать чуточку лучше, чем вчера!</p>
+                                    </div>
+                                </li>
+                                <li class="team__item glide__slide">
+                                    <div class="team__slide">
+                                        <figure class="team__img">
+                                            <div class="team__img-wrap"> <img src="img/team/sergey.jpg" alt="Сергей Кыликов"></div>
+                                            <h3 class="team__name">Сергей Кыликов</h3>
+                                            <figcaption>Капитан, более 3500 морских миль</figcaption>
+                                        </figure>
+                                        <p>Считаю, что настоящий капитан - это мульти-личность, человек, который бысто и точно принимает решения и умеет одинаково хорошо работать и руками, и головой.</p>
+                                    </div>
+                                </li>
+                                <li class="team__item glide__slide">
+                                    <div class="team__slide">
+                                        <figure class="team__img">
+                                            <div class="team__img-wrap"> <img src="img/team/olga.jpg" alt="Ольга Алымова"></div>
+                                            <h3 class="team__name">Ольга Алымова</h3>
+                                            <figcaption>Капитан, более 3000 морских миль</figcaption>
+                                        </figure>
+                                        <p>Взгляд на мир с другой стороны от береговой линии способен в целом изменить восприятие жизни. Такой опыт способен наполнять свежим бризом всю нашу жизнь еще долгое время после возвращения на берег.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="team__bullets glide__bullets" data-glide-el="controls[nav]">
+                            <button class="team__bullet glide__bullet" type="button" data-glide-dir="=0" aria-label="переключить на слайд 1"></button>
+                            <button class="team__bullet glide__bullet" type="button" data-glide-dir="=1" aria-label="переключить на слайд 2"></button>
+                            <button class="team__bullet glide__bullet" type="button" data-glide-dir="=2" aria-label="переключить на слайд 3"></button>
+                        </div>
+                    </div>
+                </section>
             </section>
         </div>
         <div class="landing__gradient">
@@ -463,32 +389,37 @@
                 <section class="landing__questions questions" id="questions">
                     <h2 class="questions__title">Популярные вопросы</h2>
                     <ol class="questions__list">
-                        <li class="questions__item">Сколько это стоит?
+                        <li class="questions__item">
+                            <button class="questions__btn" type="button">Сколько это стоит?</button>
                             <div class="questions__answer">
                                 <p>Стоимость  путешествия = стоимость круиза + судовая касса</p>
                                 <p>Судовая касса - это денежные средства, внесенные всеми участниками круиза. Они предназначены для оплаты совместных расходов - питания, стоянки, воды, электричества, топлива. В среднем взнос в судовую кассу равен 150 €</p>
                                 <p>Личные расходы – на Ваше усмотрение, 150 - 300 €</p>
                             </div>
                         </li>
-                        <li class="questions__item">Насколько это безопасно?
+                        <li class="questions__item">
+                            <button class="questions__btn" type="button">Насколько это безопасно?</button>
                             <div class="questions__answer">
                                 <p>Формат, в котором осуществляются наши недельные маршруты для новичков. </p>
                                 <p>На протяжении всего маршрута суша никогда не пропадает из виду. Все переходы осуществляются в дневное время.</p>
                                 <p>Выходя в море, капитан руководствуется сводом правил, в том числе проверяет исправность яхты и изучает прогноз погоды в регионе, чтобы избежать штормовых переходов.</p>
                             </div>
                         </li>
-                        <li class="questions__item">Если я заболею?
+                        <li class="questions__item">
+                            <button class="questions__btn" type="button">Если я заболею?</button>
                             <div class="questions__answer">
                                 <p>На борту предусмотрены аптечка первой медицинской помощи, огнетушители и спасательные средства. Для вызова экстренной помощи имеются средства связи и аварийный радиобуй.</p>
                             </div>
                         </li>
-                        <li class="questions__item">Если я передумаю ехать?
+                        <li class="questions__item">
+                            <button class="questions__btn" type="button">Если я передумаю ехать?</button>
                             <div class="questions__answer">
                                 <p>Для обеспечения взаимных договоренностей мы заключаем договор. В нём учтены все нюансы касаемо обязательств, оплаты, сроков, возврата средств и прочее.</p>
                                 <p>Образец вы можете запросить по любым имеющимся контактным данным.</p>
                             </div>
                         </li>
-                        <li class="questions__item">Что нужно взять с собой?
+                        <li class="questions__item">
+                            <button class="questions__btn" type="button">Что нужно взять с собой?</button>
                             <div class="questions__answer">
                                 <ul>
                                     <li>Сумка или рюкзак</li>
@@ -503,7 +434,8 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="questions__item">Какой распорядок дня на судне?
+                        <li class="questions__item">
+                            <button class="questions__btn" type="button">Какой распорядок дня на судне?</button>
                             <div class="questions__answer">
                                 <p>Примерный распорядок дня</p>
                                 <ul>
@@ -518,50 +450,59 @@
                                 <p>Распорядок дня оговаривается - вы сами решаете как и с кем комфортно проводить время на отдыхе.</p>
                             </div>
                         </li>
-                        <li class="questions__item">Я не умею плавать, что мне делать?
+                        <li class="questions__item">
+                            <button class="questions__btn" type="button">Я не умею плавать, что мне делать?</button>
                             <div class="questions__answer">
                                 <p>Чтобы ходить на яхте, не обязательно уметь плавать.</p>
                                 <p>Для подстраховки на яхте предусмотрены спасательный круг, жилет и обвязка. Для купания можно также  использовать надувной круг, матрас и нарукавники.</p>
                             </div>
                         </li>
-                        <li class="questions__item">Есть ли одноместные каюты?
+                        <li class="questions__item">
+                            <button class="questions__btn" type="button">Есть ли одноместные каюты?</button>
                             <div class="questions__answer">
                                 <p>В каюте предусмотрено размещение 1-2 человек.</p>
                                 <p>Размещение одного человека в каюте зависит от количества людей на яхте.</p>
                                 <p>Вы всегда можете выкупить каюту целиком.</p>
                             </div>
                         </li>
-                        <li class="questions__item">Есть вопросы по программе
+                        <li class="questions__item">
+                            <button class="questions__btn" type="button">Есть вопросы по программе</button>
                             <div class="questions__answer">
                                 <p>Если у вам астались вопросы по программе - заполните форму обратной связи и мы вышлем вам подробное описание наших круизов.</p>
                                 <p>Также вы можете <a href="https://api.whatsapp.com/send?phone=79118482000">позвонить</a> или написать нам и задать вопросы нашему капитану лично.</p>
                             </div>
                         </li>
-                        <li class="questions__item">Есть ли скидки?
+                        <li class="questions__item">
+                            <button class="questions__btn" type="button">Есть ли скидки?</button>
                             <div class="questions__answer">
                                 <p>При аренде яхты целиком редусмотрена специальная цена.</p>
                                 <p>Данный вопрос уточняется при личном контакте.</p>
                             </div>
                         </li>
-                        <li class="questions__item">Как мы будем питаться?
+                        <li class="questions__item">
+                            <button class="questions__btn" type="button">Как мы будем питаться?</button>
                             <div class="questions__answer">
                                 <p>Продукты мы закупаем в супермаркетах и на рынках. Накануне закупки составляем список необходимых продуктов и согласовываем его со всеми участниками.</p>
                                 <p>На яхте мы все вместе готовим завтраки, обеды, ужины и легкие перекусы, на суше можем зайти в ресторан/кафе.</p>
                                 <p>На яхте предусмотрена газовая плита с духовкой, холодильник и все необходимое для приготовления пищи.</p>
                             </div>
                         </li>
-                        <li class="questions__item">Сколько будет человек на яхте?
+                        <li class="questions__item">
+                            <button class="questions__btn" type="button">Сколько будет человек на яхте?</button>
                             <div class="questions__answer">
                                 <p>Всестимость яхты - 10 человек, включая капитана и помощника.</p>
                             </div>
                         </li>
-                        <li class="questions__item">Чем будут заниматься дети на яхте?
+                        <li class="questions__item">
+                            <button class="questions__btn" type="button">Чем будут заниматься дети на яхте?</button>
                             <div class="questions__answer">
                                 <p>Мы берем в круизные плавания детей от 7 лет. Это наиболее подходящий возраст для обучения и безопасного прохождения маршрута.</p>
                                 <p>Но каждый родитель должен понимать, что ответственность за своих детей он несет сам.</p>
                             </div>
                         </li>
                     </ol>
+                    <button class="upcoming-trips__btn-collapse questions__btn-collapse questions__btn-collapse--max" type="button">Развернуть</button>
+                    <button class="upcoming-trips__btn-collapse questions__btn-collapse questions__btn-collapse--min" type="button">Свернуть</button>
                 </section>
                 <section class="landing__form form">
                     <h2 class="form__title">Забронировать круиз</h2>
@@ -747,6 +688,7 @@
     <script src="js/uncoming-trips.js"></script>
     <script type="text/javascript" src="js/form.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/glide.js"></script>
 </body>
 
 </html>
