@@ -1,12 +1,30 @@
 .intro {}
 
-.intro__title {}
+.intro__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-.intro__list {}
+.intro__list {
+
+}
+
+.intro__slide {
+  margin: 0 auto;
+  width: 230px;
+  text-align: center;
+}
 
 .intro__item {}
 
-.intro__img {}
+.intro__item-title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.intro__img {
+  margin-bottom: 25px;
+}
 
 .intro__signature {
   img {}
@@ -15,13 +33,44 @@
 
 .intro__desc {}
 
+.intro__bullets {
+  @include toggle-wrap;
+  width: 92px;
+}
 
+.intro__bullet {
+  @include toggle;
+}
+
+.intro__glide {
+  margin-bottom: 60px;
+}
 
 @media(min-width: $tablet-small-width) {}
 
 
 
-@media (min-width: $tablet-width) {}
+@media (min-width: $tablet-width) {
+  .intro__title {
+    margin-bottom: 64px;
+  }
+
+  .intro__img {
+    margin-bottom: 30px;
+  }
+
+  .intro__item-title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  .intro__desc {
+    max-width: 227px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 
 
 

@@ -1,21 +1,33 @@
-section.landing__team.team
+section.about__team.team
   h2.team__title
-  ul.team__list
-    li.team__item
-      figure.team__img
-        img(src="#", alt="Описание")
-        h3.team__name Александр Скворцов
-        figcaption Капитан, более 4000 морских миль
-      p Море - прекрасный учитель! Тут всё по-настоящему. В море мы проявляемся такими, какими есть.. Прекрасная возможность взять обратную связь и стать чуточку лучше, чем вчера!
-    li.team__item
-      figure.team__img
-        img(src="#", alt="Описание")
-        h3.team__name Сергей Кыликов
-        figcaption Капитан, более 3500 морских миль
-      p Считаю, что настоящий капитан - это мульти-личность, человек, который бысто и точно принимает решения и умеет одинаково хорошо работать и руками, и головой.
-    li.team__item
-      figure.team__img
-        img(src="#", alt="Описание")
-        h3.team__name Ольга Алымова
-        figcaption Капитан, более 3000 морских миль
-      p Взгляд на мир с другой стороны от береговой линии способен в целом изменить восприятие жизни. Такой опыт способен наполнять свежим бризом всю нашу жизнь еще долгое время после возвращения на берег.
+  .team__glide
+    .glide__track(data-glide-el="track")
+      ul.team__list.glide__slides
+        li.team__item.glide__slide
+          .team__slide
+            figure.team__img
+              .team__img-wrap 
+                img(src="img/team/alexandr.jpg", alt="Александр Скворцов")
+              h3.team__name Александр Скворцов
+              figcaption Капитан, более 4000 морских миль
+            p Море - прекрасный учитель! Тут всё по-настоящему. В море мы проявляемся такими, какими есть.. Прекрасная возможность взять обратную связь и стать чуточку лучше, чем вчера!
+        li.team__item.glide__slide
+          .team__slide
+            figure.team__img
+              .team__img-wrap 
+                img(src="img/team/sergey.jpg", alt="Сергей Кыликов")
+              h3.team__name Сергей Кыликов
+              figcaption Капитан, более 3500 морских миль
+            p Считаю, что настоящий капитан - это мульти-личность, человек, который бысто и точно принимает решения и умеет одинаково хорошо работать и руками, и головой.
+        li.team__item.glide__slide
+          .team__slide
+            figure.team__img
+              .team__img-wrap 
+                img(src="img/team/olga.jpg", alt="Ольга Алымова")
+              h3.team__name Ольга Алымова
+              figcaption Капитан, более 3000 морских миль
+            p Взгляд на мир с другой стороны от береговой линии способен в целом изменить восприятие жизни. Такой опыт способен наполнять свежим бризом всю нашу жизнь еще долгое время после возвращения на берег.
+    .team__bullets.glide__bullets(data-glide-el="controls[nav]")
+      button.team__bullet.glide__bullet(type="button" data-glide-dir="=0" aria-label="переключить на слайд 1")
+      button.team__bullet.glide__bullet(type="button" data-glide-dir="=1" aria-label="переключить на слайд 2")
+      button.team__bullet.glide__bullet(type="button" data-glide-dir="=2" aria-label="переключить на слайд 3")

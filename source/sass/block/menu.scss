@@ -41,6 +41,13 @@
     line-height: 17px;
     font-weight: 500;
     color: $white;
+    &:hover {
+        color: $white;
+      };
+    
+      &:focus, &:active {
+        color: $white;
+      }
 }
 
 @media(min-width: $tablet-small-width) {}
@@ -53,18 +60,15 @@
         flex-wrap: wrap;
         width: 405px;
     }
+
     .menu__link {
       font-size: 16px;
       line-height: 20px;
       font-weight: 400;
     }
 
-    .menu__wrap {
-        
-    }
-
     .menu__item {
-        margin-right: 40px;
+        margin-right: 25px;
         margin-bottom: 0;
         &:nth-child(4n +4) {
             margin-right: 0;
@@ -74,9 +78,24 @@
     .menu__burger-btn {
         display: none;
     }
+
+    .tel__link {
+        img {
+            display: none;
+        }
+    }
 }
 
 @media (min-width: $desktop-width) {
+
+    .menu__item {
+        margin-right: 40px;
+        margin-bottom: 0;
+        &:nth-child(4n +4) {
+            margin-right: 0;
+        }
+    }
+
     .menu__link {
         font-size: 18px;
         line-height: 22px;

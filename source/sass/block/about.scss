@@ -1,37 +1,33 @@
-.about {}
+.about {
+  text-align: center;
+}
 
 .about__title {
   margin-top: 0;
   margin-bottom: 30px;
-  text-align: center;
   font-weight: 400;
 }
 .about__hello {
   display: block;
   margin-top: 0;
   margin-bottom: 20px;
-  text-align: center;
   font-size: 18px;
   line-height: 22px;
   font-weight: 600;
 }
 
 .about__desc {
-  p {
-    
+  margin-bottom: 40px;
+  a, p, strong {
+    font-size: 12px;
+    line-height: 18px;
   }
-}
-
-.about__img {
-  position: relative;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  width: 200px;
-  height: 230px;
-  overflow: hidden;
-  
-  img {
-    @include img-full-height;
+  p {
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  strong, a {
+    font-weight: 700;
   }
 }
 

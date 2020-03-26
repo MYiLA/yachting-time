@@ -16,6 +16,10 @@
     transform: scale(1.4);
   }
 
+  &:last-child {
+    margin-right: 0;
+  }
+
   &:nth-child(1) {
     background: radial-gradient(5px, #a9a7a7 93%, transparent 100%);
   }

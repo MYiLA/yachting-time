@@ -1,16 +1,74 @@
-.price {}
+.price {
+  &--not-included {
+    .price__item-title {
+      width: auto;
+    }
 
-.price__title {}
+    .price__item-title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
 
-.price__list {}
+      margin-bottom: 10px;
+    }
 
-.price__item {}
+    .price__desc {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+    }
 
-.price__img {
-  img {}
+  }
 }
 
-.price__desc {}
+.price__title {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.price__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 70px;
+}
+
+.price__item {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.price__item-wrap {
+  width: 192px;
+}
+
+.price__item-title {
+  width: 50px;
+}
+
+.price__img {
+  width: 60px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  img {
+    width: 100%;
+  }
+}
+
+.price__desc {
+  margin: 0;
+  padding: 0;
+}
+
+.price {
+  
+}
 
 
 

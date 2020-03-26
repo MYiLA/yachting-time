@@ -49,6 +49,10 @@
     background-color: none;
     border: 1px solid #4F4F4F;
     border-radius: 50%;
+    &:hover, &:focus, &:active {
+        outline: none;
+    }
+
     &::before, &::after {
         position: absolute;
         width: 10px;
