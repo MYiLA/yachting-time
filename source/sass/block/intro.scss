@@ -51,6 +51,11 @@
 
 
 @media (min-width: $tablet-width) {
+
+  .intro__slide {
+    width: 195px;
+  }
+
   .intro__title {
     margin-bottom: 64px;
   }
@@ -74,4 +79,21 @@
 
 
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .intro__list {
+    justify-content: space-between;
+  }
+
+  .intro__item {
+    width: 205px;
+  }
+
+  .intro__slide {
+    width: 100%;
+    margin: 0;
+  }
+
+  .intro__bullets {
+    display: none;
+  }
+}

@@ -22,10 +22,16 @@
 
 .landing__intro {}
 
-.landing__price {}
+.landing__price {
+  margin: 0 auto;
+}
 
 .landing__questions {
   margin-bottom: y;
+}
+
+.landing__attraction {
+  margin-bottom: 130px;
 }
 
 .landing__reviews {
@@ -50,7 +56,9 @@
 
 
 
-@media(min-width: $tablet-small-width) {}
+@media(min-width: $tablet-small-width) {
+
+}
 
 
 
@@ -58,6 +66,10 @@
   .landing__promo {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .landing__impressions {
+    margin-bottom: 130px;
   }
 }
 

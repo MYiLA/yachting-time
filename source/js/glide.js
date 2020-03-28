@@ -1,25 +1,6 @@
 'use strict';
-//инициализация слайдеров
-// const alsoSlider = new Glide('.also__glide', {
-//     type: 'carousel',
-//     startAt: 0,
-//     perView: 4,
-//     gap: 30,
-//     autoplay: 5000,
-//     animationTimingFunc: 'cubic-bezier(.36,.39,.31,1.02)',
-//     dragThreshold: 50,
-//     animationDuration: 1000,
-//     breakpoints: {
-//         900: {
-//             perView: 3
-//         },
-//         660: {
-//             perView: 1
-//         }
-//     },
-// }).mount();
-
-const introSlider = new Glide('.intro__glide', {
+// инициализация слайдеров
+const alsoSlider = new Glide('.also__glide', {
     type: 'carousel',
     startAt: 0,
     perView: 4,
@@ -38,16 +19,44 @@ const introSlider = new Glide('.intro__glide', {
     },
 }).mount();
 
+const introSlider = new Glide('.intro__glide', {
+    type: 'carousel',
+    startAt: 0,
+    perView: 5,
+    gap: 30,
+    autoplay: 5000,
+    animationTimingFunc: 'cubic-bezier(.36,.39,.31,1.02)',
+    dragThreshold: 50,
+    animationDuration: 1000,
+    breakpoints: {
+        1440: {
+            perView: 3
+        },
+        900: {
+            perView: 2
+        },
+        660: {
+            perView: 1
+        }
+    },
+}).mount();
 
-const deleteAlsoSlider = function () {
-    if(window.innerWidth >= tabletWidth) {
-    alsoSlider.destroy()
-  } 
-  // иначе заного инициализировать слайдер(если в нем есть такая опция)
+
+const deleteAlsoSlider = function (slider, width) {
+    if(window.innerWidth >= width) {
+    slider.destroy();
+  } else {
+    slider.mount();
+  }
 }
 
-// остальные два отключать на десктопе desktopWidth
-deleteAlsoSlider()
+deleteAlsoSlider(alsoSlider, tabletWidth)
+deleteAlsoSlider(introSlider, desktopWidth)
 
-window.addEventListener('resize', deleteAlsoSlider)
+// остальные два отключать на десктопе desktopWidth
+
+window.addEventListener('resize', function () {
+    deleteAlsoSlider(alsoSlider, tabletWidth)
+    deleteAlsoSlider(introSlider, desktopWidth)
+})
 

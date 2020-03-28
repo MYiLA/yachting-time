@@ -1,4 +1,6 @@
 .price {
+  max-width: 310px;
+
   &--not-included {
     .price__item-title {
       width: auto;
@@ -22,8 +24,6 @@
 }
 
 .price__title {
-  font-size: 18px;
-  line-height: 22px;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -45,7 +45,7 @@
 }
 
 .price__item-wrap {
-  width: 192px;
+  max-width: 192px;
 }
 
 .price__item-title {
@@ -56,6 +56,7 @@
   width: 60px;
   flex-shrink: 0;
   margin-right: 20px;
+
   img {
     width: 100%;
   }
@@ -66,18 +67,63 @@
   padding: 0;
 }
 
-.price {
-  
+
+
+@media(min-width: $tablet-small-width) {
+  .price__item-wrap {
+    max-width: 220px;
+  }
 }
 
 
 
-@media(min-width: $tablet-small-width) {}
+@media (min-width: $tablet-width) {
+  .price {
+    max-width: 100%;
+  }
+
+  .price__title {
+    width: 592;
+    margin-bottom: 58px;
+  }
+
+  .price__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 126px;
+  }
+
+  .price__item {
+    display: block;
+    text-align: center;
+    max-width: 140px;
+
+    .price__img {
+      width: 90px;
+      margin: 0 auto;
+      margin-bottom: 28px;
+    }
+  }
+
+  .price--included {
+    p {
+      text-transform: uppercase;
+    }
+  }
+}
 
 
 
-@media (min-width: $tablet-width) {}
+@media (min-width: $desktop-width) {
+  .price__item {
+    max-width: 190px;
+  }
 
-
-
-@media (min-width: $desktop-width) {}
+  .price {
+    &--not-included {
+      .price__item {
+        max-width: 150px;
+      }
+    }
+  }
+}
