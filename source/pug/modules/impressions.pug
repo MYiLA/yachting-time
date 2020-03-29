@@ -1,28 +1,219 @@
 section.landing__impressions.impressions
   h2.impressions__title Что нас ждет
-  ul.impressions__list
-    li.impressions__item.impressions__item--reverse
-      .impressions__desc
-        h3 Острова и пляжи
-        p а также красивейшие бухты
-      .impressions__img
-        img(src="#", alt="описание")
-    li.impressions__item
-      .impressions__desc
-        h3 Секретные места
-        p побываете там, где не ступала нога обычного туриста
-      .impressions__img
-        img(src="#", alt="описание")
-    li.impressions__item.impressions__item--reverse
-      .impressions__desc
-        h3 Необычные активности
-        p научитесь управлять яхтой и вязать морские узлы
-      .impressions__img
-        img(src="#", alt="описание")
-    li.impressions__item
-      .impressions__desc
-        h3 Расширение кругозора
-        p посмотрите на мир с другого ракурса
-      .impressions__img
-        img(src="#", alt="описание")
-  include ../modules/also
+    .impressions__tabs
+      button.impressions__tab.impressions__tab--croatia.active(type="button" aria-label="выбрать Хорватию")
+      button.impressions__tab.impressions__tab--greece(type="button" aria-label="выбрать Грецию")
+      button.impressions__tab.impressions__tab--sicily(type="button" aria-label="выбрать Сицилию")
+      button.impressions__tab.impressions__tab--turkey(type="button" aria-label="выбрать Турцию")
+
+    .impressions__glide.impressions__glide--croatia.active
+      .impressions__track.glide__track(data-glide-el="track")
+        ul.impressions__list.glide__slides
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Хорватия, Стари-Град
+                h3.impressions__item-title Вдохновляющая архитектура
+                p.impressions__desc Прогуляетесь по узеньким улочкам древних городов
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Средиземное море
+                h3.impressions__item-title Расширение кругозора
+                p.impressions__desc Посмотрите на мир с другого ракурса
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Средиземное море
+                h3.impressions__item-title Необычные активности
+                p.impressions__desc Научитесь управлять яхтой и вязать морские узлы
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Хорватия, о. Млет
+                h3.impressions__item-title Секретные места
+                p.impressions__desc Побываете там, где не ступала нога обычного туриста
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Хорватия, о. Хвар
+                h3.impressions__item-title Острова и пляжи
+                p.impressions__desc А также красивейшие бухты 
+      //- div.impressions__arrow-wrap.glide__arrows(data-glide-el="controls")
+      //-   button.impressions__arrow.impressions__arrow--left.glide__arrow.glide__arrow--left(type="button" aria-label="предыдущий слайд" data-glide-dir="<")
+      //-   button.impressions__arrow.impressions__arrow--right.glide__arrow.glide__arrow--right(type="button" aria-label="следующий слайд" data-glide-dir=">")
+      .impressions__bullets.glide__bullets(data-glide-el="controls[nav]")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=0" aria-label="переключить на слайд 1")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=1" aria-label="переключить на слайд 2")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=2" aria-label="переключить на слайд 3")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=3" aria-label="переключить на слайд 4")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=3" aria-label="переключить на слайд 5")
+
+    .impressions__glide.impressions__glide--greece
+      .impressions__track.glide__track(data-glide-el="track")
+        ul.impressions__list.glide__slides
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Греция, о. Сими
+                h3.impressions__item-title Вдохновляющая архитектура
+                p.impressions__desc Прогуляетесь по узеньким улочкам древних городов
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Средиземное море
+                h3.impressions__item-title Расширение кругозора
+                p.impressions__desc Посмотрите на мир с другого ракурса
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Средиземное море
+                h3.impressions__item-title Необычные активности
+                p.impressions__desc Научитесь управлять яхтой и вязать морские узлы
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Греция, о. Халки
+                h3.impressions__item-title Секретные места
+                p.impressions__desc Побываете там, где не ступала нога обычного туриста
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Греция, о. Халки
+                h3.impressions__item-title Острова и пляжи
+                p.impressions__desc А также красивейшие бухты 
+      //- div.impressions__arrow-wrap.glide__arrows(data-glide-el="controls")
+      //-   button.impressions__arrow.impressions__arrow--left.glide__arrow.glide__arrow--left(type="button" aria-label="предыдущий слайд" data-glide-dir="<")
+      //-   button.impressions__arrow.impressions__arrow--right.glide__arrow.glide__arrow--right(type="button" aria-label="следующий слайд" data-glide-dir=">")
+      .impressions__bullets.glide__bullets(data-glide-el="controls[nav]")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=0" aria-label="переключить на слайд 1")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=1" aria-label="переключить на слайд 2")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=2" aria-label="переключить на слайд 3")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=3" aria-label="переключить на слайд 4")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=3" aria-label="переключить на слайд 5")
+
+    .impressions__glide.impressions__glide--sicily
+      .impressions__track.glide__track(data-glide-el="track")
+        ul.impressions__list.glide__slides
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Сицилия, о. Липари
+                h3.impressions__item-title Вдохновляющая архитектура
+                p.impressions__desc Прогуляетесь по узеньким улочкам древних городов
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Средиземное море
+                h3.impressions__item-title Расширение кругозора
+                p.impressions__desc Посмотрите на мир с другого ракурса
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Средиземное море
+                h3.impressions__item-title Необычные активности
+                p.impressions__desc Научитесь управлять яхтой и вязать морские узлы
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Cицилия, вулкан Стромболи
+                h3.impressions__item-title Секретные места
+                p.impressions__desc Побываете там, где не ступала нога обычного туриста
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Сицилия, о. Вулкано
+                h3.impressions__item-title Острова и пляжи
+                p.impressions__desc А также красивейшие бухты 
+      //- div.impressions__arrow-wrap.glide__arrows(data-glide-el="controls")
+      //-   button.impressions__arrow.impressions__arrow--left.glide__arrow.glide__arrow--left(type="button" aria-label="предыдущий слайд" data-glide-dir="<")
+      //-   button.impressions__arrow.impressions__arrow--right.glide__arrow.glide__arrow--right(type="button" aria-label="следующий слайд" data-glide-dir=">")
+      .impressions__bullets.glide__bullets(data-glide-el="controls[nav]")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=0" aria-label="переключить на слайд 1")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=1" aria-label="переключить на слайд 2")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=2" aria-label="переключить на слайд 3")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=3" aria-label="переключить на слайд 4")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=3" aria-label="переключить на слайд 5")
+
+    .impressions__glide.impressions__glide--turkey
+      .impressions__track.glide__track(data-glide-el="track")
+        ul.impressions__list.glide__slides
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Турция, место такое
+                h3.impressions__item-title Вдохновляющая архитектура
+                p.impressions__desc Прогуляетесь по узеньким улочкам древних городов
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Средиземное море
+                h3.impressions__item-title Расширение кругозора
+                p.impressions__desc Посмотрите на мир с другого ракурса
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Средиземное море
+                h3.impressions__item-title Необычные активности
+                p.impressions__desc Научитесь управлять яхтой и вязать морские узлы
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Турция, бухта Бештан
+                h3.impressions__item-title Секретные места
+                p.impressions__desc Побываете там, где не ступала нога обычного туриста
+          li.glide__slide.impressions__item-wrap
+            .impressions__item
+              .impressions__img
+                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+              .impressions__desc-plate
+                p.impressions__desc Турция, бухта Бештан
+                h3.impressions__item-title Острова и пляжи
+                p.impressions__desc А также красивейшие бухты
+      //- div.impressions__arrow-wrap.glide__arrows(data-glide-el="controls")
+      //-   button.impressions__arrow.impressions__arrow--left.glide__arrow.glide__arrow--left(type="button" aria-label="предыдущий слайд" data-glide-dir="<")
+      //-   button.impressions__arrow.impressions__arrow--right.glide__arrow.glide__arrow--right(type="button" aria-label="следующий слайд" data-glide-dir=">")
+      .impressions__bullets.glide__bullets(data-glide-el="controls[nav]")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=0" aria-label="переключить на слайд 1")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=1" aria-label="переключить на слайд 2")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=2" aria-label="переключить на слайд 3")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=3" aria-label="переключить на слайд 4")
+        button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=3" aria-label="переключить на слайд 5")
