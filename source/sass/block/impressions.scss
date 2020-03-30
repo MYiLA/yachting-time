@@ -36,7 +36,7 @@
     border: 1px solid $black;
     border-radius: 30px;
     padding: 0;
-    margin-right: 10px;
+    margin-left: 16px;
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -48,12 +48,12 @@
       outline: none;
     }
 
-    &:focus {
-      background-color: #d1d1d1;
+    &:focus,  &:active {
+      background-color: #e2e0e0;
       outline: none;
     }
     
-    &.active, &:active {
+    &.active {
       background-color: #c4c4c4;
       outline: none;
     }
@@ -69,22 +69,23 @@
   }
 
 .impressions__sliders-wrap {
+  
   position: relative;
   min-height: 415px;
   width: 100%;
 }
 
 .impressions__glide {
-  display: none;
-  // position: absolute;
-  // opacity: 0;
-  // pointer-events: none;
+  // display: none;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
   transition: .6s;
   &.active {
-    display: block;
-    // position: relative;
-    // opacity: 1;
-    // pointer-events: auto;
+    // display: block;
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 
@@ -97,9 +98,18 @@
 }
 
 .impressions__item {
+  margin-left: 16px;
+  margin-right: 16px;
   position: relative;
   width: 240px;
   text-align: center;
+  transition: 0.6s;
+}
+
+.impressions__item-wrap.glide__slide--active {
+  .impressions__desc-plate, .impressions__plate-bottom {
+    opacity: 1;
+  }
 }
 
 .impressions__img {
@@ -129,6 +139,9 @@
   transform: translateX(-50%);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+
+  opacity: 0;
+  transition: 0.6s;
 }
 
 .impressions__img {
@@ -138,6 +151,7 @@
 .impressions__plate-title {
   font-size: 12px;
   line-height: 15px;
+  opacity: 1;
 }
 
 .impressions__item-title {
@@ -156,11 +170,14 @@
 .impressions__plate-bottom {
   width: 195px;
   margin: 0 auto;
+  opacity: 0;
+  transition: 0.6s;
 }
 
 .impressions__bullets {
   @include toggle-wrap;
   width: 93px;
+  display: none;
 }
 
 .impressions__bullet {
@@ -170,21 +187,143 @@
 .impressions__also {
 }
 
+@media(min-width: 420px) {
+  .impressions__item {
+    margin: 0 auto;
+  }
 
-@media(min-width: $tablet-small-width) {}
+  .impressions__item-wrap {
+    margin: 0;
+  }
 
+  .impressions__img {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(255, 255, 255, .4);
+      opacity: 1;
+      transition: 0.6s;
+    }
+  }
 
+  .impressions__item-wrap.glide__slide--active {
+    .impressions__desc-plate, .impressions__plate-bottom {
+      opacity: 1;
+    }
+
+    .impressions__img {
+      &:after {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+@media(min-width: $tablet-small-width) {
+  .impressions__tabs {
+    width: 578px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .impressions__tab:nth-child(1) {
+    margin-left: 0;
+  }
+}
 
 @media (min-width: $tablet-width) {
-  .impressions__bullets {
-    display: none;
+  .impressions__title {
+    margin-bottom: 60px;
   }
 
   .impressions__tabs {
+    width: 747px;
     margin-bottom: 67px;
+  }
+
+  .impressions__tab {
+    min-width: 174px;
+    height: 56px;
+    span {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  .impressions__item {
+    width: 650px;
+    height: 456px;
+  }
+
+  .impressions__img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+  }
+
+  .impressions__desc-plate {
+    top: 412px;
+    width: 318px;
+  }
+
+  .impressions__plate-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .impressions__plate-bottom {
+    width: 305px;
+  }
+
+  .impressions__item-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .impressions__desc {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .impressions__item-wrap.glide__slide--active {
+    .impressions__item {
+      transform: translateY(-57px);
+    }
+  }
+
+  .impressions__item-wrap, .impressions__list, .impressions__track {
+    overflow: visible;
+  }
+
+  .impressions__sliders-wrap {
+    margin-bottom: 130px;
+  }
+
+  .impressions__also {
+    margin: 0 auto;
+    width: 785px;
   }
 }
 
 
 
+@media (min-width: 1340px) {
+  .impressions__item {
+    width: 864px;
+  }
+}
+
 @media (min-width: $desktop-width) {}
+
+@media (min-width: 1800px) {
+  .impressions {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}

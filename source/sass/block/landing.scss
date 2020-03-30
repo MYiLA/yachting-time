@@ -13,7 +13,7 @@
 }
 
 .landing__about {
-  margin-bottom: 78px;
+  margin-bottom: 70px;
 }
 
 .landing__form {}
@@ -24,6 +24,7 @@
 
 .landing__price {
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .landing__questions {
@@ -35,7 +36,7 @@
 }
 
 .landing__reviews {
-  margin-bottom: 72px;
+  margin-bottom: 70px;
 }
 
 .landing__scheme {}
@@ -66,9 +67,30 @@
   .landing__promo {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 130px;
   }
 
   .landing__impressions {
+    margin-bottom: 130px;
+  }
+
+  .landing__upcoming-trips {
+    margin-bottom: 130px;
+  }
+
+  .landing__yacht {
+    margin-bottom: 130px;
+  }
+
+  .landing__price {
+    margin-bottom: 130px;
+  }
+
+  .landing__reviews {
+    margin-bottom: 130px;
+  }
+
+  .landing__about {
     margin-bottom: 130px;
   }
 }
