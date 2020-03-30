@@ -89,7 +89,7 @@
     transition: 0.4s;
 
     &--counter.active {
-        box-shadow: 0 0 0 2px #058E6E;
+        // box-shadow: 0 0 0 2px #058E6E;
         .form__counter-wrap {
             opacity: 1;
             pointer-events: auto;
@@ -112,7 +112,7 @@
         }
 
         &.active {
-            box-shadow: 0 0 0 2px #058E6E;
+            // box-shadow: 0 0 0 2px #058E6E;
             .form__label {
                 top: 23%;
                 font-size: 7px;

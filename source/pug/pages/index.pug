@@ -44,25 +44,25 @@ html(lang="ru")
         p.form__desc.form__desc--places Оставьте свой номер и мы свяжемся с вами в течение 10 минут для уточнения подробностей
         p.form__desc.form__desc--not-places Оставьте свой номер и мы свяжемся с вами, когда появятся свободные места
         form.form__form(method = "POST" action="https://formspree.io/mzbvobkj")
-          .form__cruises.cruises-select.cruises-select--popup
-            label.cruises-select__tab(for="cruise__dodecanes-popup")
-            input(type="radio" id="cruise__dodecanes-popup" name="cruise" value="Греция. Архипелаг Додеканес. 25 апреля - 02 мая")
-            label.cruises-select__tab(for="cruise__not-places")
-            input(type="radio" id="cruise__not-places" name="cruise" value="Турция. Майские праздники на море. 2 мая - 9 мая. Мест нет.")
-            label.cruises-select__tab(for="tourkin-view-popup")
-            input(type="radio" id="tourkin-view-popup" name="cruise" value="Турция. Взгляд с другой стороны. 9 мая - 16 мая")
-            label.cruises-select__tab(for="horvatia-way-popup")
-            input(type="radio" id="horvatia-way-popup" name="cruise" value="Хорватия. Путь в жемчужину Адриатики. 25июня - 6 июля")
-            label.cruises-select__tab(for="horvatia-isle-popup")
-            input(type="radio" id="horvatia-isle-popup" name="cruise" value="Хорватия. По островам Средней Долмации. 4 июля - 11 июля")
-            label.cruises-select__tab(for="sicilia-popup")
-            input(type="radio" id="sicilia-popup" name="cruise" value="Сицилия. Липарские острова. 8 августа - 15 августа")
-          .form__input-wrap.form__input-wrap--counter
-            label.form__label.form__label--number(for="places-popup") Кол-во мест
-            .form__counter-wrap
-              button.form__counter-tab.form__counter-tab--up(type="button" aria-label="Увеличить на 1")
-              input.form__counter(type="number" value="1" id="places-popup" name="places" readonly)
-              button.form__counter-tab.form__counter-tab--down(type="button" aria-label="Уменьшить на 1")
+          //- .form__cruises.cruises-select.cruises-select--popup
+          //-   label.cruises-select__tab(for="cruise__dodecanes-popup")
+          //-   input(type="radio" id="cruise__dodecanes-popup" name="cruise" value="Греция. Архипелаг Додеканес. 25 апреля - 02 мая")
+          //-   label.cruises-select__tab(for="cruise__not-places")
+          //-   input(type="radio" id="cruise__not-places" name="cruise" value="Турция. Майские праздники на море. 2 мая - 9 мая. Мест нет.")
+          //-   label.cruises-select__tab(for="tourkin-view-popup")
+          //-   input(type="radio" id="tourkin-view-popup" name="cruise" value="Турция. Взгляд с другой стороны. 9 мая - 16 мая")
+          //-   label.cruises-select__tab(for="horvatia-way-popup")
+          //-   input(type="radio" id="horvatia-way-popup" name="cruise" value="Хорватия. Путь в жемчужину Адриатики. 25июня - 6 июля")
+          //-   label.cruises-select__tab(for="horvatia-isle-popup")
+          //-   input(type="radio" id="horvatia-isle-popup" name="cruise" value="Хорватия. По островам Средней Долмации. 4 июля - 11 июля")
+          //-   label.cruises-select__tab(for="sicilia-popup")
+          //-   input(type="radio" id="sicilia-popup" name="cruise" value="Сицилия. Липарские острова. 8 августа - 15 августа")
+          //- .form__input-wrap.form__input-wrap--counter
+          //-   label.form__label.form__label--number(for="places-popup") Кол-во мест
+          //-   .form__counter-wrap
+          //-     button.form__counter-tab.form__counter-tab--up(type="button" aria-label="Увеличить на 1")
+          //-     input.form__counter(type="number" value="1" id="places-popup" name="places" readonly)
+          //-     button.form__counter-tab.form__counter-tab--down(type="button" aria-label="Уменьшить на 1")
           .form__input-wrap.form__input-wrap--text
             label.form__label.form__label--text(for="name-popup") Ваше имя
             input.form__input(type="text" id="name-popup" name="name" autocomplete="off")
