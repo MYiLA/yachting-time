@@ -1,32 +1,155 @@
 .yacht {}
 
-.yacht__title {}
-
-.yacht__slider {}
-
-.yacht__slide {}
-
-.yacht__desc {}
-
-.yacht__img {
-  
-  img {}
+.yacht__title {
+  text-align: center;
+  margin-bottom: 34px;
 }
 
-.yacht__tabs-list {}
+.yacht__slider {
+  width: 100%;
+}
 
-.yacht__tab {}
+.yacht__slide {
+  text-align: center;
+}
 
-.yacht__tab-text {}
+.yacht__desc {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.yacht__img {
+  position: relative;
+  width: 100%;
+  height: 209px;
+  overflow: hidden;
+  margin-bottom: 15px;
+
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: auto;
+
+  }
+}
+
+.yacht__tabs-list {
+  @include toggle-wrap;
+}
+
+.yacht__tab {
+  @include toggle;
+  span {
+    display: none;
+  };
+}
+
+@media(min-width: $tablet-small-width) {
+  .yacht__img {
+    height: 273px;
+  }
+}
 
 
 
-@media(min-width: $tablet-small-width) {}
+@media (min-width: $tablet-width) {
+  .yacht__title {
+    margin-bottom: 60px;
+  }
 
+  .yacht__slider {
+    position: relative;
+  }
 
+  .yacht__img {
+    height: 365px;
+    margin-bottom: 0;
+  }
 
-@media (min-width: $tablet-width) {}
+  .yacht__slide {
+    position: relative;
+  }
 
+  .yacht__tabs-list {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 409px;
+    height: 55px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 17px;
+    padding-bottom: 18px;
+    border-radius: 5px 5px 0 0;
+    align-items: center;
+    background-color: $white;
+  }
 
+  .yacht__tab {
+    &:focus {
+      outline: none;
+    }
 
-@media (min-width: $desktop-width) {}
+    &:hover, &:active {
+      outline: none;
+      transform: scale(1);
+      font-weight: 700;
+    }
+  }
+
+  .yacht__desc {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 280px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    text-align: left;
+
+    background-color: rgba(255, 255, 255, .85);
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .yacht__tab {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-right: 25px;
+
+    &:nth-child(n) {
+      background: none;
+    } 
+
+    span {
+      padding: 0;
+      margin: 0;
+      display: block;
+    };
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .yacht__img {
+    height: 550px;
+  }
+
+  .yacht__desc {
+    top: 80px;
+    left: 75px;
+    width: 320px;
+    padding-top: 33px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-bottom: 30px;
+  }
+}

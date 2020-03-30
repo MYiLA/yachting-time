@@ -160,9 +160,52 @@ h4 {
 }
 
 .glide__bullet--active {
-    transform: scale(1.4) !important;
+  transform: scale(1.4) !important;
 }
+
+@media (min-width: $tablet-width) {
+    .yacht__tab.glide__bullet--active {
+    transform: scale(1) !important;
+    .yacht__tab-text {
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+}
+
+
 
 .glide__track {
   height: auto;
+}
+
+#tooltip {
+  background:rgba(255, 255, 255, 0.9);
+  color:#000000;
+  text-align:center;
+  padding:6px 0;
+  position:absolute;
+  max-width:250px;
+  z-index:9999;
+  display:none;
+  border-radius:3px;
+  box-shadow:2px 2px 4px rgba(0, 0, 0, 0.2);
+  padding:5px 8px;
+  font-size:12px;
+  text-shadow:none;
+}
+
+#tooltip:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  border: 6px dashed rgba(255, 255, 255, 0.9);
+  top: -6px;
+  left:15px;
+  border-bottom-style: solid;
+  border-top: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  content:'';
 }
