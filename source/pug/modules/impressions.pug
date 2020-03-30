@@ -1,52 +1,62 @@
 section.landing__impressions.impressions
   h2.impressions__title Что нас ждет
+  .impressions__tabs__wrap
     .impressions__tabs
-      button.impressions__tab.impressions__tab--croatia.active(type="button" aria-label="выбрать Хорватию")
-      button.impressions__tab.impressions__tab--greece(type="button" aria-label="выбрать Грецию")
-      button.impressions__tab.impressions__tab--sicily(type="button" aria-label="выбрать Сицилию")
-      button.impressions__tab.impressions__tab--turkey(type="button" aria-label="выбрать Турцию")
-
+      button.impressions__tab.impressions__tab--croatia.active(type="button")
+        span(style = "background-image: url(img/impressions/croatia/flag.svg);") Хорватия
+      button.impressions__tab.impressions__tab--greece(type="button")
+        span(style = "background-image: url(img/impressions/greece/flag.svg);") Греция
+      button.impressions__tab.impressions__tab--sicily(type="button")
+        span(style = "background-image: url(img/impressions/sicily/flag.svg);") Сицилия
+      button.impressions__tab.impressions__tab--turkey(type="button")
+        span(style = "background-image: url(img/impressions/turkey/flag.svg);") Турция
+  .impressions__sliders-wrap
     .impressions__glide.impressions__glide--croatia.active
       .impressions__track.glide__track(data-glide-el="track")
         ul.impressions__list.glide__slides
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/croatia/architecture_x1.jpg", alt="Хорватия, Стари-Град")
               .impressions__desc-plate
-                p.impressions__desc Хорватия, Стари-Град
+                p.impressions__plate-title Хорватия, Стари-Град
+              .impressions__plate-bottom
                 h3.impressions__item-title Вдохновляющая архитектура
                 p.impressions__desc Прогуляетесь по узеньким улочкам древних городов
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/croatia/outlook_x1.jpg", alt="мужчина на яхте")
               .impressions__desc-plate
-                p.impressions__desc Средиземное море
+                p.impressions__plate-title Средиземное море
+              .impressions__plate-bottom
                 h3.impressions__item-title Расширение кругозора
                 p.impressions__desc Посмотрите на мир с другого ракурса
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/croatia/activ_x1.jpg", alt="женщина управляет яхтой")
               .impressions__desc-plate
-                p.impressions__desc Средиземное море
+                p.impressions__plate-title Средиземное море
+              .impressions__plate-bottom
                 h3.impressions__item-title Необычные активности
                 p.impressions__desc Научитесь управлять яхтой и вязать морские узлы
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/croatia/secret_x1.jpg", alt="Хорватия, о. Млет")
               .impressions__desc-plate
-                p.impressions__desc Хорватия, о. Млет
+                p.impressions__plate-title Хорватия, о. Млет
+              .impressions__plate-bottom
                 h3.impressions__item-title Секретные места
                 p.impressions__desc Побываете там, где не ступала нога обычного туриста
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/croatia/isle_x1.jpg", alt="Хорватия, о. Хвар")
               .impressions__desc-plate
-                p.impressions__desc Хорватия, о. Хвар
+                p.impressions__plate-title Хорватия, о. Хвар
+              .impressions__plate-bottom
                 h3.impressions__item-title Острова и пляжи
                 p.impressions__desc А также красивейшие бухты 
       //- div.impressions__arrow-wrap.glide__arrows(data-glide-el="controls")
@@ -65,41 +75,46 @@ section.landing__impressions.impressions
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/greece/architecture_x1.jpg", alt="Греция, о. Сими")
               .impressions__desc-plate
                 p.impressions__desc Греция, о. Сими
+              .impressions__plate-bottom
                 h3.impressions__item-title Вдохновляющая архитектура
                 p.impressions__desc Прогуляетесь по узеньким улочкам древних городов
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/greece/outlook_x1.jpg", alt="мужчина на яхте")
               .impressions__desc-plate
-                p.impressions__desc Средиземное море
+                p.impressions__plate-title Средиземное море
+              .impressions__plate-bottom
                 h3.impressions__item-title Расширение кругозора
                 p.impressions__desc Посмотрите на мир с другого ракурса
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/greece/activ_x1.jpg", alt="женщина управляет яхтой")
               .impressions__desc-plate
                 p.impressions__desc Средиземное море
+              .impressions__plate-bottom
                 h3.impressions__item-title Необычные активности
                 p.impressions__desc Научитесь управлять яхтой и вязать морские узлы
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/greece/secret_x1.jpg", alt="Греция, о. Халки")
               .impressions__desc-plate
-                p.impressions__desc Греция, о. Халки
+                p.impressions__plate-title Греция, о. Халки
+              .impressions__plate-bottom
                 h3.impressions__item-title Секретные места
                 p.impressions__desc Побываете там, где не ступала нога обычного туриста
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/greece/isle_x1.jpg", alt="Греция, о. Халки")
               .impressions__desc-plate
-                p.impressions__desc Греция, о. Халки
+                p.impressions__plate-title Греция, о. Халки
+              .impressions__plate-bottom
                 h3.impressions__item-title Острова и пляжи
                 p.impressions__desc А также красивейшие бухты 
       //- div.impressions__arrow-wrap.glide__arrows(data-glide-el="controls")
@@ -118,41 +133,46 @@ section.landing__impressions.impressions
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/sicily/architecture_x1.jpg", alt="Сицилия, о. Липари")
               .impressions__desc-plate
-                p.impressions__desc Сицилия, о. Липари
+                p.impressions__plate-title Сицилия, о. Липари
+              .impressions__plate-bottom
                 h3.impressions__item-title Вдохновляющая архитектура
                 p.impressions__desc Прогуляетесь по узеньким улочкам древних городов
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/sicily/outlook_x1.jpg", alt="мужчина на яхте")
               .impressions__desc-plate
-                p.impressions__desc Средиземное море
+                p.impressions__plate-title Средиземное море
+              .impressions__plate-bottom
                 h3.impressions__item-title Расширение кругозора
                 p.impressions__desc Посмотрите на мир с другого ракурса
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/sicily/activ_x1.jpg", alt="женщина управляет яхтой")
               .impressions__desc-plate
-                p.impressions__desc Средиземное море
+                p.impressions__plate-title Средиземное море
+              .impressions__plate-bottom
                 h3.impressions__item-title Необычные активности
                 p.impressions__desc Научитесь управлять яхтой и вязать морские узлы
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/sicily/secret_x1.jpg", alt="Cицилия, вулкан Стромболи")
               .impressions__desc-plate
-                p.impressions__desc Cицилия, вулкан Стромболи
+                p.impressions__plate-title Cицилия, вулкан Стромболи
+              .impressions__plate-bottom
                 h3.impressions__item-title Секретные места
                 p.impressions__desc Побываете там, где не ступала нога обычного туриста
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/sicily/isle_x1.jpg", alt="Сицилия, о. Вулкано")
               .impressions__desc-plate
-                p.impressions__desc Сицилия, о. Вулкано
+                p.impressions__plate-title Сицилия, о. Вулкано
+              .impressions__plate-bottom
                 h3.impressions__item-title Острова и пляжи
                 p.impressions__desc А также красивейшие бухты 
       //- div.impressions__arrow-wrap.glide__arrows(data-glide-el="controls")
@@ -171,41 +191,46 @@ section.landing__impressions.impressions
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/turkey/architecture_x1.jpg", alt="Турция")
               .impressions__desc-plate
-                p.impressions__desc Турция, место такое
+                p.impressions__plate-title Турция, место такое
+              .impressions__plate-bottom
                 h3.impressions__item-title Вдохновляющая архитектура
                 p.impressions__desc Прогуляетесь по узеньким улочкам древних городов
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/turkey/outlook_x1.jpg", alt="мужчина на яхте")
               .impressions__desc-plate
-                p.impressions__desc Средиземное море
+                p.impressions__plate-title Средиземное море
+              .impressions__plate-bottom
                 h3.impressions__item-title Расширение кругозора
                 p.impressions__desc Посмотрите на мир с другого ракурса
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/turkey/activ_x1.jpg", alt="женщина управляет яхтой")
               .impressions__desc-plate
-                p.impressions__desc Средиземное море
+                p.impressions__plate-title Средиземное море
+              .impressions__plate-bottom
                 h3.impressions__item-title Необычные активности
                 p.impressions__desc Научитесь управлять яхтой и вязать морские узлы
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/turkey/secret_x1.jpg", alt="Турция, бухта Бештан")
               .impressions__desc-plate
-                p.impressions__desc Турция, бухта Бештан
+                p.impressions__plate-title Турция, бухта Бештан
+              .impressions__plate-bottom
                 h3.impressions__item-title Секретные места
                 p.impressions__desc Побываете там, где не ступала нога обычного туриста
           li.glide__slide.impressions__item-wrap
             .impressions__item
               .impressions__img
-                img(src="img/impressions/snorkel.png", alt="маска для ныряния")
+                img(src="img/impressions/turkey/isle_x1.jpg", alt="Турция, бухта Бештан")
               .impressions__desc-plate
-                p.impressions__desc Турция, бухта Бештан
+                p.impressions__plate-title Турция, бухта Бештан
+              .impressions__plate-bottom
                 h3.impressions__item-title Острова и пляжи
                 p.impressions__desc А также красивейшие бухты
       //- div.impressions__arrow-wrap.glide__arrows(data-glide-el="controls")
@@ -217,3 +242,4 @@ section.landing__impressions.impressions
         button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=2" aria-label="переключить на слайд 3")
         button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=3" aria-label="переключить на слайд 4")
         button.impressions__bullet.glide__bullet(type="button" data-glide-dir="=3" aria-label="переключить на слайд 5")
+  include ./also
