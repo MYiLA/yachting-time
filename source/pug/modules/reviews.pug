@@ -1,18 +1,10 @@
 section.landing__reviews.reviews(id="reviews")
   h2.reviews__title Отзывы
   .reviews__slider
-    .glide
+    .glide.reviews__glide
       .glide__track(data-glide-el="track")
         ul.glide__slides
-          li.glide__slide
-            .reviews__item
-              .reviews__img
-                img(src="img/reviews/Inna-lekontseva-collin.jpg", alt="фотография Инны Леконтсевой")
-              .reviews__desc Это было незабываемое путешествие и хочется снова его повторить! Яхтинг – это новый мир возможностей и эмоций! Всем от души рекомендую! И конечно же большое спасибо команде и капитану, без него бы ничего не получилось!
-              .reviews__author 
-                a(href="https://vk.com/topic-158155317_41161404?post=4") Inna Lekontseva-Collin
-                time(datetime="2018-06") июнь 2018
-          li.glide__slide
+          li.glide__slide.reviews__slide
             .reviews__item
               .reviews__img
                 img(src="img/reviews/ivan-kalinichev.jpg", alt="фотография Ивана Калиничева")
@@ -20,7 +12,15 @@ section.landing__reviews.reviews(id="reviews")
               .reviews__author 
                 a(href="https://vk.com/topic-158155317_41161404?post=4") Иван Калиничев
                 time(datetime="2018-05") май 2018
-          li.glide__slide
+          li.glide__slide.reviews__slide
+            .reviews__item
+              .reviews__img
+                img(src="img/reviews/Inna-lekontseva-collin.jpg", alt="фотография Инны Леконтсевой")
+              .reviews__desc Это было незабываемое путешествие и хочется снова его повторить! Яхтинг – это новый мир возможностей и эмоций! Всем от души рекомендую! И конечно же большое спасибо команде и капитану, без него бы ничего не получилось!
+              .reviews__author 
+                a(href="https://vk.com/topic-158155317_41161404?post=4") Inna Lekontseva-Collin
+                time(datetime="2018-06") июнь 2018
+          li.glide__slide.reviews__slide
             .reviews__item
               .reviews__img
                 img(src="img/reviews/polina-kormiltseva.jpg", alt="фотография Полины Кормилтсевой")

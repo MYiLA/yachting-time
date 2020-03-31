@@ -1,7 +1,7 @@
 'use strict';
 // инициализация слайдеров
 const alsoSlider = new Glide('.also__glide', {
-    type: 'carousel',
+    type: 'slider',
     startAt: 0,
     perView: 4,
     gap: 30,
@@ -20,7 +20,7 @@ const alsoSlider = new Glide('.also__glide', {
 });
 
 const introSlider = new Glide('.intro__glide', {
-    type: 'carousel',
+    type: 'slider',
     startAt: 0,
     perView: 5,
     gap: 30,
@@ -43,22 +43,44 @@ const introSlider = new Glide('.intro__glide', {
 
 
 
-introSlider.mount();
-alsoSlider.mount();
+const reviewsSlider = new Glide('.reviews__glide', {
+    type: 'slider',
+    startAt: 0,
+    perView: 3,
+    gap: 30,
+    autoplay: 5000,
+    animationTimingFunc: 'cubic-bezier(.36,.39,.31,1.02)',
+    dragThreshold: 50,
+    animationDuration: 1000,
+    breakpoints: {
+        900: {
+            perView: 1
+        },
+    },
+});
 
-const deleteAlsoSlider = function (slider, width) {
+
+
+// introSlider.mount();
+// alsoSlider.mount();
+// reviewsSlider.mount();
+
+const deleteSlider = function (slider, width) {
     if(window.innerWidth >= width) {
     slider.destroy();
+  } else {
+    slider.mount();
   }
 }
 
-deleteAlsoSlider(alsoSlider, tabletWidth)
-deleteAlsoSlider(introSlider, desktopWidth)
-
+deleteSlider(alsoSlider, tabletWidth)
+deleteSlider(introSlider, desktopWidth)
+deleteSlider(reviewsSlider, tabletWidth)
 // остальные два отключать на десктопе desktopWidth
 
 window.addEventListener('resize', function () {
-    deleteAlsoSlider(alsoSlider, tabletWidth)
-    deleteAlsoSlider(introSlider, desktopWidth)
+    deleteSlider(alsoSlider, tabletWidth)
+    deleteSlider(introSlider, desktopWidth)
+    deleteSlider(reviewsSlider, tabletWidth)
 })
 
