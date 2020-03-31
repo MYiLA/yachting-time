@@ -47,6 +47,10 @@
   };
 }
 
+.yacht__tab-text {
+  transition: 0.4s;
+}
+
 @media(min-width: $tablet-small-width) {
   .yacht__img {
     height: 273px;
