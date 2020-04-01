@@ -51,9 +51,8 @@ $('.upcoming-trips__btn--tel').on('click', function () {
     $('.popup-form').addClass('active--no-places')
 })
 console.log($('#tel'));
-// маска для формы
+// маски для формы
 $(document).ready(function () {
-    console.log($('#tel'));
-    $('#tel').mask('(000)-000-00-00');
+    $('#tel').mask('+7(900)-000-00-00');
+    $('#tel-popup').mask('+7(900)-000-00-00');
 })
-// $('#tel').mask('+7(900)-000-00-00')
