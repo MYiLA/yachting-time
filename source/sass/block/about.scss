@@ -7,6 +7,7 @@
   margin-bottom: 30px;
   font-weight: 400;
 }
+
 .about__hello {
   display: block;
   margin-top: 0;
@@ -18,18 +19,60 @@
 
 .about__desc {
   margin-bottom: 40px;
-  a, p, strong {
+
+  a,
+  p,
+  strong {
     font-size: 12px;
     line-height: 18px;
   }
+
   p {
     margin-bottom: 20px;
     font-weight: 400;
   }
-  strong, a {
+
+  strong,
+  a {
     font-weight: 700;
   }
 }
 
-@media (min-width: $tablet-width) {}
-@media (min-width: $desktop-width) {}
+@media (min-width: $tablet-small-width) {
+  .about__desc {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+
+  .team__slide {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about__desc {
+    max-width: 415px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__title {
+    margin-bottom: 60px;
+  }
+
+  .about__desc {
+    max-width: 680px;
+    margin-bottom: 100px;
+
+    p {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    strong {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+}

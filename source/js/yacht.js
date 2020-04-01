@@ -5,7 +5,7 @@ const yachtSlider = new Glide('.yacht-glide', {
     startAt: 0,
     perView: 1,
     gap: 30,
-    autoplay: 5000,
+    autoplay: 6000,
     animationTimingFunc: 'cubic-bezier(.36,.39,.31,1.02)',
     dragThreshold: 50,
     animationDuration: 1000,
@@ -18,7 +18,7 @@ $(function() {
       if (this.title) {
           var c = this.title;
           var x = 0;//расположение по горизонтали(left)
-          var y = 35;//расположение по вертикали (top)
+          var y = 15;//расположение по вертикали (top)
           $(this).mouseover(function(d) {
               this.title = "";
               $("body").append('<div id="tooltip">' + c + "</div>");

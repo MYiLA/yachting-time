@@ -131,29 +131,6 @@ h4 {
   font-weight: 400;
 }
 
-@media (min-width: $tablet-width) {
-  h1 {
-    font-size: 64px;
-    line-height: 75px;
-  }
-
-  h2 {
-    font-size: 48px;
-    line-height: 59px;
-  }
-
-  h3 {
-    font-size: 36px;
-    line-height: 44px;
-  }
-
-  h4 {
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
-}
-
 .glide__slides {
   margin: 0;
   padding: 0;
@@ -162,18 +139,6 @@ h4 {
 .glide__bullet--active {
   transform: scale(1.4) !important;
 }
-
-@media (min-width: $tablet-width) {
-    .yacht__tab.glide__bullet--active {
-    transform: scale(1) !important;
-    .yacht__tab-text {
-      font-weight: 700;
-      text-decoration: underline;
-    }
-  }
-}
-
-
 
 .glide__track {
   height: auto;
@@ -208,4 +173,58 @@ h4 {
   border-left-color: transparent;
   border-right-color: transparent;
   content:'';
+}
+
+@media (min-width: $tablet-width) {
+  h1 {
+    font-size: 56px;
+    line-height: 67px;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .yacht__tab.glide__bullet--active {
+    transform: scale(1) !important;
+    .yacht__tab-text {
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  h1 {
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  h2 {
+    font-size: 48px;
+    line-height: 59px;
+  }
+
+  h3 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
 }

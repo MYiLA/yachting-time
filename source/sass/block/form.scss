@@ -39,6 +39,7 @@
 .form__counter-wrap {
     opacity: 0;
     pointer-events: none;
+    touch-action: none;
     transition: 0.4s;
 }
 
@@ -93,6 +94,7 @@
         .form__counter-wrap {
             opacity: 1;
             pointer-events: auto;
+            touch-action: auto;
         }
 
         .form__label--number {
@@ -180,9 +182,9 @@
 
 @media (min-width: $tablet-width) {
     .form__desc {
-        width: 683px;
-        font-size: 24px;
-        line-height: 29px;
+        width: 535px;
+        font-size: 22px;
+        line-height: 26px;
     }
 
     .form__label {
@@ -244,4 +246,10 @@
 
 
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+    .form__desc {
+        width: 600px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+}

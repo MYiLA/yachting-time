@@ -76,8 +76,8 @@
   .promo__desc {
     max-width: 560px;
     text-align: left;
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 28px;
+    line-height: 40px;
   }
 }
 
@@ -86,5 +86,10 @@
     padding-top: 325px;
     width: 1200px;
     display: block;
+  }
+
+  .promo__desc {
+    font-size: 32px;
+    line-height: 44px;
   }
 }

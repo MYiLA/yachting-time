@@ -56,8 +56,6 @@ const collapseUncoming = function () {
             $('.upcoming-trips__btn-collapse--max').css('display', 'block');
             $('.upcoming-trips__item:not(:nth-child(1)):not(:nth-child(2))').css('display', 'none');
         })
-        // $('.upcoming-trips__btn-collapse--min').hide();
-        // $('.upcoming-trips__btn-collapse--max').show("slow");
     } else {
         $('.upcoming-trips__item').each(function () {
             $(this).attr('style', '');

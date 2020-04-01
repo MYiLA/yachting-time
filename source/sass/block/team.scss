@@ -71,4 +71,51 @@
 
 
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .team__list {
+    margin-bottom: 0;
+  }
+
+  .team__item {
+    width: 374px;
+    margin-right: 40px;
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+
+  .team__slide {
+    width: 100%;
+    text-align: left;
+    p {
+      width: 310px;
+      font-size: 16px;
+      line-height: 22px;  
+    }
+  }
+
+  .team__img {
+    margin-bottom: 20px;
+    figcaption {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  .team__img-wrap {
+    height: 465px;
+    width: 374px;
+  }
+
+ .team__name {
+   font-size: 20px;
+   line-height: 24px;
+   margin-bottom: 10px;
+ }
+
+  .team__bullets {
+    display: none;
+  }
+
+}

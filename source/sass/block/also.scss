@@ -63,8 +63,6 @@
   }
 
   .also__title {
-    font-size: 36px;
-    line-height: 44px;
     margin-bottom: 60px;
   }
 
@@ -76,8 +74,8 @@
 
   .also__desc {
     margin-bottom: 0;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
   }
 
   .also__track {
@@ -95,5 +93,10 @@
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .also__desc {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
