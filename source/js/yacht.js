@@ -6,6 +6,7 @@ const yachtSlider = new Glide('.yacht-glide', {
     perView: 1,
     gap: 30,
     autoplay: 6000,
+    hoverpause: true,
     animationTimingFunc: 'cubic-bezier(.36,.39,.31,1.02)',
     dragThreshold: 50,
     animationDuration: 1000,

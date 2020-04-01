@@ -6,6 +6,7 @@ const alsoSlider = new Glide('.also__glide', {
     perView: 4,
     gap: 30,
     autoplay: 6000,
+    hoverpause: true,
     animationTimingFunc: 'cubic-bezier(.36,.39,.31,1.02)',
     dragThreshold: 50,
     animationDuration: 1000,
@@ -25,6 +26,7 @@ const introSlider = new Glide('.intro__glide', {
     perView: 5,
     gap: 30,
     autoplay: 6000,
+    hoverpause: true,
     animationTimingFunc: 'cubic-bezier(.36,.39,.31,1.02)',
     dragThreshold: 50,
     animationDuration: 1000,
@@ -49,6 +51,7 @@ const reviewsSlider = new Glide('.reviews__glide', {
     perView: 3,
     gap: 30,
     autoplay: 6000,
+    hoverpause: true,
     animationTimingFunc: 'cubic-bezier(.36,.39,.31,1.02)',
     dragThreshold: 50,
     animationDuration: 1000,
@@ -65,6 +68,7 @@ const teamSlider = new Glide('.team__glide', {
     perView: 2,
     gap: 30,
     autoplay: 6000,
+    hoverpause: true,
     animationTimingFunc: 'cubic-bezier(.36,.39,.31,1.02)',
     dragThreshold: 50,
     animationDuration: 1000,
@@ -74,10 +78,6 @@ const teamSlider = new Glide('.team__glide', {
         },
     },
 });
-
-// introSlider.mount();
-// alsoSlider.mount();
-// reviewsSlider.mount();
 
 const deleteSlider = function (slider, width) {
     if(window.innerWidth >= width) {
@@ -91,7 +91,7 @@ deleteSlider(alsoSlider, tabletWidth)
 deleteSlider(reviewsSlider, tabletWidth)
 
 deleteSlider(introSlider, desktopWidth)
-deleteSlider(teamSlider, desktopWidth)
+deleteSlider(teamSlider, tabletWidth)
 
 // остальные два отключать на десктопе desktopWidth
 
@@ -100,6 +100,6 @@ window.addEventListener('resize', function () {
     deleteSlider(reviewsSlider, tabletWidth)
 
     deleteSlider(introSlider, desktopWidth)
-    deleteSlider(teamSlider, desktopWidth)
+    deleteSlider(teamSlider, tabletWidth)
 })
 

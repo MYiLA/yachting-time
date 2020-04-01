@@ -67,17 +67,12 @@
 
 
 
-@media (min-width: $tablet-width) {}
-
-
-
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .team__list {
     margin-bottom: 0;
   }
-
   .team__item {
-    width: 374px;
+    width: 200px;
     margin-right: 40px;
 
     &:nth-last-child(1) {
@@ -87,6 +82,27 @@
 
   .team__slide {
     width: 100%;
+    p {
+      width: 100%; 
+    }
+  }
+
+  .team__bullets {
+    display: none;
+  }
+}
+
+
+
+@media (min-width: $desktop-width) {
+  
+
+  .team__item {
+    width: 374px;
+    margin-right: 40px;
+  }
+
+  .team__slide {
     text-align: left;
     p {
       width: 310px;
@@ -113,9 +129,4 @@
    line-height: 24px;
    margin-bottom: 10px;
  }
-
-  .team__bullets {
-    display: none;
-  }
-
 }

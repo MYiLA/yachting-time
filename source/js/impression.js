@@ -8,6 +8,7 @@ const croatiaSlider = new Glide('.impressions__glide--croatia', {
   gap: 30,
   peek: {before: 150, after: 150},
   autoplay: 6000,
+  hoverpause: true,
   animationTimingFunc: 'cubic-bezier(.36,.39,.31,1.02)',
   dragThreshold: 50,
   animationDuration: 1000,
@@ -58,6 +59,7 @@ const greeceSlider = new Glide('.impressions__glide--greece', {
   gap: 30,
   peek: {before: 150, after: 150},
   autoplay: 6000,
+  hoverpause: true,
   animationTimingFunc: 'cubic-bezier(.36,.39,.31,1.02)',
   dragThreshold: 50,
   animationDuration: 1000,
@@ -108,6 +110,7 @@ const sicilySlider = new Glide('.impressions__glide--sicily', {
   gap: 30,
   peek: {before: 150, after: 150},
   autoplay: 6000,
+  hoverpause: true,
   animationTimingFunc: 'cubic-bezier(.36,.39,.31,1.02)',
   dragThreshold: 50,
   animationDuration: 1000,
@@ -158,6 +161,7 @@ const turkeySlider = new Glide('.impressions__glide--turkey', {
   gap: 30,
   peek: {before: 150, after: 150},
   autoplay: 6000,
+  hoverpause: true,
   animationTimingFunc: 'cubic-bezier(.36,.39,.31,1.02)',
   dragThreshold: 50,
   animationDuration: 1000,
@@ -200,28 +204,6 @@ const turkeySlider = new Glide('.impressions__glide--turkey', {
     }
 },
 });
-// слайдеры
-// croatiaSlider.mount();
-// greeceSlider.mount();
-// sicilySlider.mount();
-// turkeySlider.mount();
-
-// croatiaSlider.destroy();
-// greeceSlider.destroy();
-// sicilySlider.destroy();
-// turkeySlider.destroy();
-// табы
-// impressions__tab--croatia
-// impressions__tab--greece
-// impressions__tab--sicily
-// impressions__tab--turkey
-
-// active
-// слайдеры
-// impressions__glide--croatia
-// impressions__glide--greece
-// impressions__glide--sicily
-// impressions__glide--turkey
 
 // слайдер по умолчанию
 croatiaSlider.mount();
