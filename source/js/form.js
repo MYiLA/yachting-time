@@ -5,7 +5,7 @@ $('.cruises-select__tabs-caption').on('click', '.cruises-select__tab:not(.active
     $(this)
         .addClass('active').siblings().removeClass('active')
         .closest('.cruises-select__wrap').children('.cruises-select__content-wrap').find('.cruises-select__tabs-content').removeClass('active').eq($(this).index()).addClass('active');
-    });
+});
 
 // показывает блок с плашками
 $('.cruises-select__btn-collapse').on('click', function () {
@@ -15,10 +15,10 @@ $('.cruises-select__btn-collapse').on('click', function () {
 // логика инпутов
 
 $('.form__input').on('focusout', function () {
-    if($(this).val() === '') {
+    if ($(this).val() === '') {
         $(this).parent().removeClass('active')
         $(this).parent().removeClass('change')
-    }  
+    }
 })
 
 $('.form__input-wrap').on('click', function () {
@@ -50,3 +50,10 @@ $('.upcoming-trips__btn--book').on('click', function () {
 $('.upcoming-trips__btn--tel').on('click', function () {
     $('.popup-form').addClass('active--no-places')
 })
+console.log($('#tel'));
+// маска для формы
+$(document).ready(function () {
+    console.log($('#tel'));
+    $('#tel').mask('(000)-000-00-00');
+})
+// $('#tel').mask('+7(900)-000-00-00')

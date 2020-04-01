@@ -17,6 +17,15 @@ $('.menu__burger-btn').on('click', function () {
 //   }
 //   });
 
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 1){
+    $('.header__tel').addClass('header__tel--fixed')
+  }
+  else{
+  $('.header__tel').removeClass('header__tel--fixed')
+  }
+  });
+
 //анимация бургера
 $(document).ready(function () {
 

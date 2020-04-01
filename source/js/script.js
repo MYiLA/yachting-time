@@ -68,3 +68,7 @@ const collapseQuestions = function () {
 }
 
 collapseQuestions();
+
+// ajax-запрос для формы
+
+// валидация
