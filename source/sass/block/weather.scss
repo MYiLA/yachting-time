@@ -52,6 +52,11 @@
   margin-bottom: 13px;
 }
 
+.weather__temperature {
+  font-size: 10px;
+  line-height: 12px;
+}
+
 // @media(min-width: $tablet-small-width) {}
 
 @media (min-width: $tablet-width) {
@@ -88,5 +93,10 @@
 
   .weather__days {
     padding-left: 37px;
+  }
+
+  .weather__temperature {
+    font-size: 14px;
+    line-height: 17px;
   }
 }

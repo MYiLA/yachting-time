@@ -1,6 +1,6 @@
 .promo {
   padding: 25px;
-  min-height: 100vh;
+  min-height: 570px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,6 +20,7 @@
 }
 
 .promo__title {
+  margin-top: 0;
   margin-bottom: 67px;
   text-align: center;
   color: $white;

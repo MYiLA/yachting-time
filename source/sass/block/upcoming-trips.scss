@@ -4,6 +4,7 @@
 
 .upcoming-trips__title {
     width: 100%;
+    margin-top: 0;
     margin-bottom: 42px;
     text-align: center;
 }
@@ -141,7 +142,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    padding-top: 45px;
+    padding-top: 0;
     top: 0;
     left: 0;
     background-size: cover;
@@ -149,7 +150,7 @@
     transition: 0.6s;
 
     &--horvatia-isle {
-        background-image: url('../img/upcoming-trips/horvatia-isle-hover.png');
+        background-image: url('../img/upcoming-trips/horvatia-isle-hover.jpg');
     }
 
     &--sicilia {
@@ -172,11 +173,20 @@
         background-image: url('../img/upcoming-trips/dodecanes-hover.jpg')
     }
 
+    .upcoming-trips__wrap-title {
+        margin-top: -25px;
+      text-align: center;
+    }
+
+    .upcoming-trips__desc {
+      margin-bottom: 40px;
+    }
+
     p {
         padding: 0;
         margin: 0;
-        margin-bottom: 20px;
-        width: 225px;
+        margin-bottom: 30px;
+        width: 260px;
         font-size: 14px;
         line-height: 20px;
         color: $white;
@@ -202,7 +212,7 @@
         border-left: none;
         border-top: none;
         left: 0;
-        top: 50%;
+        top: 100%;
         transform: translate(-50%, -50%) rotate(-45deg);
     }
 
@@ -266,7 +276,7 @@
 .upcoming-trips__btn {
     @include btn;
 
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 @media(min-width: $tablet-small-width) {
@@ -362,6 +372,22 @@
 
         span {
             width: 50px;
+        }
+    }
+
+    .upcoming-trips__item-hover {
+        .upcoming-trips__wrap-title {
+          margin-top: 0;
+          text-align: center;
+        }
+    
+        .upcoming-trips__desc {
+          width: 260px;
+          margin-bottom: 50px;
+        }
+    
+        p {
+            margin-bottom: 30px;
         }
     }
 }

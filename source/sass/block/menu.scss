@@ -25,6 +25,7 @@
     padding-left: 10px;
     padding-right: 10px;
     margin: 0;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,6 +55,7 @@
 
 @media (min-width: $tablet-width) {
     .menu__list {
+        margin-bottom: 0;
         padding: 0;
         background-color: transparent;
         flex-direction: row;
