@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
 }
 
 .promo__wrap {
@@ -63,6 +63,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .promo {
+    background-position: top right;
+  }
+
   .promo__title {
     text-align: left;
   }
