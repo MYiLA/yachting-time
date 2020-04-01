@@ -17,9 +17,12 @@
 
 @media (min-width: $tablet-width) {
   .tel__link {
+    display: flex;
+    align-items: center;
+    
     img {
       margin-right: 15px;
-      padding-bottom: 9px;
+      padding-bottom: 0;
     }
     span {
       font-size: 16px;
