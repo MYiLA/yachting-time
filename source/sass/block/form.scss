@@ -5,8 +5,9 @@
 
 .form__title {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding: 0;
+    font-weight: 700;
 }
 
 .form__desc {
@@ -119,7 +120,8 @@
                 top: 23%;
                 font-size: 7px;
                 line-height: 10px;
-                color: rgba(0, 0, 0, 0.6);
+                color: #058E6E;
+                
             }
 
             & .form__input {
@@ -130,8 +132,12 @@
     
     &.change {
         .form__label--number, .form__label {
-            color: #058E6E;
+            color: rgba(0, 0, 0, 0.6);
         }
+    }
+
+    &.invalid {
+      box-shadow: 0 0 0 3px #e30a17 ;
     }
 }
 
@@ -155,6 +161,7 @@
 }
 
 .form__submit {
+    cursor: pointer;
     @include btn-color;
     margin: 0 auto;
     margin-top: 30px;
@@ -168,19 +175,50 @@
     }
 }
 
+.form__personal-data {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 288px;
+    font-size: 10px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.6);
+
+    a {
+        font-size: 10px;
+        line-height: 10px;
+        color: rgba(0, 0, 0, 0.6);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    }
+}
+
+.popup-form__form {
+    .form__personal-data {
+        color: $white;
+    
+        a {
+            color: $white;
+            border-bottom: 1px solid $white;
+        }
+    }    
+}
+
 
 
 @media(min-width: $tablet-small-width) {
     .form__desc {
         margin-left: auto;
         margin-right: auto;
-        width: 400px;
+        width: 280px;
     }
 }
 
 
 
 @media (min-width: $tablet-width) {
+    .form__title {
+        font-weight: 400;
+    }
+
     .form__desc {
         width: 535px;
         font-size: 22px;
@@ -241,6 +279,19 @@
         padding-left: 65px;
         font-size: 18px;
         line-height: 22px;
+    }
+
+    .form__personal-data {
+        text-align: center;
+        max-width: 300px;
+        font-size: 12px;
+        line-height: 16px;
+        a {
+            font-size: 12px;
+            line-height: 16px;
+            color: rgba(0, 0, 0, 0.6);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+        }
     }
 }
 

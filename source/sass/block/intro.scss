@@ -44,7 +44,8 @@
 }
 
 .intro__glide {
-  margin-bottom: 60px;
+  cursor: pointer;
+  margin-bottom: 70px;
 }
 
 @media(min-width: $tablet-small-width) {}
@@ -87,6 +88,11 @@
 @media (min-width: $desktop-width) {
   .intro__list {
     justify-content: space-between;
+  }
+
+  .intro__glide {
+    cursor: auto;
+    margin-bottom: 60px;
   }
 
   .intro__item {

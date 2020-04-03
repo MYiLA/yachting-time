@@ -85,7 +85,7 @@
     padding-left: 0;
     padding-right: 0;
     &--fixed {
-      position: fixed;
+      position: static;
       background-color: rgba(19, 67, 117, 0.9);
     }
   }
@@ -141,11 +141,13 @@
         opacity: 0.3;
         background-color: transparent;
       }
-      
+
+      img {
+        width: 20px;
+      }
     }
   }
 }
-
 
 
 @media (min-width: $desktop-width) {

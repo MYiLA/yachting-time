@@ -7,9 +7,17 @@
 }
 
 .reviews__item {
+  display: flex;
+  flex-direction: column;
   width: 286px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
+}
+
+.reviews__slide {
+  display: flex;
+  height: auto;
 }
 
 .reviews__img {
@@ -30,6 +38,7 @@
 }
 
 .reviews__desc {
+  flex-grow: 1;
   width: 100%;
   font-weight: 400;
   font-size: 12px;
@@ -104,7 +113,9 @@
 
 @media (min-width: $desktop-width) {
   .reviews__slide {
-    width: 372px;
+    width: 380px;
+    align-content: stretch;
+    align-items: stretch;
   }
 
   .reviews__desc {

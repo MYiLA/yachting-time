@@ -47,6 +47,7 @@
 }
 
 .questions__btn {
+  cursor: pointer;
   position: relative;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.7);
@@ -131,6 +132,7 @@
 }
 
 .questions__btn-collapse {
+  cursor: pointer;
   display: block;
   position: relative;
   text-align: center;
@@ -249,7 +251,7 @@
   }
 
   .questions__btn-collapse {
-    margin-left: 0;
+    margin-left: 125px;
     padding-left: 0;
   }
 }
@@ -268,7 +270,9 @@
   }
 
   .questions__btn-collapse {
-    margin-left: 190px;
+    margin-left: 325px;
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .questions__list {

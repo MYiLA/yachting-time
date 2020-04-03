@@ -9,6 +9,7 @@
 }
 
 .impressions__tabs__wrap {
+  cursor: pointer;
   position: relative;
   width: 100%;
 
@@ -32,6 +33,7 @@
   }
 
   .impressions__tab {
+    cursor: pointer;
     min-width: 132px;
     height: 48px;
     border: 1px solid $black;
@@ -51,11 +53,13 @@
 
     &:focus,  &:active {
       background-color: #e2e0e0;
+      border: none;
       outline: none;
     }
     
     &.active {
       background-color: #c4c4c4;
+      border: none;
       outline: none;
     }
 
@@ -77,6 +81,7 @@
 }
 
 .impressions__glide {
+  cursor: pointer;
   // display: none;
   position: absolute;
   opacity: 0;
@@ -164,12 +169,12 @@
 }
 
 .impressions__desc {
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .impressions__plate-bottom {
-  width: 195px;
+  width: 100%;
   margin: 0 auto;
   opacity: 0;
   transition: 0.6s;

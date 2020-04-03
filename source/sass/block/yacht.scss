@@ -99,6 +99,7 @@
   }
 
   .yacht__tab {
+    cursor: pointer;
     &:focus {
       outline: none;
     }
@@ -133,6 +134,7 @@
     p {
       margin-top: 0;
       margin-bottom: 0;
+      line-height: 21px;
     }
   }
 
@@ -167,5 +169,8 @@
     padding-left: 19px;
     padding-right: 19px;
     padding-bottom: 30px;
+    p {
+      line-height: 23px;
+    }
   }
 }

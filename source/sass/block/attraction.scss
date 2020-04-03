@@ -22,7 +22,6 @@
 
 .attraction__wrap {
   position: relative;
-  width: 275px;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 28px;
@@ -32,6 +31,8 @@
 }
 
 .attraction__title {
+  width: 275px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -39,8 +40,8 @@
 }
 
 .attraction__desc {
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 24px;
   // margin-bottom: 60px;
 }
 
@@ -56,8 +57,15 @@
 
   transition: 0.4s;
 
+  &:hover {
+    opacity: 1;
+    color: $white;
+  }
+
   &:active, &:focus {
     background-color: #3f6cac;
+    opacity: 1;
+    color: $white;
   }
 }
 

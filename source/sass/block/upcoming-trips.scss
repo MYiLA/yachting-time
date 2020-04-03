@@ -180,17 +180,19 @@
 
     .upcoming-trips__desc {
       margin-bottom: 40px;
+      font-size: 14px;
+      line-height: 20px;
     }
 
     p {
         padding: 0;
         margin: 0;
         margin-bottom: 30px;
-        width: 260px;
-        font-size: 14px;
-        line-height: 20px;
+        width: 220px;
+        font-size: 12px;
+        line-height: 18px;
         color: $white;
-        font-weight: 500;
+        font-weight: 400;
         text-align: center;
     }
 }
@@ -274,6 +276,7 @@
 }
 
 .upcoming-trips__btn {
+    cursor: pointer;
     @include btn;
 
     margin-bottom: 30px;
@@ -284,6 +287,8 @@
         &:hover .upcoming-trips__item-hover {
             opacity: 1;
             pointer-events: auto;
+            touch-action: auto;
+
         }
     }
     .upcoming-trips__list {
@@ -296,6 +301,7 @@
         transform: none;
         opacity: 0;
         pointer-events: none;
+        touch-action: none;
     }
     
     .upcoming-trips__btn-mobile {
@@ -336,7 +342,7 @@
     .upcoming-trips__item-wrap {
         padding-left: 36px;
         padding-right: 18px;
-        padding-top: 23px;
+        padding-top: 31px;
     }
 
     .upcoming-trips__item {
@@ -346,7 +352,7 @@
     }
 
     .upcoming-trips__weather {
-      margin-bottom: 80px;
+      margin-bottom: 75px;
     }
 
     .upcoming-trips__name {
@@ -369,10 +375,21 @@
         height: 68px;
         font-size: 12px;
         line-height: 17px;
+        margin-top: -8px;
 
         span {
             width: 50px;
         }
+    }
+
+    .upcoming-trips__time-wrap {
+        width: 247px;
+        height: 55px;
+    }
+
+    .upcoming-trips__time {
+        font-size: 14px;
+        line-height: 17px;
     }
 
     .upcoming-trips__item-hover {
