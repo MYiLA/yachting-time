@@ -1,5 +1,9 @@
 'use strict';
+(function () {
 // инициализация слайдеров
+const tabletWidth = 900;
+const desktopWidth = 1250;
+
 const alsoSlider = new Glide('.also__glide', {
     type: 'slider',
     startAt: 0,
@@ -42,8 +46,6 @@ const introSlider = new Glide('.intro__glide', {
         }
     },
 });
-
-
 
 const reviewsSlider = new Glide('.reviews__glide', {
     type: 'slider',
@@ -103,3 +105,4 @@ window.addEventListener('resize', function () {
     deleteSlider(teamSlider, tabletWidth)
 })
 
+})();

@@ -1,5 +1,5 @@
 'use strict';
-
+(function () {
 const yachtSlider = new Glide('.yacht-glide', {
     type: 'carousel',
     startAt: 0,
@@ -40,3 +40,4 @@ $(function() {
       }
   })
   });
+})();

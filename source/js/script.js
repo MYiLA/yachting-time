@@ -1,7 +1,5 @@
 'use strict';
-
-const tabletWidth = 900;
-const desktopWidth = 1250;
+(function () {
 
 const closeAnimation = function (wrap) {
   wrap.classList.remove('dissolve-show');
@@ -72,3 +70,4 @@ collapseQuestions();
 // ajax-запрос для формы
 
 // валидация
+})();

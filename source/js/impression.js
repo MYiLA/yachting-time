@@ -1,6 +1,6 @@
 'use strict';
 // слайдеры
-
+(function () {
 const croatiaSlider = new Glide('.impressions__glide--croatia', {
   type: 'slider',
   startAt: 0,
@@ -265,3 +265,4 @@ $('.impressions__tab').each(function () {
   })
 })
 
+})();

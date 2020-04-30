@@ -1,5 +1,6 @@
 'use strict';
 //открытие меню 
+(function () {
 $('.menu__burger-btn').on('click', function () {
   $('.navbar-collapse').toggleClass('show-menu');
 })
@@ -42,3 +43,4 @@ $(document).ready(function () {
       $('.animated-icon3').toggleClass('open');
     });
   });
+})();

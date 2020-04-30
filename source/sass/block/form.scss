@@ -19,7 +19,7 @@
 .form__form {}
 
 .form__select-wrap {
-  position: relative;
+    position: relative;
 }
 
 .form__select {}
@@ -32,7 +32,9 @@
     @include input-transparent;
     padding-left: 35px;
 
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
         outline: none;
     }
 }
@@ -51,11 +53,15 @@
     background-color: none;
     border: 1px solid #4F4F4F;
     border-radius: 50%;
-    &:hover, &:focus, &:active {
+
+    &:hover,
+    &:focus,
+    &:active {
         outline: none;
     }
 
-    &::before, &::after {
+    &::before,
+    &::after {
         position: absolute;
         width: 10px;
         height: 1px;
@@ -65,25 +71,28 @@
         background-color: #4F4F4F;
     }
 
-  &--up {
-    left: 48px;
-    bottom: 10px;
-    &::before, &::after {
-        content: '';
-  }
+    &--up {
+        left: 48px;
+        bottom: 10px;
 
-  &::after {
-      transform: translate(-50%, -50%) rotate(90deg);
-  }
-}
+        &::before,
+        &::after {
+            content: '';
+        }
 
-  &--down {
-    left: 10px;
-    bottom: 10px;
-    &::before {
-        content: '';
+        &::after {
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
     }
-  }
+
+    &--down {
+        left: 10px;
+        bottom: 10px;
+
+        &::before {
+            content: '';
+        }
+    }
 }
 
 .form__input-wrap {
@@ -91,6 +100,7 @@
     transition: 0.4s;
 
     &--counter.active {
+
         // box-shadow: 0 0 0 2px #058E6E;
         .form__counter-wrap {
             opacity: 1;
@@ -99,29 +109,35 @@
         }
 
         .form__label--number {
-          top: 23%;
-          font-size: 7px;
-          line-height: 10px;
-          color: rgba(0, 0, 0, 0.6);
+            top: 23%;
+            font-size: 7px;
+            line-height: 10px;
+            color: rgba(0, 0, 0, 0.6);
         }
     }
 
     &--text {
         & .form__input {
             opacity: 0;
-            &:hover, &:active, &:focus {
+
+            &:hover,
+            &:active,
+            &:focus {
                 outline: none;
-            };
+            }
+
+            ;
         }
 
         &.active {
+
             // box-shadow: 0 0 0 2px #058E6E;
             .form__label {
                 top: 23%;
                 font-size: 7px;
                 line-height: 10px;
                 color: #058E6E;
-                
+
             }
 
             & .form__input {
@@ -129,15 +145,38 @@
             }
         }
     }
-    
-    &.change {
-        .form__label--number, .form__label {
+
+    &::after {
+        content: '';
+        opacity: 0;
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%) scaleX(0.7) rotate(45deg);
+        width: 12px;
+        height: 20px;
+        border: 3px solid #058E6E;
+        border-top: none;
+        border-left: 0;
+        transition: 0.4s;
+    }
+
+    &.valid {
+
+        &::after {
+            content: '';
+            opacity: 1;
+        }
+
+        .form__label--number,
+        .form__label {
             color: rgba(0, 0, 0, 0.6);
+
         }
     }
 
     &.invalid {
-      box-shadow: 0 0 0 3px #e30a17 ;
+        box-shadow: 0 0 0 3px #e30a17;
     }
 }
 
@@ -170,7 +209,8 @@
 
     transition: 0.4s;
 
-    &:active, &:focus {
+    &:active,
+    &:focus {
         background-color: #3f6cac;
     }
 }
@@ -194,12 +234,12 @@
 .popup-form__form {
     .form__personal-data {
         color: $white;
-    
+
         a {
             color: $white;
             border-bottom: 1px solid $white;
         }
-    }    
+    }
 }
 
 
@@ -232,19 +272,21 @@
     }
 
     .form__input-wrap {
-        &--counter.active, &--text.active {
+
+        &--counter.active,
+        &--text.active {
             .form__label--number {
-              top: 23%;
-              font-size: 10px;
-              line-height: 12px;
+                top: 23%;
+                font-size: 10px;
+                line-height: 12px;
             }
         }
 
         &--text.active {
             .form__label {
-              top: 23%;
-              font-size: 10px;
-              line-height: 12px;
+                top: 23%;
+                font-size: 10px;
+                line-height: 12px;
             }
         }
     }
@@ -258,11 +300,11 @@
 
     .form__counter-tab {
         &--down {
-          left: 35px;  
+            left: 35px;
         }
 
         &--up {
-          left: 84px;
+            left: 84px;
         }
 
     }
@@ -270,7 +312,9 @@
     .form__counter-tab {
         width: 18px;
         height: 18px;
-        &:before, &:after {
+
+        &:before,
+        &:after {
             width: 10px;
         }
     }
@@ -286,6 +330,7 @@
         max-width: 300px;
         font-size: 12px;
         line-height: 16px;
+
         a {
             font-size: 12px;
             line-height: 16px;

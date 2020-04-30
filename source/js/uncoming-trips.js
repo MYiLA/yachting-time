@@ -1,4 +1,5 @@
 // эффект ховера на мобильной ширине
+(function () {
 const widthMobile = 320;
 const widthTabletSmall = 660;
 const widthTablet = 900;
@@ -78,3 +79,4 @@ $(window).resize(function () {
 
 uncomingHoverMobile()
 collapseUncoming()
+})();
