@@ -55,11 +55,14 @@
 
     // закрыть попап (переделать на display none и класс/опасити/анимации)
     $('.form__btn-close').on('click', function () {
-        $('.popup-form').removeClass('active')
-    })
+        $('.popup-form').removeClass('active');
+        $('.popup-form').removeClass('active--no-places');
+        $('.popup-form .form__form')[0].reset();
 
-    $('.form__btn-close').on('click', function () {
-        $('.popup-form').removeClass('active--no-places')
+        $('.popup-form .form__input-wrap').each(function () {
+            $(this).removeClass('valid')
+            $(this).removeClass('active')
+        });
     })
 
     // открыть попап (переделать на display none и класс/опасити/анимации)
@@ -200,6 +203,11 @@
             openPopupThanks('popup-thanks--black')
 
             $('.popup-form .form__form')[0].reset();
+
+            $('.popup-form .form__input-wrap').each(function () {
+                $(this).removeClass('valid')
+                $(this).removeClass('active')
+            })
         }
     })
 
@@ -214,13 +222,17 @@
         } else {
 
             // window.backend('POST', URL_UPLOAD, function() {
-            //     alert('Сервис formspree.io (https://formspree.io/) возможно работает не корректно'); 
+            //     alert('Сервер не работает. Сообщите об ошибке службе поддержки.'); 
             // }, function() {
             //     alert('Произошла ошибка соединения')
             // }, new FormData($('.landing__form .form__form')[0]));
 
             openPopupThanks('popup-thanks--white');
             $('.landing__form .form__form')[0].reset();
+            $('.landing__form .form__input-wrap').each(function () {
+                $(this).removeClass('valid')
+                $(this).removeClass('active')
+            })
         }
     })
 
