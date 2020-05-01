@@ -106,6 +106,15 @@
         mask: /^(?!.*\s{2,})[a-zA-Zа-яА-Я\s]+$/,
     });
 
+    //отменить стандартный субмит у формы
+    $('.landing__form').on('submit', function (evt) {
+        evt.preventDefault();
+    })
+
+    $('.popup-form').on('submit', function (evt) {
+        evt.preventDefault();
+    })
+
     // проверка валидация
     const invalidTime = 2500;
 
@@ -173,8 +182,7 @@
         validationTel($('#tel-popup'))
     })
 
-
-    // субмит и ajax
+    // функции показа сообщений ошибки и успеха
 
     const openPopupThanks = function (colorItem) {
         $('.popup-thanks').addClass('active');
@@ -196,7 +204,7 @@
         $('.popup-error').removeClass(colorItem);
     }
 
-    //сообщения формы
+    //показ сообщений при отправке формы
     var showError = function (errorMessage) {
         openPopupError('popup-error--white');
     }
@@ -210,7 +218,7 @@
         })
     }
 
-    //сообщения формы-попапа
+    //показ сообщений при отправке формы-попапа
     var showErrorPopup = function (errorMessage) {
         openPopupError('popup-error--black');
     }
@@ -224,8 +232,8 @@
         })
     }
 
-    $('.popup-form .form__submit').on('click', function (evt) {
-        evt.preventDefault();
+    // отправить попап форму
+    var onSubmitFormPopup = function () {
         validationName($('#name-popup'));
         validationTel($('#tel-popup'));
 
@@ -235,9 +243,7 @@
             // скрываю попап формы
             $('.popup-form').removeClass('active')
             $('.popup-form').removeClass('active--no-places')
-            // отправка формы сервисом formspree.io
-
-            // function (method, URL, onSuccess, onError, data)
+            // отправка формы сервисом formspree.io + обход защиты браузера
             backend(
                 'POST',
                 URL_UPLOAD,
@@ -245,11 +251,10 @@
                 showErrorPopup,
                 new FormData($('.popup-form .form__form')[0]));
         }
-    })
+    }
 
-    $('.landing__form .form__submit').on('click', function (evt) {
-        evt.preventDefault();
-
+    //отправить форму
+    var onSubmitForm = function () {
         validationName($('#name'));
         validationTel($('#tel'));
 
@@ -258,12 +263,24 @@
         } else {
 
             backend(
-                'POST', 
-                URL_UPLOAD, 
-                showSuccess, 
+                'POST',
+                URL_UPLOAD,
+                showSuccess,
                 showError,
                 new FormData($('.landing__form .form__form')[0]));
         }
+    }
+
+
+    $('.popup-form .form__submit').on('click', function (evt) {
+        evt.preventDefault();
+        onSubmitFormPopup();
+    })
+
+
+    $('.landing__form .form__submit').on('click', function (evt) {
+        evt.preventDefault();
+        onSubmitForm();
     })
 
     $('.popup-thanks__btn').on('click', function () {
@@ -275,9 +292,4 @@
         closePopupError('popup-error--white');
         closePopupError('popup-error--black');
     })
-
-    // .popup-thanks
-    //     &.active открывает попап
-    //     &--white белый попап
-    //     &--black темный попап
 })();
