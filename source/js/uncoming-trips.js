@@ -33,9 +33,6 @@ const uncomingHoverMobile = function () {
                     'pointer-events': 'none'
                 })
             });
-            // $(this).children('.upcoming-trips__item-hover').children('.upcoming-trips__btn--book').on('click', function () {
-            //     $('.popup-form').addClass('active')
-            // })
         });
     } else {
         $('.upcoming-trips__item').each(function () {

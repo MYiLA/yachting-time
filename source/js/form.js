@@ -271,7 +271,8 @@
         }
     }
 
-
+// поправить: при нажатии на кнопку появляется попап-лоадер. после ответа он удаляется и появляется нужное сообщение. 
+// фон у попапов общий. Заменяются сами попапы(изменить верстку и логику)
     $('.popup-form .form__submit').on('click', function (evt) {
         evt.preventDefault();
         onSubmitFormPopup();
@@ -284,8 +285,8 @@
     })
 
     $('.popup-thanks__btn').on('click', function () {
-        closePopupThanks('popup-thanks--white')
-        closePopupThanks('popup-thanks--black')
+        closePopupThanks('popup-thanks--white');
+        closePopupThanks('popup-thanks--black');
     })
 
     $('.popup-error__btn').on('click', function () {
