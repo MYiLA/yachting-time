@@ -1,8 +1,8 @@
 'use strict';
 
 (function () {
-    // ajax запрос НА мой емейл
-    const URL_UPLOAD = 'https://formspree.io/mzbvobkj';
+    // ajax запрос НА тестовый емейл
+    const URL_UPLOAD = 'https://cors-anywhere.herokuapp.com/https://formspree.io/xknqwaqr';
 
 
     const XHR_CODE_SUCCESS = 200;
@@ -20,6 +20,14 @@
             } else {
                 onError('Статус ответа: ' + xhr.status + ' ' + xhr.statusText);
             }
+        });
+
+        xhr.addEventListener('error', function () {
+            onError('Произошла ошибка соединения');
+        });
+
+        xhr.addEventListener('timeout', function () {
+            onError('Закончился срок действия запроса');
         });
 
         xhr.timeout = xhrTimeout;
@@ -178,6 +186,44 @@
         $('.popup-thanks').removeClass(colorItem);
     }
 
+    const openPopupError = function (colorItem) {
+        $('.popup-error').addClass('active');
+        $('.popup-error').addClass(colorItem);
+    }
+
+    const closePopupError = function (colorItem) {
+        $('.popup-error').removeClass('active');
+        $('.popup-error').removeClass(colorItem);
+    }
+
+    //сообщения формы
+    var showError = function (errorMessage) {
+        openPopupError('popup-error--white');
+    }
+
+    var showSuccess = function () {
+        openPopupThanks('popup-thanks--white');
+        $('.landing__form .form__form')[0].reset();
+        $('.landing__form .form__input-wrap').each(function () {
+            $(this).removeClass('valid')
+            $(this).removeClass('active')
+        })
+    }
+
+    //сообщения формы-попапа
+    var showErrorPopup = function (errorMessage) {
+        openPopupError('popup-error--black');
+    }
+
+    var showSuccessPopup = function () {
+        openPopupThanks('popup-thanks--black')
+        $('.popup-form .form__form')[0].reset();
+        $('.popup-form .form__input-wrap').each(function () {
+            $(this).removeClass('valid')
+            $(this).removeClass('active')
+        })
+    }
+
     $('.popup-form .form__submit').on('click', function (evt) {
         evt.preventDefault();
         validationName($('#name-popup'));
@@ -191,23 +237,13 @@
             $('.popup-form').removeClass('active--no-places')
             // отправка формы сервисом formspree.io
 
-
-            // window.backend('POST', URL_UPLOAD, function() {
-            //     alert('Сервис formspree.io (https://formspree.io/) возможно работает не корректно'); 
-            // }, function() {
-            //     alert('Произошла ошибка соединения')
-            // }, new FormData($('.popup-form .form__form')[0]));
-
-
-            // всегда говорю "спасибо":-)
-            openPopupThanks('popup-thanks--black')
-
-            $('.popup-form .form__form')[0].reset();
-
-            $('.popup-form .form__input-wrap').each(function () {
-                $(this).removeClass('valid')
-                $(this).removeClass('active')
-            })
+            // function (method, URL, onSuccess, onError, data)
+            backend(
+                'POST',
+                URL_UPLOAD,
+                showSuccessPopup,
+                showErrorPopup,
+                new FormData($('.popup-form .form__form')[0]));
         }
     })
 
@@ -221,24 +257,23 @@
             return
         } else {
 
-            // window.backend('POST', URL_UPLOAD, function() {
-            //     alert('Сервер не работает. Сообщите об ошибке службе поддержки.'); 
-            // }, function() {
-            //     alert('Произошла ошибка соединения')
-            // }, new FormData($('.landing__form .form__form')[0]));
-
-            openPopupThanks('popup-thanks--white');
-            $('.landing__form .form__form')[0].reset();
-            $('.landing__form .form__input-wrap').each(function () {
-                $(this).removeClass('valid')
-                $(this).removeClass('active')
-            })
+            backend(
+                'POST', 
+                URL_UPLOAD, 
+                showSuccess, 
+                showError,
+                new FormData($('.landing__form .form__form')[0]));
         }
     })
 
     $('.popup-thanks__btn').on('click', function () {
         closePopupThanks('popup-thanks--white')
         closePopupThanks('popup-thanks--black')
+    })
+
+    $('.popup-error__btn').on('click', function () {
+        closePopupError('popup-error--white');
+        closePopupError('popup-error--black');
     })
 
     // .popup-thanks

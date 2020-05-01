@@ -1,7 +1,7 @@
 'use strict';
 (function () {
 // инициализация слайдеров
-const tabletWidth = 900;
+const widthTablet = 900;
 const desktopWidth = 1250;
 
 const alsoSlider = new Glide('.also__glide', {
@@ -89,20 +89,20 @@ const deleteSlider = function (slider, width) {
   }
 }
 
-deleteSlider(alsoSlider, tabletWidth)
-deleteSlider(reviewsSlider, tabletWidth)
+deleteSlider(alsoSlider, widthTablet)
+deleteSlider(reviewsSlider, widthTablet)
 
 deleteSlider(introSlider, desktopWidth)
-deleteSlider(teamSlider, tabletWidth)
+deleteSlider(teamSlider, widthTablet)
 
 // остальные два отключать на десктопе desktopWidth
 
 window.addEventListener('resize', function () {
-    deleteSlider(alsoSlider, tabletWidth)
-    deleteSlider(reviewsSlider, tabletWidth)
+    deleteSlider(alsoSlider, widthTablet)
+    deleteSlider(reviewsSlider, widthTablet)
 
     deleteSlider(introSlider, desktopWidth)
-    deleteSlider(teamSlider, tabletWidth)
+    deleteSlider(teamSlider, widthTablet)
 })
 
 })();

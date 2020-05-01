@@ -46,7 +46,6 @@
     }
 
     .popup-error__desc {
-      display: none;
       color: $white;
     }
 
@@ -78,6 +77,7 @@
 }
 
 .popup-error__desc {
+  max-width: 340px;
   margin-bottom: 30px;
   text-align: center;
   font-size: 14px;
