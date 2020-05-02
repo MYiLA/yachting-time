@@ -42,7 +42,6 @@
 
     .popup-error__title {
       color: $white;
-      margin-bottom: 50px;
     }
 
     .popup-error__desc {
@@ -61,8 +60,8 @@
 
 .popup-error__wrap {
   padding-top: 74px;
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-right: 30px;
+  padding-left: 30px;
   padding-bottom: 75px;
 }
 
@@ -86,7 +85,14 @@
 
 .popup-error__btn {
   @include btn-color;
+  border-radius: 5px;
+  height: 46px;
+  width: 155px;
+  font-size: 14px;
+  line-height: 14px;
   margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: $tablet-width) {

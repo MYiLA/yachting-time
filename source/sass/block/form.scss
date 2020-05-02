@@ -1,6 +1,9 @@
 .form {
     text-align: center;
     padding-bottom: 80px;
+    p {
+        
+    }
 }
 
 .form__title {
@@ -12,21 +15,14 @@
 
 .form__desc {
     margin: 0;
-    margin-bottom: 37px;
+    margin-bottom: 28px;
     padding: 0;
+    line-height: 17px;
 }
-
-.form__form {}
 
 .form__select-wrap {
     position: relative;
 }
-
-.form__select {}
-
-.form__select-item {}
-
-.form__counter-wrap {}
 
 .form__counter {
     @include input-transparent;
@@ -215,7 +211,7 @@
 }
 
 .form__personal-data {
-    text-align: left;
+    text-align: center;
     margin: 0 auto;
     max-width: 288px;
     font-size: 10px;
@@ -259,9 +255,9 @@
     }
 
     .form__desc {
-        width: 535px;
-        font-size: 22px;
-        line-height: 26px;
+        width: 440px;
+        font-size: 20px;
+        line-height: 24px;
     }
 
     .form__label {

@@ -42,11 +42,9 @@
 
     .popup-thanks__title {
       color: $white;
-      margin-bottom: 50px;
     }
 
     .popup-thanks__desc {
-      display: none;
       color: $white;
     }
 
@@ -87,6 +85,11 @@
 
 .popup-thanks__btn {
   @include btn-color;
+  border-radius: 5px;
+  height: 60px;
+  width: 200px;
+  font-size: 14px;
+  line-height: 14px;
   margin: 0 auto;
 }
 

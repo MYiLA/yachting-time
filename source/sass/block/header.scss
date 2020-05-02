@@ -1,5 +1,6 @@
 .header {
   position: absolute;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -27,7 +28,7 @@
 }
 
 .header__tel {
-  margin-right: 23px;
+  margin-right: 11px;
   transition: 0.6s;
   img {
     transition: 0.6s;
@@ -137,7 +138,8 @@
         background-color: transparent;
       }
   
-      .tel__link:active, .tel__link:focus {
+      .tel__link:active, 
+      .tel__link:focus {
         opacity: 0.3;
         background-color: transparent;
       }

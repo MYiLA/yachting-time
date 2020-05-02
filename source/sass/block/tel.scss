@@ -2,10 +2,21 @@
   padding-top: 3px;
 }
 
+.header__tel--fixed {
+  .tel__link {
+    img {
+      width: 30px;
+    }
+  }
+}
+
 .tel__link {
-  
   span {
-      display: none;
+    display: none;
+  }
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -21,6 +32,7 @@
     align-items: center;
     
     img {
+      width: 18px;
       margin-right: 15px;
       padding-bottom: 0;
     }

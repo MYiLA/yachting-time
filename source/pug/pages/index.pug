@@ -50,16 +50,20 @@ html(lang="ru")
           p.form__personal-data Заполняя форму, я даю согласие на обработку 
             a.form__personal-link(href="https://yachtingtime.ru/personalnye-dannye-tury-kruizy-na-jahtah") персональных данных
           button.form__submit(type="submit") Забронировать
-    .popup-thanks.popup-thanks--black
+    .popup-thanks
       .popup-thanks__wrap
         h2.popup-thanks__title Спасибо!#[br]Ваша заявка принята
         p.popup-thanks__desc Мы скоро вам перезвоним
         button.popup-thanks__btn(type="button") Вернуться на сайт
-    .popup-error.popup-error--black
+    .popup-error
       .popup-error__wrap
         h2.popup-error__title Ошибка отправки
         p.popup-error__desc Не удалось отправить заявку, попробуйте снова через 5 минут
         button.popup-error__btn(type="button") Хорошо
+    .loading.loading--popup.dissolve
+      include ../modules/loading
+    .loading.dissolve
+      include ../modules/loading
 
     script(src="js/polyfill.min.js")
     script(src="lib/glide/glide.min.js")

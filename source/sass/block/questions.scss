@@ -107,7 +107,7 @@
   transition: 0.6s;
 
   p {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
   }
   ul {
     list-style: none;
@@ -118,6 +118,7 @@
   li {
     position: relative;
     padding-left: 20px;
+    margin-bottom: 5px;
     &::before {
       content: '';
       position: absolute;

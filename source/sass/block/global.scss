@@ -97,6 +97,10 @@ a {
   position: fixed;
 }
 
+.dissolve {
+  opacity: 0;
+}
+
 h1,
 h2,
 h3,
@@ -186,13 +190,13 @@ p {
 
 @media (min-width: $tablet-width) {
   h1 {
-    font-size: 56px;
-    line-height: 67px;
+    font-size: 45px;
+    line-height: 55px;
   }
 
   h2 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 34px;
+    line-height: 46px;
   }
 
   h3 {

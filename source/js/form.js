@@ -204,12 +204,34 @@
         $('.popup-error').removeClass(colorItem);
     }
 
+
+    // показ/скрытие попапа
+
+    var openPopup = function (popup) {
+        popup.addClass('active');
+        setTimeout(function () {
+            popup.removeClass('dissolve');
+        }, 10);
+    }
+
+    var closePopup = function (popup) {
+        setTimeout(function () {
+            popup.addClass('dissolve');
+        }, 0);
+
+        setTimeout(function () {
+            popup.removeClass('active');
+        }, 400);
+    }
+
     //показ сообщений при отправке формы
     var showError = function (errorMessage) {
+        closePopup($('.loading'));
         openPopupError('popup-error--white');
     }
 
     var showSuccess = function () {
+        closePopup($('.loading'));
         openPopupThanks('popup-thanks--white');
         $('.landing__form .form__form')[0].reset();
         $('.landing__form .form__input-wrap').each(function () {
@@ -220,17 +242,20 @@
 
     //показ сообщений при отправке формы-попапа
     var showErrorPopup = function (errorMessage) {
+        closePopup($('.loading.loading--popup'));
         openPopupError('popup-error--black');
     }
 
     var showSuccessPopup = function () {
-        openPopupThanks('popup-thanks--black')
+        closePopup($('.loading.loading--popup'));
+        openPopupThanks('popup-thanks--black');
         $('.popup-form .form__form')[0].reset();
         $('.popup-form .form__input-wrap').each(function () {
             $(this).removeClass('valid')
             $(this).removeClass('active')
         })
     }
+
 
     // отправить попап форму
     var onSubmitFormPopup = function () {
@@ -243,6 +268,8 @@
             // скрываю попап формы
             $('.popup-form').removeClass('active')
             $('.popup-form').removeClass('active--no-places')
+            // показываю лоадинг
+            openPopup($('.loading.loading--popup'))
             // отправка формы сервисом formspree.io + обход защиты браузера
             backend(
                 'POST',
@@ -261,7 +288,7 @@
         if ($('.landing__form .form__input-wrap.invalid').length > 0) {
             return
         } else {
-
+            openPopup($('.loading'))
             backend(
                 'POST',
                 URL_UPLOAD,
@@ -271,8 +298,8 @@
         }
     }
 
-// поправить: при нажатии на кнопку появляется попап-лоадер. после ответа он удаляется и появляется нужное сообщение. 
-// фон у попапов общий. Заменяются сами попапы(изменить верстку и логику)
+    // поправить: при нажатии на кнопку появляется попап-лоадер. после ответа он удаляется и появляется нужное сообщение. 
+    // фон у попапов общий. Заменяются сами попапы(изменить верстку и логику)
     $('.popup-form .form__submit').on('click', function (evt) {
         evt.preventDefault();
         onSubmitFormPopup();
