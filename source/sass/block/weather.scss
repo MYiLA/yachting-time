@@ -84,8 +84,14 @@
 
 
 @media (min-width: $desktop-width) {
+  .weather {
+    justify-content: flex-start;
+  }
+
   .weather__wrap {
     width: 110px;
+    margin-right: 5px;
+
     font-size: 14px;
     line-height: 17px;
     text-align: left;

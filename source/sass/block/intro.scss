@@ -48,10 +48,6 @@
   margin-bottom: 70px;
 }
 
-@media(min-width: $tablet-small-width) {}
-
-
-
 @media (min-width: $tablet-width) {
 
   .intro__slide {
@@ -96,7 +92,11 @@
   }
 
   .intro__item {
-    width: 205px;
+    width: 225px;
+  }
+
+  .intro__img {
+    margin-bottom: 27px;
   }
 
   .intro__slide {

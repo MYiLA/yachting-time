@@ -169,13 +169,18 @@
 
 
 @media (min-width: $desktop-width) {
+    .footer {
+        padding-top: 58px;
+        padding-bottom: 45px;
+    }
+
     .footer__wrap {
-        width: 1200px;
+        width: 1070px;
     }
 
     .footer__copyright {
         order: -1;
-
+        padding-bottom: 15px;
         font-size: 18px;
         line-height: 22px;
 

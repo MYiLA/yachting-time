@@ -338,9 +338,22 @@
 
 
 @media (min-width: $desktop-width) {
+    .form {
+        padding-bottom: 110px;
+    }
+
     .form__desc {
         width: 600px;
         font-size: 24px;
         line-height: 29px;
+        margin-bottom: 33px;
+    }
+
+    .form__title {
+        margin-bottom: 50px;
+    }
+
+    .form__submit {
+        margin-top: 20px;
     }
 }

@@ -38,8 +38,6 @@
   }
 }
 
-
-
 .team__name {
   font-weight: 600;
   font-size: 14px;
@@ -61,12 +59,6 @@
 .team__bullet {
   @include toggle;
 }
-
-
-
-@media(min-width: $tablet-small-width) {}
-
-
 
 @media (min-width: $tablet-width) {
   .team__list {
@@ -129,8 +121,9 @@
   }
 
   .team__img-wrap {
-    height: 465px;
+    height: 480px;
     width: 374px;
+    margin-bottom: 36px;
   }
 
  .team__name {

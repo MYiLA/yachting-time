@@ -339,6 +339,10 @@
 }
 
 @media (min-width: $desktop-width) {
+    .upcoming-trips__title {
+      margin-bottom: 60px;
+    }
+
     .upcoming-trips__item-wrap {
         padding-left: 36px;
         padding-right: 18px;
@@ -376,6 +380,7 @@
         font-size: 12px;
         line-height: 17px;
         margin-top: -8px;
+        margin-left: 21px;
 
         span {
             width: 50px;

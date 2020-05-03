@@ -50,8 +50,6 @@
       }
 }
 
-@media(min-width: $tablet-small-width) {}
-
 @media (min-width: $tablet-width) {
     .menu__list {
         margin-bottom: 0;
@@ -82,6 +80,9 @@
 }
 
 @media (min-width: $desktop-width) {
+    .menu__wrap {
+      padding-bottom: 12px;
+    }
 
     .menu__item {
         margin-right: 40px;

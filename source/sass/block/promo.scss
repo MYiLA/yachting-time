@@ -108,14 +108,23 @@
 
 @media (min-width: $desktop-width) {
   .promo__wrap {
-    padding-top: 325px;
+    padding-top: 253px;
+    padding-bottom: 80px;
     width: 1200px;
     display: block;
+  }
+
+  .promo__title {
+    margin-bottom: 18px;
   }
 
   .promo__desc {
     max-width: 560px;
     font-size: 32px;
     line-height: 44px;
+  }
+
+  .promo__link {
+    margin-bottom: 0;
   }
 }

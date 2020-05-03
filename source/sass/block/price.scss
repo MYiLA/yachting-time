@@ -85,8 +85,10 @@
   }
 
   .price__title {
-    width: 592;
-    margin-bottom: 58px;
+    width: 592px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .price__list {
@@ -116,14 +118,42 @@
 
 
 @media (min-width: $desktop-width) {
+  .price {
+    max-width: 1030px;
+  }
+
+  .price__title {
+    width: 670px;
+  }
+
+  .price__item-wrap {
+    max-width: none;
+  }
+
   .price__item {
     max-width: 190px;
+    .price__img {
+      margin-bottom: 33px;
+    }
   }
 
   .price {
     &--not-included {
       .price__item {
-        max-width: 150px;
+        max-width: 190px;
+      }
+
+      .price__desc {
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      .price__item-title {
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 14px;
       }
     }
   }

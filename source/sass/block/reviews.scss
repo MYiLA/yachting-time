@@ -112,6 +112,10 @@
 
 
 @media (min-width: $desktop-width) {
+  .reviews__title {
+    margin-bottom: 60px;
+  }
+
   .reviews__slide {
     width: 380px;
     align-content: stretch;

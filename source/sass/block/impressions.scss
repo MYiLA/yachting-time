@@ -325,7 +325,24 @@
   }
 }
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .impressions__tabs {
+    width: 730px;
+  }
+
+  .impressions__tab {
+    min-width: 170px;
+  }
+
+  .impressions__desc-plate {
+    top: 400px;
+    padding-top: 20px;
+  }
+
+  .impressions__sliders-wrap {
+    margin-bottom: 120px;
+  }
+}
 
 @media (min-width: 1800px) {
   .impressions {

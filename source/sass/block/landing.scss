@@ -16,12 +16,6 @@
   margin-bottom: 70px;
 }
 
-.landing__form {}
-
-.landing__impressions {}
-
-.landing__intro {}
-
 .landing__price {
   margin: 0 auto;
   margin-bottom: 58px;
@@ -39,10 +33,6 @@
   margin-bottom: 70px;
 }
 
-.landing__scheme {}
-
-.landing__team {}
-
 .landing__yacht {
   margin-bottom: 70px;
 }
@@ -57,14 +47,6 @@
     rgba(110, 170, 217, 0) 97.27%);
 }
 
-
-
-@media(min-width: $tablet-small-width) {
-
-}
-
-
-
 @media (min-width: $tablet-width) {
   .landing__promo {
     padding-left: 0;
@@ -77,7 +59,11 @@
   }
 
   .landing__upcoming-trips {
-    margin-bottom: 130px;
+    margin-bottom: 100px;
+  }
+
+  .landing__intro {
+    margin-bottom: 115px;
   }
 
   .landing__yacht {
@@ -85,15 +71,19 @@
   }
 
   .landing__price {
+    margin-bottom: 108px;
+  }
+
+  .landing__attraction {
     margin-bottom: 130px;
   }
 
   .landing__reviews {
-    margin-bottom: 130px;
+    margin-bottom: 85px;
   }
 
   .landing__about {
-    margin-bottom: 130px;
+    margin-bottom: 115px;
   }
 
   .landing__questions {
