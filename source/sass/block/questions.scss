@@ -102,12 +102,16 @@
   font-size: 12px;
   line-height: 18px;
   padding: 20px;
+  padding-bottom: 23px;
   margin-top: -5px;
   margin-bottom: 5px;
   transition: 0.6s;
 
   p {
     margin-bottom: 18px;
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
   }
   ul {
     list-style: none;
